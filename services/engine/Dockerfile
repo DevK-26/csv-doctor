@@ -1,1 +1,7 @@
-RlJPTSBweXRob246My4xMi1zbGltCldPUktESVIgL2FwcApDT1BZIHJlcXVpcmVtZW50cy50eHQgLgpSVU4gcGlwIGluc3RhbGwgLS1uby1jYWNoZS1kaXIgLXIgcmVxdWlyZW1lbnRzLnR4dApDT1BZIGFwcCAuL2FwcApFWFBPU0UgNzg2MApDTUQgWyJ1dmljb3JuIiwgImFwcC5tYWluOmFwcCIsICItLWhvc3QiLCAiMC4wLjAuMCIsICItLXBvcnQiLCAiNzg2MCJdCg==
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY app ./app
+EXPOSE 7860
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
