@@ -1,1 +1,60 @@
-IyBDU1YgRG9jdG9yIOKAlCBwcm9kdWN0aW9uIHN0YWNrIGZvciBPcmFjbGUgQ2xvdWQgVk0KIyBXaHkgdGhpcyBzaGFwZTogb25lIHNtYWxsIFZNIHJ1bnMgZXZlcnl0aGluZy4gQ2FkZHkgaXMgdGhlIG9ubHkgcHVibGljCiMgZG9vciAoYXV0by1IVFRQUyB3aGVuIGEgZG9tYWluIGlzIHNldCwgcGxhaW4gSFRUUCBvbiBJUCBvdGhlcndpc2UpLgojIFdlYiBhbmQgZW5naW5lIGFyZSBpbnRlcm5hbCBvbmx5IOKAlCB0aGV5IGNhbid0IGJlIGhpdCBkaXJlY3RseSBmcm9tIG91dHNpZGUuCnNlcnZpY2VzOgogIGNhZGR5OgogICAgaW1hZ2U6IGNhZGR5OjItYWxwaW5lCiAgICByZXN0YXJ0OiB1bmxlc3Mtc3RvcHBlZAogICAgcG9ydHM6CiAgICAgIC0gIjgwOjgwIgogICAgICAtICI0NDM6NDQzIgogICAgICAtICI0NDM6NDQzL3VkcCIKICAgIGVudmlyb25tZW50OgogICAgICBET01BSU46ICR7RE9NQUlOOi06ODB9CiAgICB2b2x1bWVzOgogICAgICAtIC4vZGVwbG95L2NhZGR5L0NhZGR5ZmlsZTovZXRjL2NhZGR5L0NhZGR5ZmlsZTpybwogICAgICAtIGNhZGR5X2RhdGE6L2RhdGEKICAgICAgLSBjYWRkeV9jb25maWc6L2NvbmZpZwogICAgZGVwZW5kc19vbjoKICAgICAgLSB3ZWIKICAgICAgLSBlbmdpbmUKCiAgd2ViOgogICAgYnVpbGQ6CiAgICAgIGNvbnRleHQ6IC4vYXBwcy93ZWIKICAgIHJlc3RhcnQ6IHVubGVzcy1zdG9wcGVkCiAgICBlbnZpcm9ubWVudDoKICAgICAgTk9ERV9FTlY6IHByb2R1Y3Rpb24KICAgICAgIyBCcm93c2VyIGNhbGxzIC9hcGkvKiBvbiB0aGUgc2FtZSBkb21haW47IENhZGR5IHByb3hpZXMgaXQgdG8gZW5naW5lLgogICAgICBORVhUX1BVQkxJQ19BUElfQkFTRTogL2FwaQogICAgZXhwb3NlOgogICAgICAtICIzMDAwIgoKICBlbmdpbmU6CiAgICBidWlsZDoKICAgICAgY29udGV4dDogLi9zZXJ2aWNlcy9lbmdpbmUKICAgIHJlc3RhcnQ6IHVubGVzcy1zdG9wcGVkCiAgICBlbnZpcm9ubWVudDoKICAgICAgUkVESVNfVVJMOiByZWRpczovL3JlZGlzOjYzNzkvMAogICAgZXhwb3NlOgogICAgICAtICI3ODYwIgogICAgZGVwZW5kc19vbjoKICAgICAgLSByZWRpcwogICAgIyBGdXR1cmUgKEJsdWVwcmludCBUNSk6IENlbGVyeSB3b3JrZXIgdXNlcyB0aGlzIHNhbWUgaW1hZ2UuCiAgICAjIEl0IGlzIE5PVCBzdGFydGVkIHlldCBiZWNhdXNlIHRoZSBlbmdpbmUgaGFzIG5vIENlbGVyeSB0YXNrcyB5ZXQg4oCUCiAgICAjIGRvIG5vdCBjbGFpbSBhc3luYyBqb2JzIGV4aXN0IHVudGlsIHRoYXQgY29kZSBsYW5kcy4KCiAgcmVkaXM6CiAgICBpbWFnZTogcmVkaXM6Ny1hbHBpbmUKICAgIHJlc3RhcnQ6IHVubGVzcy1zdG9wcGVkCiAgICBjb21tYW5kOiByZWRpcy1zZXJ2ZXIgLS1hcHBlbmRvbmx5IHllcwogICAgdm9sdW1lczoKICAgICAgLSByZWRpc19kYXRhOi9kYXRhCiAgICBleHBvc2U6CiAgICAgIC0gIjYzNzkiCgp2b2x1bWVzOgogIGNhZGR5X2RhdGE6CiAgY2FkZHlfY29uZmlnOgogIHJlZGlzX2RhdGE6Cg==
+# CSV Doctor — production stack for Oracle Cloud VM
+# Why this shape: one small VM runs everything. Caddy is the only public
+# door (auto-HTTPS when a domain is set, plain HTTP on IP otherwise).
+# Web and engine are internal only — they can't be hit directly from outside.
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      DOMAIN: ${DOMAIN:-:80}
+    volumes:
+      - ./deploy/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+      - engine
+
+  web:
+    build:
+      context: ./apps/web
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      # Browser calls /api/* on the same domain; Caddy proxies it to engine.
+      NEXT_PUBLIC_API_BASE: /api
+    expose:
+      - "3000"
+
+  engine:
+    build:
+      context: ./services/engine
+    restart: unless-stopped
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    expose:
+      - "7860"
+    depends_on:
+      - redis
+    # Future (Blueprint T5): Celery worker uses this same image.
+    # It is NOT started yet because the engine has no Celery tasks yet —
+    # do not claim async jobs exist until that code lands.
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    expose:
+      - "6379"
+
+volumes:
+  caddy_data:
+  caddy_config:
+  redis_data:
