@@ -1,1 +1,79 @@
-IyBDU1YgRG9jdG9yIOKAlCBDbGF1ZGUgQ29kZSBCdWlsZCBTcHJpbnQKCkdvYWw6IHR1cm4gdGhlIERheSAxIHNrZWxldG9uIGludG8gYSByZXN1bWUtZmxhZ3NoaXAgcHJvZHVjdC4gRWFjaCBwaGFzZQppcyBvbmUgb3IgdHdvIENsYXVkZSBDb2RlIHNlc3Npb25zLCBlbmRzIHdpdGggcnVubmluZyB0ZXN0cyArIGEgbWVhc3VyZWQKYXJ0aWZhY3QsIGFuZCBpcyByZXZpZXdlZCBieSBLaHVzaGkgYmVmb3JlIHRoZSBuZXh0IHBoYXNlIHN0YXJ0cy4KU3BlYyBzb3VyY2U6IGBCTFVFUFJJTlQubWRgIMKnMTIgKFRlY2huaWNhbCBEZXB0aCB2MikuIFJ1bGVzOiBgQ0xBVURFLm1kYC4KCiMjIFBoYXNlIEEg4oCUIFRoZSBNTCBjb3JlICh0aGUgcmVzdW1lIGhlYWRsaW5lKQoKKipBMS4gQW5vbWFseSBlbnNlbWJsZSB3aXRoIGV4cGxhbmF0aW9ucyoqIChgYW5vbWFsaWVzLnB5YCwgQkxVRVBSSU5UIFQyKQotIElzb2xhdGlvbiBGb3Jlc3QgKyBMb2NhbCBPdXRsaWVyIEZhY3RvciArIGEgc21hbGwgUHlUb3JjaCBhdXRvZW5jb2RlciwKICBjb21iaW5lZCBpbnRvIG9uZSBjYWxpYnJhdGVkIGVuc2VtYmxlIHNjb3JlLgotIEV2ZXJ5IGZsYWdnZWQgcm93IHJldHVybnMgKnJlYXNvbnMqOiB0b3AgY29udHJpYnV0aW5nIGZlYXR1cmVzIHBlciBtb2RlbC4KLSBBUEk6IGV4dGVuZCBgL2FuYWx5c2VgIHRvIGluY2x1ZGUgcGVyLXJvdyBhbm9tYWx5IHJlc3VsdHMuCi0gVGVzdHM6IHBsYW50ZWQgb3V0bGllcnMgaW4gYHNhbXBsZXMvc2FsZXMuY3N2YCAoZS5nLiB0aGUgOSw4MDAtdW5pdHMKICByb3cpIG11c3QgYmUgZmxhZ2dlZDsgY2xlYW4gcm93cyBtdXN0IG5vdCBmbG9vZCB0aGUgcmVzdWx0cy4KCioqQTIuIEJlbmNobWFyayBoYXJuZXNzKiogKGBzZXJ2aWNlcy9lbmdpbmUvYmVuY2htYXJrcy9gKQotIFNjcmlwdCBkb3dubG9hZHMgYSBwdWJsaWMgbGFiZWxsZWQgYW5vbWFseSBkYXRhc2V0IChlLmcuIGNyZWRpdC1jYXJkCiAgZnJhdWQgc2FtcGxlIG9yIFNodXR0bGUpLCBydW5zIGVhY2ggbW9kZWwgKyB0aGUgZW5zZW1ibGUsIGFuZCB3cml0ZXMKICBgYmVuY2htYXJrcy9yZXN1bHRzL2Fub21hbHlfYmVuY2htYXJrLm1kYCB3aXRoIFByZWNpc2lvbiAvIFJlY2FsbCAvCiAgRjEgLyBBVVJPQyBwZXIgbW9kZWwuCi0gQWNjZXB0YW5jZTogdGhlIHRhYmxlIGlzIGdlbmVyYXRlZCBieSB0aGUgc2NyaXB0LCByZXByb2R1Y2libGUgd2l0aCBhCiAgZml4ZWQgc2VlZCwgYW5kIHRoZSBlbnNlbWJsZSBiZWF0cyBhdCBsZWFzdCBvbmUgc2luZ2xlIG1vZGVsIG9uIEYxLgoKKipBMy4gRHJpZnQgZW5naW5lIGZyb20gc2NyYXRjaCoqIChgZHJpZnQucHlgLCBCTFVFUFJJTlQgVDEpCi0gSGFuZC1pbXBsZW1lbnRlZCBQU0ksIEtvbG1vZ29yb3bigJNTbWlybm92LCBKZW5zZW7igJNTaGFubm9uIGZvciBiYXRjaAogIGNvbXBhcmlzb247IEFEV0lOICsgUGFnZS1IaW5rbGV5IGZvciBzdHJlYW1pbmcgZGV0ZWN0aW9uLgotIEJlbmNobWFyazogc3ludGhldGljIHN0cmVhbSB3aXRoIGEga25vd24gZHJpZnQgcG9pbnQ7IHJlcG9ydCBkZXRlY3Rpb24KICBkZWxheSAoaW4gc2FtcGxlcykgcGVyIGRldGVjdG9yIGludG8gYGJlbmNobWFya3MvcmVzdWx0cy9gLgotIEFjY2VwdGFuY2U6IGRldGVjdG9ycyBmaXJlIG5lYXIgdGhlIHBsYW50ZWQgZHJpZnQgcG9pbnQsIHN0YXkgcXVpZXQgb24KICBhIG5vLWRyaWZ0IGNvbnRyb2wgc3RyZWFtOyB1bml0IHRlc3RzIGNvdmVyIGVkZ2UgY2FzZXMgKGVtcHR5LCBjb25zdGFudAogIGNvbHVtbnMpLgoKIyMgUGhhc2UgQiDigJQgRGF0YS1xdWFsaXR5IGRlcHRoCgoqKkIxLiBGdXp6eSBkZWR1cGUqKiAoYHJlbGF0aW9ucy5weWAsIEJMVUVQUklOVCBUMykKLSBCbG9ja2luZyArIHN0cmluZy1zaW1pbGFyaXR5IHJlY29yZCBsaW5rYWdlIChuYW1lL2FkZHJlc3Mtc3R5bGUKICBjb2x1bW5zKSwgY2x1c3RlciBuZWFyLWR1cGxpY2F0ZXMsIHNjb3JlIGNvbmZpZGVuY2UgcGVyIGNsdXN0ZXIuCi0gVGVzdCBvbiBhIHN5bnRoZXRpYyBkaXJ0eS1uYW1lcyBmaXh0dXJlIHdpdGgga25vd24gZHVwbGljYXRlIHBhaXJzOwogIHJlcG9ydCBwYWlyIHByZWNpc2lvbi9yZWNhbGwgaW4gYmVuY2htYXJrcy4KCioqQjIuIEFzay1Zb3VyLURhdGEgYWdlbnQqKiAoQkxVRVBSSU5UIFQ0KQotIE5hdHVyYWwtbGFuZ3VhZ2UgcXVlc3Rpb24g4oaSIGdlbmVyYXRlZCBwYW5kYXMgY29kZSDihpIgZXhlY3V0ZWQgaW4gYQogIHNhbmRib3ggKG5vIGZpbGUvbmV0d29yayBhY2Nlc3MsIHRpbWVvdXQpIOKGkiBhbnN3ZXIgKip2ZXJpZmllZCoqIGJ5IGEKICBkZXRlcm1pbmlzdGljIHJlLWNvbXB1dGF0aW9uIGJlZm9yZSBpdCBpcyBzaG93bi4KLSBJZiB2ZXJpZmljYXRpb24gZmFpbHMsIHRoZSBVSSBzYXlzIHNvIGluc3RlYWQgb2Ygc2hvd2luZyBhIHdyb25nCiAgbnVtYmVyLiBUaGF0IGhvbmVzdHkgbWVjaGFuaXNtIGlzIHRoZSBmZWF0dXJlIOKAlCBidWlsZCBpdCBwcm9wZXJseS4KCiMjIFBoYXNlIEMg4oCUIFNjYWxlLCBwcm9kdWN0LCBwcm9vZgoKKipDMS4gU2NhbGUgcGF0aCoqIChCTFVFUFJJTlQgVDUpCi0gQ2h1bmtlZCBwcm9maWxpbmcgc28gYSB+MU0tcm93IENTViBjb21wbGV0ZXM7IER1Y2tEQiBmb3IgaGVhdnkKICBhZ2dyZWdhdGlvbnM7IENlbGVyeSArIFJlZGlzIGFzeW5jIGpvYnMgd2l0aCBTU0UgcHJvZ3Jlc3MgdG8gdGhlIFVJLgotIEJlbmNobWFyazogcHJvZmlsZSB0aGUgZ2VuZXJhdGVkIDFNLXJvdyBmaWxlLCByZWNvcmQgd2FsbCB0aW1lICsKICBwZWFrIG1lbW9yeSBpbiBgYmVuY2htYXJrcy9yZXN1bHRzL3NjYWxlX2JlbmNobWFyay5tZGAuCgoqKkMyLiBQcm9kdWN0IHN1cmZhY2UqKgotIFJlcG9ydCBwYWdlOiBIZWFsdGggU2NvcmUgYnJlYWtkb3duLCBkcmlmdCBjaGFydCwgYW5vbWFseSB0YWJsZSB3aXRoCiAgcmVhc29ucywgZGVkdXBlIGNsdXN0ZXJzLCBBc2stWW91ci1EYXRhIGJveCDigJQgYWxsIGZyb20gdGhlIHJlYWwgQVBJLgotIExhbmRpbmcgcGFnZSBsZWFkcyB3aXRoIHRoZSBtZWFzdXJlZCBiZW5jaG1hcmsgbnVtYmVycy4KCioqQzMuIFNoaXAqKgotIERlcGxveSB2aWEgdGhlIGV4aXN0aW5nIE9yYWNsZSBhdXRvbWF0aW9uIChgREVQTE9ZLU9SQUNMRS5tZGApIG9uY2UKICB0aGUgVk0gYWNjb3VudCBleGlzdHM7IEdpdEh1YiBBY3Rpb25zIGFscmVhZHkgcnVucyB0ZXN0cyArIGRlcGxveS4KLSBSRUFETUUgcmV3cml0ZTogYXJjaGl0ZWN0dXJlIGRpYWdyYW0sIGJlbmNobWFyayB0YWJsZXMsIGxpdmUgVVJMLAogICJob3cgaXQgd29ya3MiIHdyaXR0ZW4gc28gYSByZWNydWl0ZXIgcmVhY2hlcyB0aGUgZGVwdGggaW4gNjAgc2Vjb25kcy4KCiMjIFJlc3VtZSBidWxsZXRzIHRoaXMgc3ByaW50IHByb2R1Y2VzIChvbmx5IG9uY2UgbWVhc3VyZWQpCgotIEJ1aWx0IGEgZGF0YS1xdWFsaXR5IHBsYXRmb3JtIChGYXN0QVBJICsgTmV4dC5qcyArIFJlZGlzL0NlbGVyeSwKICBEb2NrZXJpc2VkLCBDSS9DRCB0byBhIGNsb3VkIFZNKSB0aGF0IHByb2ZpbGVzLCBzY29yZXMgYW5kIGRpYWdub3NlcwogIHVwbG9hZGVkIENTVnMuCi0gSW1wbGVtZW50ZWQgZHJpZnQgZGV0ZWN0b3JzIChQU0kvS1MvSlMsIEFEV0lOLCBQYWdlLUhpbmtsZXkpIGZyb20KICBzY3JhdGNoOyBtZWFzdXJlZCBkZXRlY3Rpb24gZGVsYXkgb24gc3ludGhldGljIHN0cmVhbXMuCi0gQnVpbHQgYW4gZXhwbGFpbmFibGUgYW5vbWFseSBlbnNlbWJsZSAoSUYgKyBMT0YgKyBhdXRvZW5jb2RlcikKICBiZW5jaG1hcmtlZCBhdCBGMS9BVVJPQyBfXyBvbiBhIHB1YmxpYyBsYWJlbGxlZCBkYXRhc2V0LgotIEVuZ2luZWVyZWQgYSBzYW5kYm94ZWQgdGV4dC10by1wYW5kYXMgYWdlbnQgd2l0aCBkZXRlcm1pbmlzdGljCiAgYW5zd2VyIHZlcmlmaWNhdGlvbjsgY2h1bmtlZCBwcm9maWxpbmcgc3VzdGFpbnMgfjFNIHJvd3MgaW4gX19zLgo=
+# CSV Doctor — Claude Code Build Sprint
+
+Goal: turn the Day 1 skeleton into a resume-flagship product. Each phase
+is one or two Claude Code sessions, ends with running tests + a measured
+artifact, and is reviewed by Khushi before the next phase starts.
+Spec source: `BLUEPRINT.md` §12 (Technical Depth v2). Rules: `CLAUDE.md`.
+
+## Phase A — The ML core (the resume headline)
+
+**A1. Anomaly ensemble with explanations** (`anomalies.py`, BLUEPRINT T2)
+- Isolation Forest + Local Outlier Factor + a small PyTorch autoencoder,
+  combined into one calibrated ensemble score.
+- Every flagged row returns *reasons*: top contributing features per model.
+- API: extend `/analyse` to include per-row anomaly results.
+- Tests: planted outliers in `samples/sales.csv` (e.g. the 9,800-units
+  row) must be flagged; clean rows must not flood the results.
+
+**A2. Benchmark harness** (`services/engine/benchmarks/`)
+- Script downloads a public labelled anomaly dataset (e.g. credit-card
+  fraud sample or Shuttle), runs each model + the ensemble, and writes
+  `benchmarks/results/anomaly_benchmark.md` with Precision / Recall /
+  F1 / AUROC per model.
+- Acceptance: the table is generated by the script, reproducible with a
+  fixed seed, and the ensemble beats at least one single model on F1.
+
+**A3. Drift engine from scratch** (`drift.py`, BLUEPRINT T1)
+- Hand-implemented PSI, Kolmogorov–Smirnov, Jensen–Shannon for batch
+  comparison; ADWIN + Page-Hinkley for streaming detection.
+- Benchmark: synthetic stream with a known drift point; report detection
+  delay (in samples) per detector into `benchmarks/results/`.
+- Acceptance: detectors fire near the planted drift point, stay quiet on
+  a no-drift control stream; unit tests cover edge cases (empty, constant
+  columns).
+
+## Phase B — Data-quality depth
+
+**B1. Fuzzy dedupe** (`relations.py`, BLUEPRINT T3)
+- Blocking + string-similarity record linkage (name/address-style
+  columns), cluster near-duplicates, score confidence per cluster.
+- Test on a synthetic dirty-names fixture with known duplicate pairs;
+  report pair precision/recall in benchmarks.
+
+**B2. Ask-Your-Data agent** (BLUEPRINT T4)
+- Natural-language question → generated pandas code → executed in a
+  sandbox (no file/network access, timeout) → answer **verified** by a
+  deterministic re-computation before it is shown.
+- If verification fails, the UI says so instead of showing a wrong
+  number. That honesty mechanism is the feature — build it properly.
+
+## Phase C — Scale, product, proof
+
+**C1. Scale path** (BLUEPRINT T5)
+- Chunked profiling so a ~1M-row CSV completes; DuckDB for heavy
+  aggregations; Celery + Redis async jobs with SSE progress to the UI.
+- Benchmark: profile the generated 1M-row file, record wall time +
+  peak memory in `benchmarks/results/scale_benchmark.md`.
+
+**C2. Product surface**
+- Report page: Health Score breakdown, drift chart, anomaly table with
+  reasons, dedupe clusters, Ask-Your-Data box — all from the real API.
+- Landing page leads with the measured benchmark numbers.
+
+**C3. Ship**
+- Deploy via the existing Oracle automation (`DEPLOY-ORACLE.md`) once
+  the VM account exists; GitHub Actions already runs tests + deploy.
+- README rewrite: architecture diagram, benchmark tables, live URL,
+  "how it works" written so a recruiter reaches the depth in 60 seconds.
+
+## Resume bullets this sprint produces (only once measured)
+
+- Built a data-quality platform (FastAPI + Next.js + Redis/Celery,
+  Dockerised, CI/CD to a cloud VM) that profiles, scores and diagnoses
+  uploaded CSVs.
+- Implemented drift detectors (PSI/KS/JS, ADWIN, Page-Hinkley) from
+  scratch; measured detection delay on synthetic streams.
+- Built an explainable anomaly ensemble (IF + LOF + autoencoder)
+  benchmarked at F1/AUROC __ on a public labelled dataset.
+- Engineered a sandboxed text-to-pandas agent with deterministic
+  answer verification; chunked profiling sustains ~1M rows in __s.
