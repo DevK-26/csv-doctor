@@ -1,1 +1,84 @@
-IyBEYXkgMSDigJQgUmVwbyArIEVuZ2luZSBTa2VsZXRvbiAoc3RlcC1ieS1zdGVwKQoKR29hbCBieSBlbmQgb2YgRGF5IDE6IGEgcHVibGljIEdpdEh1YiByZXBvIGBjc3YtZG9jdG9yYCBvbiBZT1VSIGFjY291bnQsIHdpdGggdGhlCnNrZWxldG9uIGJlbG93IGNvbW1pdHRlZCBieSBZT1UsIGFuZCB0aGUgZW5naW5lIHRlc3RzIHBhc3Npbmcgb24geW91ciBtYWNoaW5lLgpOb3RoaW5nIGlzIGRlcGxveWVkIHlldC4gVGhhdCBpcyBEYXkgMTIuCgojIyBXaGF0IHlvdSBoYXZlIGluIHRoaXMgZm9sZGVyIChyZWFkIHRoaXMgZmlyc3QpCgp8IFBhdGggfCBXaGF0IGl0IGlzLCBpbiBwbGFpbiB3b3JkcyB8CnwtLS18LS0tfAp8IGBSRUFETUUubWRgIHwgVGhlIHJlcG8ncyBmcm9udCBwYWdlOiBwaXRjaCArIHRoZSA0IHByb2R1Y3QgcHJpbmNpcGxlcyB8CnwgYEJMVUVQUklOVC5tZGAgfCBUaGUgZnVsbCBwcm9kdWN0IHNwZWMgKHdoYXQgd2UncmUgYnVpbGRpbmcgb3ZlciAxNCBkYXlzKSB8CnwgYGxhbmVzLnlhbWxgIHwgVGhlIGZyZWUtbW9kZWwgcm91dGVyIGNvbmZpZyDigJQgd2hpY2ggQUkgbW9kZWwgYW5zd2VycywgaW4gd2hhdCBvcmRlciwgd2l0aCBkYWlseSBjYXBzIHwKfCBgc2FtcGxlcy9gIHwgMyByZWFkeSBkYXRhc2V0cyAoc2FsZXMgaGFzIGRlbGliZXJhdGVseSBwbGFudGVkIGRpcnQ6IDIgZHVwbGljYXRlIHJvd3MsIG1pc3NpbmcgY2VsbHMsIDEgaHVnZSBvdXRsaWVyIHJvdyBvZiA5LDgwMCB1bml0cywgYW5kIGEgcmV0dXJucyBqdW1wIGluIHRoZSBzZWNvbmQgaGFsZiDigJQgbGF0ZXIgZGF5cyBtdXN0IGRldGVjdCBhbGwgb2YgaXQpIHwKfCBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvcGFyc2UucHlgIHwgKipXb3JraW5nLioqIFJlYWRzIENTViBieXRlcywgZW5mb3JjZXMgMTAgTUIgLyA1MGsgcm93cywgZ3Vlc3NlcyBlYWNoIGNvbHVtbidzIHR5cGUuIElEcyBzdGF5IElEcyAobmV2ZXIgYmVjb21lIG51bWJlcnMpIHwKfCBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvcHJvZmlsZS5weWAgfCAqKldvcmtpbmcuKiogUGVyLWNvbHVtbiBzdGF0cyArIHRoZSBkZXRlcm1pbmlzdGljIEhlYWx0aCBTY29yZSAoc2FtZSBmaWxlID0gc2FtZSBzY29yZSkgfAp8IGBzZXJ2aWNlcy9lbmdpbmUvYXBwL2VuZ2luZS9hbm9tYWxpZXMucHlgIHwgU3R1YiB3aXRoIHRoZSBEYXktNCBwbGFuIHdyaXR0ZW4gaW5zaWRlIChJc29sYXRpb24gRm9yZXN0KSB8CnwgYHNlcnZpY2VzL2VuZ2luZS9hcHAvZW5naW5lL2RyaWZ0LnB5YCB8IFN0dWIgd2l0aCB0aGUgRGF5LTUgcGxhbiAoY2hhbmdlLXBvaW50cyDigJQgeW91ciBjb25jZXB0LWRyaWZ0IGZlYXR1cmUpIHwKfCBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvcmVsYXRpb25zLnB5YCB8IFN0dWIgd2l0aCB0aGUgRGF5LTUgcGxhbiAoY29ycmVsYXRpb25zKSB8CnwgYHNlcnZpY2VzL2VuZ2luZS9hcHAvZW5naW5lL2ZhY3RzLnB5YCB8ICoqV29ya2luZy4qKiBCdWlsZHMgdGhlIG1hc2tlZCBGYWN0cyBQYWNrIOKAlCB0aGUgb25seSB0aGluZyB0aGUgQUkgd2lsbCBldmVyIHNlZSB8CnwgYHNlcnZpY2VzL2VuZ2luZS9hcHAvbWFpbi5weWAgfCBGYXN0QVBJIGFwcDogYEdFVCAvaGVhbHRoYCwgYFBPU1QgL2FuYWx5c2VgICh3aXJlZCB0byBwYXJzZStwcm9maWxlIHRvZGF5KSB8CnwgYHNlcnZpY2VzL2VuZ2luZS90ZXN0cy9gIHwgMyBnb2xkZW4gdGVzdHMgbG9ja2luZyBwYXJzZS9wcm9maWxlL3Njb3JlIGJlaGF2aW91ciB8CnwgYGFwcHMvd2ViL2AgfCBOZXh0LmpzIGxhbmRpbmctcGFnZSBza2VsZXRvbiAodXBsb2FkIHdpcmluZyBpcyBEYXkgNy05KSB8CgojIyBTdGVwIDEg4oCUIENyZWF0ZSB0aGUgR2l0SHViIHJlcG8gKDIgbWludXRlcywgZG8gaXQgeW91cnNlbGYpCgoxLiBHbyB0byBnaXRodWIuY29tIOKGkiBgK2AgKHRvcCByaWdodCkg4oaSICoqTmV3IHJlcG9zaXRvcnkqKgoyLiBOYW1lOiBgY3N2LWRvY3RvcmAgwrcgRGVzY3JpcHRpb246IGBEcm9wIGFueSBDU1Yg4oCUIE1MIGZpbmRzIHdoYXQncyB3cm9uZywgd2VpcmQgYW5kIGludGVyZXN0aW5nLCBBSSBleHBsYWlucyBpdCBpbiBwbGFpbiBFbmdsaXNoLmAKMy4gKipQdWJsaWMqKiDCtyBEbyBOT1QgdGljayAiQWRkIGEgUkVBRE1FIiAvIGdpdGlnbm9yZSAvIGxpY2VuY2UgKHRoZXkgYXJlIGFscmVhZHkgaW4gdGhlIHNrZWxldG9uIOKAlCB0aWNraW5nIHRoZW0gY2F1c2VzIGEgbWVyZ2UgY29uZmxpY3Qgb24gZmlyc3QgcHVzaCkKNC4gKipDcmVhdGUgcmVwb3NpdG9yeSoqIMK3IExlYXZlIHRoZSBwYWdlIG9wZW4sIHlvdSdsbCBuZWVkIGl0cyBVUkwgaW4gU3RlcCAzCgojIyBTdGVwIDIg4oCUIFB1dCB0aGUgc2tlbGV0b24gb24geW91ciBsYXB0b3AKCjEuIERvd25sb2FkIGBjc3YtZG9jdG9yLWRheTEuemlwYCAoc2VudCB3aXRoIHRoaXMgZ3VpZGUpIGFuZCB1bnppcCBpdCBvbiB5b3VyICoqRGVza3RvcCoqCjIuIFlvdSBzaG91bGQgbm93IGhhdmUgYSBmb2xkZXIgYERlc2t0b3AvY3N2LWRvY3Rvci9gIGNvbnRhaW5pbmcgUkVBRE1FLm1kLCBCTFVFUFJJTlQubWQsIGFwcHMvLCBzZXJ2aWNlcy8sIHNhbXBsZXMvLCBsYW5lcy55YW1sCiAgIC0g4pyFIERvbmUtY2hlY2s6IGlmIHlvdSBzZWUgYSAqc2Vjb25kKiBjc3YtZG9jdG9yIGZvbGRlciBpbnNpZGUgdGhlIGZpcnN0IG9uZSwgbW92ZSB0aGUgaW5uZXIgb25lIHVwIOKAlCB0aGUgUkVBRE1FIG11c3QgYmUgYXQgYERlc2t0b3AvY3N2LWRvY3Rvci9SRUFETUUubWRgCgojIyBTdGVwIDMg4oCUIEZpcnN0IGNvbW1pdCArIHB1c2ggKHRlcm1pbmFsLCBpbnNpZGUgRGVza3RvcC9jc3YtZG9jdG9yKQoKYGBgYmFzaApjZCB+L0Rlc2t0b3AvY3N2LWRvY3RvcgpnaXQgaW5pdApnaXQgYWRkIC4KZ2l0IHN0YXR1cyAgICAgICAgICAgICMgcmVhZCBpdDogfjI1IGZpbGVzLCBubyAuZW52LCBubyB6aXAgZmlsZXMKZ2l0IC1jIHVzZXIubmFtZT0iRGV2Sy0yNiIgLWMgdXNlci5lbWFpbD0iWU9VUi1HSVRIVUItRU1BSUwiIGNvbW1pdCAtbSAiRGF5IDE6IHJlcG8gKyBlbmdpbmUgc2tlbGV0b24gKHBhcnNlLCBwcm9maWxlLCBoZWFsdGggc2NvcmUsIHRlc3RzKSIKZ2l0IGJyYW5jaCAtTSBtYWluCmdpdCByZW1vdGUgYWRkIG9yaWdpbiBodHRwczovL2dpdGh1Yi5jb20vRGV2Sy0yNi9jc3YtZG9jdG9yLmdpdApnaXQgcHVzaCAtdSBvcmlnaW4gbWFpbgpgYGAKLSDinIUgRG9uZS1jaGVjazogcmVmcmVzaCB0aGUgR2l0SHViIHJlcG8gcGFnZSDigJQgMSBjb21taXQsIFJFQURNRSByZW5kZXJzIHdpdGggdGhlIHBpdGNoLgotIOKaoCBBdXRob3IgY2hlY2sgKHlvdSBoaXQgdGhpcyBvbiB5b3VyIERMIHJlcG8pOiB0aGUgY29tbWl0IGF1dGhvciBtdXN0IHNob3cgKipEZXZLLTI2KiouCiAgSWYgaXQgc2hvd3MgYSBkaWZmZXJlbnQgbmFtZSwgdGVsbCBtZSBiZWZvcmUgcHVzaGluZyBhbnl0aGluZyBlbHNlLgoKIyMgU3RlcCA0IOKAlCBSdW4gdGhlIGVuZ2luZSBjaGVjayAocHJvdmVzIHRoZSBza2VsZXRvbiB3b3JrcykKCmBgYGJhc2gKY2Qgfi9EZXNrdG9wL2Nzdi1kb2N0b3Ivc2VydmljZXMvZW5naW5lCnB5dGhvbiAtbSB2ZW52IC52ZW52CiMgV2luZG93czogIC52ZW52XFNjcmlwdHNcYWN0aXZhdGUKIyBNYWMvTGludXg6IHNvdXJjZSAudmVudi9iaW4vYWN0aXZhdGUKcGlwIGluc3RhbGwgLXIgcmVxdWlyZW1lbnRzLnR4dApweXRob24gLW0gcHl0ZXN0IHRlc3RzLyAtdgpgYGAKRXhwZWN0ZWQgcmVzdWx0OiAqKjMgcGFzc2VkKioKLSBgdGVzdF9wYXJzZV9hbmRfdHlwZXNfb25fZGlydHlfZml4dHVyZWAg4oCUIHR5cGVzIGd1ZXNzZWQgcmlnaHQsIG9yZGVyX2lkIHN0YXlzIGFuIElECi0gYHRlc3RfcHJvZmlsZV9jb3VudHNfZHVwbGljYXRlc19hbmRfbWlzc2luZ2Ag4oCUIGZpbmRzIGV4YWN0bHkgMiBkdXBsaWNhdGUgcm93cyBpbiB0aGUgZGlydHkgZml4dHVyZQotIGB0ZXN0X2hlYWx0aF9zY29yZV9wdW5pc2hlc19kaXJ0eV9hbmRfcmV3YXJkc19jbGVhbmAg4oCUIGRpcnR5IGZpbGUgc2NvcmVzIGxvd2VyIHRoYW4gY2xlYW4gZGF0YQoKVGhlbiBzZWUgaXQgd29yayBvbiBhIHJlYWwgc2FtcGxlIChzdGlsbCBpbnNpZGUgc2VydmljZXMvZW5naW5lLCB2ZW52IGFjdGl2ZSk6CmBgYGJhc2gKcHl0aG9uIC1jICJpbXBvcnQgc3lzOyBzeXMucGF0aC5pbnNlcnQoMCwnLicpOyBmcm9tIGFwcC5lbmdpbmUucGFyc2UgaW1wb3J0IHBhcnNlX2Nzdl9ieXRlcywgaW5mZXJfdHlwZXM7IGZyb20gYXBwLmVuZ2luZS5wcm9maWxlIGltcG9ydCBwcm9maWxlX2RhdGFmcmFtZSwgaGVhbHRoX3Njb3JlOyByYXc9b3BlbignLi4vLi4vc2FtcGxlcy9zYWxlcy5jc3YnLCdyYicpLnJlYWQoKTsgZGY9cGFyc2VfY3N2X2J5dGVzKHJhdyk7IHByaW50KGluZmVyX3R5cGVzKGRmKSk7IHByaW50KGhlYWx0aF9zY29yZShwcm9maWxlX2RhdGFmcmFtZShkZikpKSIKYGBgCkV4cGVjdGVkOiB0eXBlcyBzaG93IGBvcmRlcl9pZDogaWRgLCBgcmV2ZW51ZTogbnVtZXJpY2AsIGFuZCBhIGhlYWx0aCBzY29yZSBwcmludHMuCgojIyBTdGVwIDUg4oCUIFN0b3AgaGVyZSBmb3IgRGF5IDEKCi0g4pyFIFJlcG8gcHVibGljLCAxIGNvbW1pdCwgYXV0aG9yZWQgYnkgeW91Ci0g4pyFIDMgZW5naW5lIHRlc3RzIHBhc3NlZCBvbiB5b3VyIG1hY2hpbmUKLSDinIUgWW91IGNhbiBzYXksIGluIG9uZSBsaW5lIGVhY2gsIHdoYXQgcGFyc2UucHksIHByb2ZpbGUucHkgYW5kIGZhY3RzLnB5IGRvCiAgKGlmIHlvdSBjYW4ndCwgcmUtcmVhZCB0aGVpciB0b3AgZG9jc3RyaW5ncyDigJQgdGhleSdyZSB3cml0dGVuIGZvciBleGFjdGx5IHRoaXMpCgoqKkRheSAyIHByZXZpZXc6KiogZW5naW5lIEErQitDIHByb3Blcmx5IOKAlCBtaXhlZC10eXBlIGRldGVjdGlvbiwgcmljaGVyIGNvbHVtbgpwcm9maWxlcywgYW5kIGhlYWx0aC1zY29yZSB0ZXN0cyBmb3IgZXZlcnkgZGVkdWN0aW9uLiBObyBVSSB5ZXQsIG9uIHB1cnBvc2U6CmVuZ2luZSBmaXJzdCwgcHJvdmVuIGJ5IHRlc3RzLCB0aGVuIHRoZSBwcmV0dHkgcGFydC4K
+# Day 1 — Repo + Engine Skeleton (step-by-step)
+
+Goal by end of Day 1: a public GitHub repo `csv-doctor` on YOUR account, with the
+skeleton below committed by YOU, and the engine tests passing on your machine.
+Nothing is deployed yet. That is Day 12.
+
+## What you have in this folder (read this first)
+
+| Path | What it is, in plain words |
+|---|---|
+| `README.md` | The repo's front page: pitch + the 4 product principles |
+| `BLUEPRINT.md` | The full product spec (what we're building over 14 days) |
+| `lanes.yaml` | The free-model router config — which AI model answers, in what order, with daily caps |
+| `samples/` | 3 ready datasets (sales has deliberately planted dirt: 2 duplicate rows, missing cells, 1 huge outlier row of 9,800 units, and a returns jump in the second half — later days must detect all of it) |
+| `services/engine/app/engine/parse.py` | **Working.** Reads CSV bytes, enforces 10 MB / 50k rows, guesses each column's type. IDs stay IDs (never become numbers) |
+| `services/engine/app/engine/profile.py` | **Working.** Per-column stats + the deterministic Health Score (same file = same score) |
+| `services/engine/app/engine/anomalies.py` | Stub with the Day-4 plan written inside (Isolation Forest) |
+| `services/engine/app/engine/drift.py` | Stub with the Day-5 plan (change-points — your concept-drift feature) |
+| `services/engine/app/engine/relations.py` | Stub with the Day-5 plan (correlations) |
+| `services/engine/app/engine/facts.py` | **Working.** Builds the masked Facts Pack — the only thing the AI will ever see |
+| `services/engine/app/main.py` | FastAPI app: `GET /health`, `POST /analyse` (wired to parse+profile today) |
+| `services/engine/tests/` | 3 golden tests locking parse/profile/score behaviour |
+| `apps/web/` | Next.js landing-page skeleton (upload wiring is Day 7-9) |
+
+## Step 1 — Create the GitHub repo (2 minutes, do it yourself)
+
+1. Go to github.com → `+` (top right) → **New repository**
+2. Name: `csv-doctor` · Description: `Drop any CSV — ML finds what's wrong, weird and interesting, AI explains it in plain English.`
+3. **Public** · Do NOT tick "Add a README" / gitignore / licence (they are already in the skeleton — ticking them causes a merge conflict on first push)
+4. **Create repository** · Leave the page open, you'll need its URL in Step 3
+
+## Step 2 — Put the skeleton on your laptop
+
+1. Download `csv-doctor-day1.zip` (sent with this guide) and unzip it on your **Desktop**
+2. You should now have a folder `Desktop/csv-doctor/` containing README.md, BLUEPRINT.md, apps/, services/, samples/, lanes.yaml
+   - ✅ Done-check: if you see a *second* csv-doctor folder inside the first one, move the inner one up — the README must be at `Desktop/csv-doctor/README.md`
+
+## Step 3 — First commit + push (terminal, inside Desktop/csv-doctor)
+
+```bash
+cd ~/Desktop/csv-doctor
+git init
+git add .
+git status            # read it: ~25 files, no .env, no zip files
+git -c user.name="DevK-26" -c user.email="YOUR-GITHUB-EMAIL" commit -m "Day 1: repo + engine skeleton (parse, profile, health score, tests)"
+git branch -M main
+git remote add origin https://github.com/DevK-26/csv-doctor.git
+git push -u origin main
+```
+- ✅ Done-check: refresh the GitHub repo page — 1 commit, README renders with the pitch.
+- ⚠ Author check (you hit this on your DL repo): the commit author must show **DevK-26**.
+  If it shows a different name, tell me before pushing anything else.
+
+## Step 4 — Run the engine check (proves the skeleton works)
+
+```bash
+cd ~/Desktop/csv-doctor/services/engine
+python -m venv .venv
+# Windows:  .venv\Scripts\activate
+# Mac/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python -m pytest tests/ -v
+```
+Expected result: **3 passed**
+- `test_parse_and_types_on_dirty_fixture` — types guessed right, order_id stays an ID
+- `test_profile_counts_duplicates_and_missing` — finds exactly 2 duplicate rows in the dirty fixture
+- `test_health_score_punishes_dirty_and_rewards_clean` — dirty file scores lower than clean data
+
+Then see it work on a real sample (still inside services/engine, venv active):
+```bash
+python -c "import sys; sys.path.insert(0,'.'); from app.engine.parse import parse_csv_bytes, infer_types; from app.engine.profile import profile_dataframe, health_score; raw=open('../../samples/sales.csv','rb').read(); df=parse_csv_bytes(raw); print(infer_types(df)); print(health_score(profile_dataframe(df)))"
+```
+Expected: types show `order_id: id`, `revenue: numeric`, and a health score prints.
+
+## Step 5 — Stop here for Day 1
+
+- ✅ Repo public, 1 commit, authored by you
+- ✅ 3 engine tests passed on your machine
+- ✅ You can say, in one line each, what parse.py, profile.py and facts.py do
+  (if you can't, re-read their top docstrings — they're written for exactly this)
+
+**Day 2 preview:** engine A+B+C properly — mixed-type detection, richer column
+profiles, and health-score tests for every deduction. No UI yet, on purpose:
+engine first, proven by tests, then the pretty part.
