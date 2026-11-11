@@ -1,1 +1,14 @@
-IyBDUFUtb25seSBQeVRvcmNoIHdoZWVscyAodGhlIGRlZmF1bHQgUHlQSSBMaW51eCB3aGVlbCBidW5kbGVzIH4yIEdCIG9mIENVREEpLgotLWV4dHJhLWluZGV4LXVybCBodHRwczovL2Rvd25sb2FkLnB5dG9yY2gub3JnL3dobC9jcHUKcGFuZGFzPT0yLjEuNApudW1weT49MS4yNgpmYXN0YXBpPj0wLjExMAp1dmljb3JuPj0wLjI5CnB5dGhvbi1tdWx0aXBhcnQ+PTAuMC45CnB5dGVzdD49OC4wCiMgUGhhc2UgQTEgYW5vbWFseSBlbnNlbWJsZTogSXNvbGF0aW9uIEZvcmVzdCArIExvY2FsIE91dGxpZXIgRmFjdG9yLgpzY2lraXQtbGVhcm4+PTEuNCw8MgojIFBoYXNlIEExIGFub21hbHkgZW5zZW1ibGU6IHRoZSBhdXRvZW5jb2RlciBkZXRlY3Rvci4KdG9yY2g+PTIuMiw8MwojIFRlc3RzIG9ubHk6IEZhc3RBUEkncyBUZXN0Q2xpZW50IG5lZWRzIGl0IHRvIGV4ZXJjaXNlIC9hbmFseXNlLgpodHRweD49MC4yNyw8MQo=
+# CPU-only PyTorch wheels (the default PyPI Linux wheel bundles ~2 GB of CUDA).
+--extra-index-url https://download.pytorch.org/whl/cpu
+pandas==2.1.4
+numpy>=1.26
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+pytest>=8.0
+# Phase A1 anomaly ensemble: Isolation Forest + Local Outlier Factor.
+scikit-learn>=1.4,<2
+# Phase A1 anomaly ensemble: the autoencoder detector.
+torch>=2.2,<3
+# Tests only: FastAPI's TestClient needs it to exercise /analyse.
+httpx>=0.27,<1
