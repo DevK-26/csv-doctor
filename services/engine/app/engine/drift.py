@@ -1,1 +1,22 @@
-IiIiU3RlcCBFIOKAlCBkcmlmdCAvIGNoYW5nZS1wb2ludHMuIERBWSA1IGluIHRoZSBidWlsZCBwbGFuIChzdHViIG9uIERheSAxKS4KClBsYW5uZWQgaW1wbGVtZW50YXRpb24gKEJMVUVQUklOVCDCpzNFKTogaWYgYSBkYXRldGltZSBjb2x1bW4gZXhpc3RzLCBzb3J0IGJ5Cml0LCBjb21wdXRlIHJvbGxpbmcgbWVhbi9zdGQsIGFuZCBkZXRlY3QgY2hhbmdlLXBvaW50cyAocnVwdHVyZXMgUEVMVCBpZgphdmFpbGFibGUsIGVsc2UgYSB+NDAtbGluZSBDVVNVTSBmYWxsYmFjaykuIFRoaXMgaXMgdGhlIHNpbXBsaWZpZWQsIGhvbmVzdApwcm9kdWN0IHZlcnNpb24gb2YgdGhlIEFEV0lOL0RETSBjb21wYXJpc29uIGluIEtodXNoaSdzIGNvbmNlcHQtZHJpZnQgcGFwZXIuCk5vIGRhdGV0aW1lIGNvbHVtbiAtPiBzZWN0aW9uIGlzIHNraXBwZWQsIG5ldmVyIGZha2VkLgoiIiIKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IHBhbmRhcyBhcyBwZAoKCmRlZiBmaW5kX2NoYW5nZV9wb2ludHMoZGY6IHBkLkRhdGFGcmFtZSwgdHlwZXM6IGRpY3Rbc3RyLCBzdHJdKSAtPiBkaWN0OgogICAgdGltZV9jb2xzID0gW2MgZm9yIGMsIHQgaW4gdHlwZXMuaXRlbXMoKSBpZiB0ID09ICJkYXRldGltZSJdCiAgICBpZiBub3QgdGltZV9jb2xzOgogICAgICAgIHJldHVybiB7InNraXBwZWQiOiBUcnVlLAogICAgICAgICAgICAgICAgInJlYXNvbiI6ICJubyBkYXRldGltZSBjb2x1bW4gaW4gdGhpcyBmaWxlIiwKICAgICAgICAgICAgICAgICJjaGFuZ2VfcG9pbnRzIjogW119CiAgICAjIFRPRE8gRGF5IDU6IHJvbGxpbmcgc3RhdHMgKyBjaGFuZ2UtcG9pbnQgZGV0ZWN0aW9uIChzZWUgZG9jc3RyaW5nKS4KICAgIHJldHVybiB7InNraXBwZWQiOiBUcnVlLCAicmVhc29uIjogIm5vdCBpbXBsZW1lbnRlZCB5ZXQgKERheSA1KSIsCiAgICAgICAgICAgICJjaGFuZ2VfcG9pbnRzIjogW119Cg==
+"""Step E — drift / change-points. DAY 5 in the build plan (stub on Day 1).
+
+Planned implementation (BLUEPRINT §3E): if a datetime column exists, sort by
+it, compute rolling mean/std, and detect change-points (ruptures PELT if
+available, else a ~40-line CUSUM fallback). This is the simplified, honest
+product version of the ADWIN/DDM comparison in Khushi's concept-drift paper.
+No datetime column -> section is skipped, never faked.
+"""
+from __future__ import annotations
+
+import pandas as pd
+
+
+def find_change_points(df: pd.DataFrame, types: dict[str, str]) -> dict:
+    time_cols = [c for c, t in types.items() if t == "datetime"]
+    if not time_cols:
+        return {"skipped": True,
+                "reason": "no datetime column in this file",
+                "change_points": []}
+    # TODO Day 5: rolling stats + change-point detection (see docstring).
+    return {"skipped": True, "reason": "not implemented yet (Day 5)",
+            "change_points": []}
