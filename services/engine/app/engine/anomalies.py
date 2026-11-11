@@ -1,1 +1,435 @@
-IiIiU3RlcCBEIOKAlCBleHBsYWluYWJsZSBhbm9tYWx5IGVuc2VtYmxlIChCTFVFUFJJTlQgwqcxMiBUMiwgc3ByaW50IFBoYXNlIEExKS4KClRocmVlIGRldGVjdG9ycyBmcm9tIHRocmVlIGZhbWlsaWVzIHNjb3JlIGV2ZXJ5IHJvdyBvbiB0aGUgbnVtZXJpYyBjb2x1bW5zOgoKLSBJc29sYXRpb24gRm9yZXN0ICh0cmVlcyk6IGFub21hbGllcyBhcmUgaXNvbGF0ZWQgaW4gZmV3IHJhbmRvbSBzcGxpdHMuCi0gTG9jYWwgT3V0bGllciBGYWN0b3IgKGRlbnNpdHkpOiBhbm9tYWxpZXMgc2l0IGluIHNwYXJzZXIgcmVnaW9ucyB0aGFuCiAgdGhlaXIgbmVpZ2hib3Vycy4KLSBBIHNtYWxsIFB5VG9yY2ggYXV0b2VuY29kZXIgKHJlY29uc3RydWN0aW9uKTogYW5vbWFsaWVzIGJyZWFrIHRoZQogIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiBjb2x1bW5zIHRoYXQgbm9ybWFsIHJvd3MgZm9sbG93LgoKVGhlaXIgcmF3IHNjb3JlcyBsaXZlIG9uIHVucmVsYXRlZCBzY2FsZXMsIHNvIGVhY2ggaXMgY2FsaWJyYXRlZCBvbnRvIGEKY29tbW9uIDAtMSBzY2FsZSAoc2VlIGBjYWxpYnJhdGVgKSBiZWZvcmUgYSB3ZWlnaHRlZCBhdmVyYWdlIGdpdmVzIHRoZSBzaW5nbGUKZW5zZW1ibGUgc2NvcmUuIFRoZSBjYWxpYnJhdGVkIHNjb3JlIGlzIGEgc2V2ZXJpdHkgc2NhbGUsIG5vdCBhIHByb2JhYmlsaXR5OgowLjUgbWVhbnMgIkZMQUdfWiByb2J1c3Qgc3RhbmRhcmQgZGV2aWF0aW9ucyBhYm92ZSB0aGUgdHlwaWNhbCByb3ciLgoKRXZlcnkgZmxhZ2dlZCByb3cgY2FycmllcyByZWFzb25zOiB3aGljaCBjb2x1bW5zIGRyb3ZlIHRoZSBzY29yZSwgbWVhc3VyZWQKYnkgcGVyLWNvbHVtbiByZWNvbnN0cnVjdGlvbiBlcnJvciAoYXV0b2VuY29kZXIpIGFuZCBieSBwZXJ0dXJiYXRpb24KKElzb2xhdGlvbiBGb3Jlc3QgLyBMT0Y6IHJlc2V0IG9uZSBjb2x1bW4gdG8gaXRzIHR5cGljYWwgdmFsdWUsIHNlZSBob3cgZmFyCnRoZSBzY29yZSBkcm9wcykuCgpFdmVyeXRoaW5nIGlzIGRldGVybWluaXN0aWMgZm9yIGEgZ2l2ZW4gYHNlZWRgLgoiIiIKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IG1hdGgKCmltcG9ydCBudW1weSBhcyBucAppbXBvcnQgcGFuZGFzIGFzIHBkCmZyb20gc2tsZWFybi5lbnNlbWJsZSBpbXBvcnQgSXNvbGF0aW9uRm9yZXN0CmZyb20gc2tsZWFybi5uZWlnaGJvcnMgaW1wb3J0IExvY2FsT3V0bGllckZhY3RvcgoKTU9ERUxTID0gKCJpc29sYXRpb25fZm9yZXN0IiwgImxvY2FsX291dGxpZXJfZmFjdG9yIiwgImF1dG9lbmNvZGVyIikKTU9ERUxfTEFCRUxTID0gewogICAgImlzb2xhdGlvbl9mb3Jlc3QiOiAiSXNvbGF0aW9uIEZvcmVzdCIsCiAgICAibG9jYWxfb3V0bGllcl9mYWN0b3IiOiAiTG9jYWwgT3V0bGllciBGYWN0b3IiLAogICAgImF1dG9lbmNvZGVyIjogIkF1dG9lbmNvZGVyIiwKfQoKTUlOX1JPV1MgPSA1MApNSU5fTlVNRVJJQ19DT0xTID0gMgpERUZBVUxUX1NFRUQgPSA0MgpERUZBVUxUX1RIUkVTSE9MRCA9IDAuNQpERUZBVUxUX01BWF9ST1dTID0gNTAKCiMgQ2FsaWJyYXRpb246IGEgcmF3IHNjb3JlIEZMQUdfWiByb2J1c3Qgc3RhbmRhcmQgZGV2aWF0aW9ucyBhYm92ZSB0aGUgbWVkaWFuCiMgbWFwcyB0byAwLjU7IEZMQUdfU0xPUEUgY29udHJvbHMgaG93IGZhc3QgaXQgc2F0dXJhdGVzIGFyb3VuZCB0aGF0IHBvaW50LgpGTEFHX1ogPSA0LjAKRkxBR19TTE9QRSA9IDEuMAojIFNjYWxlZCBmZWF0dXJlcyBhcmUgY2xpcHBlZCB0byB0aGlzIGJlZm9yZSBtb2RlbCBmaXR0aW5nIHNvIG9uZSBhYnN1cmQKIyB2YWx1ZSBjYW5ub3QgZG9taW5hdGUgdGhlIGF1dG9lbmNvZGVyJ3MgbG9zcyBvciBMT0YncyBkaXN0YW5jZXMuCkNMSVAgPSAxMC4wCgpJRl9UUkVFUyA9IDIwMApMT0ZfTkVJR0hCT1JTID0gMjAKQUVfU1RFUFMgPSA2MDAKQUVfQkFUQ0ggPSAyNTYKQUVfTFIgPSA1ZS0zCiMgRnJhY3Rpb24gb2YgZWFjaCBiYXRjaCAodGhlIHdvcnN0LXJlY29uc3RydWN0ZWQgcm93cykgZXhjbHVkZWQgZnJvbSB0aGUKIyBncmFkaWVudCwgc28gdGhlIGF1dG9lbmNvZGVyIGNhbm5vdCBzaW1wbHkgbWVtb3Jpc2UgdGhlIGFub21hbGllcy4KQUVfVFJJTSA9IDAuMQoKCiMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KIyBGZWF0dXJlIHByZXBhcmF0aW9uCiMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCmRlZiBwcmVwYXJlX2ZlYXR1cmVzKGRmOiBwZC5EYXRhRnJhbWUsIHR5cGVzOiBkaWN0W3N0ciwgc3RyXSkgLT4gdHVwbGVbbnAubmRhcnJheSwgbGlzdFtzdHJdLCBucC5uZGFycmF5XToKICAgICIiIlR1cm4gdGhlIG51bWVyaWMgY29sdW1ucyBvZiBhIHBhcnNlZCAoYWxsLXN0cmluZykgZnJhbWUgaW50byBhIG1hdHJpeC4KCiAgICBSZXR1cm5zICh2YWx1ZXMsIG5hbWVzLCBtaXNzaW5nKTogYHZhbHVlc2AgaXMgZmxvYXQ2NCBbcm93cywgZmVhdHVyZXNdCiAgICB3aXRoIGJsYW5rcy91bnBhcnNlYWJsZSBjZWxscyBpbXB1dGVkIGJ5IHRoZSBjb2x1bW4gbWVkaWFuLCBgbWlzc2luZ2AKICAgIG1hcmtzIHRoZSBpbXB1dGVkIGNlbGxzLiBDb2x1bW5zIHRoYXQgYXJlIG51bWVyaWNhbGx5IGNvbnN0YW50IGFyZQogICAgZHJvcHBlZCDigJQgdGhleSBjYXJyeSBubyBzaWduYWwgYW5kIGJyZWFrIHNjYWxpbmcuCiAgICAiIiIKICAgIG5hbWVzLCBjb2xzLCBtaXNzID0gW10sIFtdLCBbXQogICAgZm9yIGNvbCBpbiBkZi5jb2x1bW5zOgogICAgICAgIGlmIHR5cGVzLmdldChjb2wpICE9ICJudW1lcmljIjoKICAgICAgICAgICAgY29udGludWUKICAgICAgICBudW1zID0gcGQudG9fbnVtZXJpYyhkZltjb2xdLCBlcnJvcnM9ImNvZXJjZSIpLmFzdHlwZSgiZmxvYXQ2NCIpCiAgICAgICAgbnVtcyA9IG51bXMud2hlcmUobnAuaXNmaW5pdGUobnVtcykpCiAgICAgICAgaWYgbnVtcy5ub3RuYSgpLnN1bSgpID09IDA6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgbWVkaWFuID0gZmxvYXQobnVtcy5tZWRpYW4oKSkKICAgICAgICBmaWxsZWQgPSBudW1zLmZpbGxuYShtZWRpYW4pLnRvX251bXB5KCkKICAgICAgICBpZiBucC5wdHAoZmlsbGVkKSA9PSAwOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIG5hbWVzLmFwcGVuZChjb2wpCiAgICAgICAgY29scy5hcHBlbmQoZmlsbGVkKQogICAgICAgIG1pc3MuYXBwZW5kKG51bXMuaXNuYSgpLnRvX251bXB5KCkpCiAgICBpZiBub3QgbmFtZXM6CiAgICAgICAgcmV0dXJuIG5wLmVtcHR5KChsZW4oZGYpLCAwKSksIFtdLCBucC5lbXB0eSgobGVuKGRmKSwgMCksIGR0eXBlPWJvb2wpCiAgICByZXR1cm4gbnAuY29sdW1uX3N0YWNrKGNvbHMpLCBuYW1lcywgbnAuY29sdW1uX3N0YWNrKG1pc3MpCgoKZGVmIHJvYnVzdF9zY2FsZSh2YWx1ZXM6IG5wLm5kYXJyYXkpIC0+IG5wLm5kYXJyYXk6CiAgICAiIiJDZW50cmUgZWFjaCBjb2x1bW4gb24gaXRzIG1lZGlhbiBhbmQgZGl2aWRlIGJ5IGl0cyBJUVItYmFzZWQgc3ByZWFkLgoKICAgIE1lZGlhbi9JUVIgaW5zdGVhZCBvZiBtZWFuL3N0ZCBzbyB0aGUgYW5vbWFsaWVzIHdlIGFyZSBodW50aW5nIGRvIG5vdAogICAgc3RyZXRjaCB0aGUgc2NhbGUgdGhleSBhcmUgbWVhc3VyZWQgb24uIFJlc3VsdCBpcyBjbGlwcGVkIHRvICstQ0xJUC4KICAgICIiIgogICAgdmFsdWVzID0gbnAuYXNhcnJheSh2YWx1ZXMsIGR0eXBlPW5wLmZsb2F0NjQpCiAgICBtZWRpYW4gPSBucC5tZWRpYW4odmFsdWVzLCBheGlzPTApCiAgICBxMjUsIHE3NSA9IG5wLnBlcmNlbnRpbGUodmFsdWVzLCBbMjUsIDc1XSwgYXhpcz0wKQogICAgc3ByZWFkID0gKHE3NSAtIHEyNSkgLyAxLjM0OSAgIyBJUVIgb2YgYSBub3JtYWwgZGlzdHJpYnV0aW9uID0gMS4zNDkgc2lnbWEKICAgIHN0ZCA9IHZhbHVlcy5zdGQoYXhpcz0wKQogICAgc3ByZWFkID0gbnAud2hlcmUoc3ByZWFkID4gMCwgc3ByZWFkLCBzdGQpCiAgICBzcHJlYWQgPSBucC53aGVyZShzcHJlYWQgPiAwLCBzcHJlYWQsIDEuMCkKICAgIHJldHVybiBucC5jbGlwKCh2YWx1ZXMgLSBtZWRpYW4pIC8gc3ByZWFkLCAtQ0xJUCwgQ0xJUCkKCgojIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiMgQ2FsaWJyYXRpb24KIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKZGVmIGNhbGlicmF0ZShyYXc6IG5wLm5kYXJyYXkpIC0+IG5wLm5kYXJyYXk6CiAgICAiIiJNYXAgcmF3IGFub21hbHkgc2NvcmVzIChoaWdoZXIgPSBzdHJhbmdlcikgb250byBhIGNvbW1vbiAwLTEgc2NhbGUuCgogICAgeiA9IChzY29yZSAtIG1lZGlhbikgLyByb2J1c3Rfc2lnbWEsIHRoZW4gYSBsb2dpc3RpYyBjZW50cmVkIG9uIEZMQUdfWi4KICAgIE1lZGlhbiBhbmQgTUFEIGFyZSB1c2VkIGJlY2F1c2UgdGhlIG1lYW4vc3RkIG9mIHRoZSBzY29yZXMgd291bGQgYmUKICAgIGluZmxhdGVkIGJ5IHRoZSB2ZXJ5IGFub21hbGllcyBiZWluZyBzY29yZWQuIElmIGV2ZXJ5IHJvdyBzY29yZXMgdGhlCiAgICBzYW1lLCBub3RoaW5nIHN0YW5kcyBvdXQgYW5kIGFsbCBjYWxpYnJhdGVkIHNjb3JlcyBhcmUgfjAuCiAgICAiIiIKICAgIHJhdyA9IG5wLmFzYXJyYXkocmF3LCBkdHlwZT1ucC5mbG9hdDY0KQogICAgbWVkaWFuID0gbnAubWVkaWFuKHJhdykKICAgIHNpZ21hID0gMS40ODI2ICogbnAubWVkaWFuKG5wLmFicyhyYXcgLSBtZWRpYW4pKQogICAgaWYgc2lnbWEgPD0gMDoKICAgICAgICBxMjUsIHE3NSA9IG5wLnBlcmNlbnRpbGUocmF3LCBbMjUsIDc1XSkKICAgICAgICBzaWdtYSA9IChxNzUgLSBxMjUpIC8gMS4zNDkKICAgIGlmIHNpZ21hIDw9IDA6CiAgICAgICAgc2lnbWEgPSByYXcuc3RkKCkKICAgIGlmIHNpZ21hIDw9IDA6CiAgICAgICAgeiA9IG5wLnplcm9zX2xpa2UocmF3KQogICAgZWxzZToKICAgICAgICB6ID0gKHJhdyAtIG1lZGlhbikgLyBzaWdtYQogICAgcmV0dXJuIDEuMCAvICgxLjAgKyBucC5leHAoLW5wLmNsaXAoKHogLSBGTEFHX1opIC8gRkxBR19TTE9QRSwgLTUwLCA1MCkpKQoKCiMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KIyBUaGUgdGhyZWUgZGV0ZWN0b3JzLiBFYWNoIHJldHVybnMgcmF3IHNjb3JlcyB3aGVyZSBoaWdoZXIgPSBtb3JlIGFub21hbG91cwojIHBsdXMgd2hhdGV2ZXIgaXQgbmVlZHMgdG8gZXhwbGFpbiBhIHJvdyBsYXRlci4KIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKZGVmIF9maXRfaXNvbGF0aW9uX2ZvcmVzdChYOiBucC5uZGFycmF5LCBzZWVkOiBpbnQpIC0+IHR1cGxlW25wLm5kYXJyYXksIElzb2xhdGlvbkZvcmVzdF06CiAgICBtb2RlbCA9IElzb2xhdGlvbkZvcmVzdChuX2VzdGltYXRvcnM9SUZfVFJFRVMsIHJhbmRvbV9zdGF0ZT1zZWVkKQogICAgbW9kZWwuZml0KFgpCiAgICByZXR1cm4gLW1vZGVsLnNjb3JlX3NhbXBsZXMoWCksIG1vZGVsCgoKZGVmIF9maXRfbG9mKFg6IG5wLm5kYXJyYXkpIC0+IHR1cGxlW25wLm5kYXJyYXksIExvY2FsT3V0bGllckZhY3RvciB8IE5vbmVdOgogICAgIyBFeGFjdCBkdXBsaWNhdGUgcm93cyBnaXZlIHplcm8gbmVpZ2hib3VyIGRpc3RhbmNlcyBhbmQgbWFrZSBMT0YgYmxvdwogICAgIyB1cCB0byB+MWUxMCwgc28gTE9GIGlzIGZpdHRlZCBvbiBkaXN0aW5jdCByb3dzIGFuZCBtYXBwZWQgYmFjay4KICAgIHVuaXF1ZSwgaW52ZXJzZSA9IG5wLnVuaXF1ZShYLCBheGlzPTAsIHJldHVybl9pbnZlcnNlPVRydWUpCiAgICBpbnZlcnNlID0gbnAuYXNhcnJheShpbnZlcnNlKS5yYXZlbCgpCiAgICBpZiBsZW4odW5pcXVlKSA8IDM6CiAgICAgICAgcmV0dXJuIG5wLnplcm9zKGxlbihYKSksIE5vbmUKICAgIGsgPSBtaW4oTE9GX05FSUdIQk9SUywgbGVuKHVuaXF1ZSkgLSAxKQogICAgIyBub3ZlbHR5PVRydWUgb25seSBzbyBzY29yZV9zYW1wbGVzKCkgZXhpc3RzIGZvciB0aGUgcGVydHVyYmF0aW9uCiAgICAjIGV4cGxhbmF0aW9uczsgbmVnYXRpdmVfb3V0bGllcl9mYWN0b3JfIGlzIHN0aWxsIHRoZSBsZWF2ZS1zZWxmLW91dAogICAgIyBzY29yZSBvZiBlYWNoIGZpdHRlZCByb3cuCiAgICBtb2RlbCA9IExvY2FsT3V0bGllckZhY3RvcihuX25laWdoYm9ycz1rLCBub3ZlbHR5PVRydWUpCiAgICBtb2RlbC5maXQodW5pcXVlKQogICAgbG9mID0gLW1vZGVsLm5lZ2F0aXZlX291dGxpZXJfZmFjdG9yXwogICAgIyBMT0YgaXMgYSBkZW5zaXR5IHJhdGlvICgxID0gc2FtZSBkZW5zaXR5IGFzIG5laWdoYm91cnMpOiBsb2cgbWFrZXMgaXQKICAgICMgc3ltbWV0cmljIGFyb3VuZCAwIHNvIGNhbGlicmF0aW9uIGlzIG5vdCBkb21pbmF0ZWQgYnkgdGhlIHJhdGlvJ3MgdGFpbC4KICAgIHJldHVybiBucC5sb2cobnAuY2xpcChsb2YsIDFlLTYsIDFlNikpW2ludmVyc2VdLCBtb2RlbAoKCmRlZiBfbG9mX3Njb3JlX25ldyhtb2RlbDogTG9jYWxPdXRsaWVyRmFjdG9yLCByb3dzOiBucC5uZGFycmF5KSAtPiBucC5uZGFycmF5OgogICAgcmV0dXJuIG5wLmxvZyhucC5jbGlwKC1tb2RlbC5zY29yZV9zYW1wbGVzKHJvd3MpLCAxZS02LCAxZTYpKQoKCmRlZiBfZml0X2F1dG9lbmNvZGVyKFg6IG5wLm5kYXJyYXksIHNlZWQ6IGludCkgLT4gbnAubmRhcnJheToKICAgICIiIlRyYWluIGEgZCAtPiBoIC0+IGIgLT4gaCAtPiBkIGF1dG9lbmNvZGVyOyByZXR1cm4gcGVyLWNlbGwgc3F1YXJlZCBlcnJvci4KCiAgICBSYXcgc2NvcmUgcGVyIHJvdyBpcyB0aGUgbWVhbiBvZiBpdHMgcm93IGluIHRoZSByZXR1cm5lZCBtYXRyaXg7IHRoZQogICAgcGVyLWNvbHVtbiBlcnJvcnMgYXJlIHRoZSBhdXRvZW5jb2RlcidzIG93biBleHBsYW5hdGlvbi4KICAgICIiIgogICAgaW1wb3J0IHRvcmNoICAjIGxvY2FsIGltcG9ydDoga2VlcHMgaW1wb3J0aW5nIHRoZSBlbmdpbmUgY2hlYXAKICAgIGZyb20gdG9yY2ggaW1wb3J0IG5uCgogICAgbiwgZCA9IFguc2hhcGUKICAgIGhpZGRlbiA9IG1heCg4LCAyICogZCkKICAgIGJvdHRsZW5lY2sgPSBtYXgoMSwgZCAvLyAyKQoKICAgIHJuZ19zdGF0ZSA9IHRvcmNoLnJhbmRvbS5nZXRfcm5nX3N0YXRlKCkgICMgZG8gbm90IGRpc3R1cmIgdGhlIGNhbGxlcidzIFJORwogICAgdHJ5OgogICAgICAgIHRvcmNoLm1hbnVhbF9zZWVkKHNlZWQpCiAgICAgICAgbW9kZWwgPSBubi5TZXF1ZW50aWFsKAogICAgICAgICAgICBubi5MaW5lYXIoZCwgaGlkZGVuKSwgbm4uVGFuaCgpLAogICAgICAgICAgICBubi5MaW5lYXIoaGlkZGVuLCBib3R0bGVuZWNrKSwgbm4uVGFuaCgpLAogICAgICAgICAgICBubi5MaW5lYXIoYm90dGxlbmVjaywgaGlkZGVuKSwgbm4uVGFuaCgpLAogICAgICAgICAgICBubi5MaW5lYXIoaGlkZGVuLCBkKSwKICAgICAgICApLmRvdWJsZSgpCiAgICAgICAgZGF0YSA9IHRvcmNoLmZyb21fbnVtcHkobnAuYXNjb250aWd1b3VzYXJyYXkoWCwgZHR5cGU9bnAuZmxvYXQ2NCkpCiAgICAgICAgb3B0aW0gPSB0b3JjaC5vcHRpbS5BZGFtKG1vZGVsLnBhcmFtZXRlcnMoKSwgbHI9QUVfTFIpCiAgICAgICAgZ2VuID0gdG9yY2guR2VuZXJhdG9yKCkubWFudWFsX3NlZWQoc2VlZCkKICAgICAgICBiYXRjaCA9IG1pbihuLCBBRV9CQVRDSCkKICAgICAgICBrZWVwID0gbWF4KDEsIGludChtYXRoLmNlaWwoYmF0Y2ggKiAoMS4wIC0gQUVfVFJJTSkpKSkKICAgICAgICBmb3IgXyBpbiByYW5nZShBRV9TVEVQUyk6CiAgICAgICAgICAgIGlkeCA9IHRvcmNoLnJhbmRwZXJtKG4sIGdlbmVyYXRvcj1nZW4pWzpiYXRjaF0KICAgICAgICAgICAgeGIgPSBkYXRhW2lkeF0KICAgICAgICAgICAgcGVyX3JvdyA9ICgobW9kZWwoeGIpIC0geGIpICoqIDIpLm1lYW4oZGltPTEpCiAgICAgICAgICAgIGxvc3MgPSB0b3JjaC50b3BrKHBlcl9yb3csIGtlZXAsIGxhcmdlc3Q9RmFsc2UpLnZhbHVlcy5tZWFuKCkKICAgICAgICAgICAgb3B0aW0uemVyb19ncmFkKCkKICAgICAgICAgICAgbG9zcy5iYWNrd2FyZCgpCiAgICAgICAgICAgIG9wdGltLnN0ZXAoKQogICAgICAgIHdpdGggdG9yY2gubm9fZ3JhZCgpOgogICAgICAgICAgICBlcnJvcnMgPSAoKG1vZGVsKGRhdGEpIC0gZGF0YSkgKiogMikubnVtcHkoKQogICAgZmluYWxseToKICAgICAgICB0b3JjaC5yYW5kb20uc2V0X3JuZ19zdGF0ZShybmdfc3RhdGUpCiAgICByZXR1cm4gZXJyb3JzCgoKIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQojIFNjb3JpbmcKIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKZGVmIF9ub3JtYWxpc2Vfd2VpZ2h0cyh3ZWlnaHRzOiBkaWN0W3N0ciwgZmxvYXRdIHwgTm9uZSkgLT4gZGljdFtzdHIsIGZsb2F0XToKICAgIGlmIHdlaWdodHMgaXMgTm9uZToKICAgICAgICByZXR1cm4ge206IDEuMCAvIGxlbihNT0RFTFMpIGZvciBtIGluIE1PREVMU30KICAgIHVua25vd24gPSBzZXQod2VpZ2h0cykgLSBzZXQoTU9ERUxTKQogICAgaWYgdW5rbm93bjoKICAgICAgICByYWlzZSBWYWx1ZUVycm9yKGYidW5rbm93biBtb2RlbChzKSBpbiB3ZWlnaHRzOiB7c29ydGVkKHVua25vd24pfTsgZXhwZWN0ZWQge2xpc3QoTU9ERUxTKX0iKQogICAgdyA9IHttOiBmbG9hdCh3ZWlnaHRzLmdldChtLCAwLjApKSBmb3IgbSBpbiBNT0RFTFN9CiAgICB0b3RhbCA9IHN1bSh3LnZhbHVlcygpKQogICAgaWYgdG90YWwgPD0gMCBvciBtaW4ody52YWx1ZXMoKSkgPCAwOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoImVuc2VtYmxlIHdlaWdodHMgbXVzdCBiZSBub24tbmVnYXRpdmUgYW5kIHN1bSB0byBtb3JlIHRoYW4gMCIpCiAgICByZXR1cm4ge206IHYgLyB0b3RhbCBmb3IgbSwgdiBpbiB3Lml0ZW1zKCl9CgoKZGVmIHNjb3JlX21hdHJpeChYOiBucC5uZGFycmF5LCBzZWVkOiBpbnQgPSBERUZBVUxUX1NFRUQsCiAgICAgICAgICAgICAgICAgd2VpZ2h0czogZGljdFtzdHIsIGZsb2F0XSB8IE5vbmUgPSBOb25lKSAtPiBkaWN0OgogICAgIiIiU2NvcmUgYW4gYWxyZWFkeS1zY2FsZWQgbnVtZXJpYyBtYXRyaXggd2l0aCBhbGwgdGhyZWUgbW9kZWxzLgoKICAgIElucHV0OiBmbG9hdCBtYXRyaXggW3Jvd3MsIGZlYXR1cmVzXSAodXNlIGByb2J1c3Rfc2NhbGVgIGZpcnN0KS4KICAgIE91dHB1dDogeyJzY29yZXMiOiB7bW9kZWw6IGNhbGlicmF0ZWQgMC0xIGFycmF5LCAiZW5zZW1ibGUiOiBhcnJheX0sCiAgICAgICAgICAgICAicmF3Ijoge21vZGVsOiByYXcgYXJyYXl9LCAid2VpZ2h0cyI6IHsuLi59LCAiX2ZpdHRlZCI6IHsuLi59fS4KICAgIFRoaXMgaXMgdGhlIGV4YWN0IGNvZGUgcGF0aCB0aGUgYmVuY2htYXJrIG1lYXN1cmVzLgogICAgIiIiCiAgICBYID0gbnAuYXNhcnJheShYLCBkdHlwZT1ucC5mbG9hdDY0KQogICAgaWYgWC5uZGltICE9IDIgb3IgWC5zaGFwZVswXSA8IDMgb3IgWC5zaGFwZVsxXSA8IDE6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigic2NvcmVfbWF0cml4IG5lZWRzIGEgMi1EIG1hdHJpeCB3aXRoIGF0IGxlYXN0IDMgcm93cyBhbmQgMSBjb2x1bW4iKQogICAgaWYgbm90IG5wLmlzZmluaXRlKFgpLmFsbCgpOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoInNjb3JlX21hdHJpeCBpbnB1dCBjb250YWlucyBOYU4gb3IgaW5maW5pdGUgdmFsdWVzOyBpbXB1dGUgZmlyc3QiKQogICAgdyA9IF9ub3JtYWxpc2Vfd2VpZ2h0cyh3ZWlnaHRzKQoKICAgIGlmX3JhdywgaWZfbW9kZWwgPSBfZml0X2lzb2xhdGlvbl9mb3Jlc3QoWCwgc2VlZCkKICAgIGxvZl9yYXcsIGxvZl9tb2RlbCA9IF9maXRfbG9mKFgpCiAgICBhZV9jZWxscyA9IF9maXRfYXV0b2VuY29kZXIoWCwgc2VlZCkKICAgICMgbG9nOiByZWNvbnN0cnVjdGlvbiBlcnJvcnMgc3ByZWFkIG11bHRpcGxpY2F0aXZlbHksIGxpa2UgTE9GJ3MgcmF0aW8uCiAgICBhZV9yYXcgPSBucC5sb2coYWVfY2VsbHMubWVhbihheGlzPTEpICsgMWUtMTIpCgogICAgcmF3ID0geyJpc29sYXRpb25fZm9yZXN0IjogaWZfcmF3LCAibG9jYWxfb3V0bGllcl9mYWN0b3IiOiBsb2ZfcmF3LCAiYXV0b2VuY29kZXIiOiBhZV9yYXd9CiAgICBzY29yZXMgPSB7bTogY2FsaWJyYXRlKHJhd1ttXSkgZm9yIG0gaW4gTU9ERUxTfQogICAgc2NvcmVzWyJlbnNlbWJsZSJdID0gc3VtKHdbbV0gKiBzY29yZXNbbV0gZm9yIG0gaW4gTU9ERUxTKQogICAgcmV0dXJuIHsKICAgICAgICAic2NvcmVzIjogc2NvcmVzLAogICAgICAgICJyYXciOiByYXcsCiAgICAgICAgIndlaWdodHMiOiB3LAogICAgICAgICJfZml0dGVkIjogeyJpc29sYXRpb25fZm9yZXN0IjogaWZfbW9kZWwsICJsb2NhbF9vdXRsaWVyX2ZhY3RvciI6IGxvZl9tb2RlbCwKICAgICAgICAgICAgICAgICAgICAiYXV0b2VuY29kZXJfY2VsbF9lcnJvcnMiOiBhZV9jZWxsc30sCiAgICB9CgoKIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQojIEV4cGxhbmF0aW9ucwojIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgpkZWYgX3NoYXJlcyhjb250cmliOiBucC5uZGFycmF5KSAtPiBucC5uZGFycmF5OgogICAgY29udHJpYiA9IG5wLmNsaXAoY29udHJpYiwgMC4wLCBOb25lKQogICAgdG90YWwgPSBjb250cmliLnN1bSgpCiAgICByZXR1cm4gY29udHJpYiAvIHRvdGFsIGlmIHRvdGFsID4gMCBlbHNlIG5wLnplcm9zX2xpa2UoY29udHJpYikKCgpkZWYgX3BlcnR1cmJhdGlvbl9zaGFyZXMoeDogbnAubmRhcnJheSwgYmFzZTogZmxvYXQsIHNjb3JlX2ZuKSAtPiBucC5uZGFycmF5OgogICAgIiIiU2hhcmUgb2YgYSByb3cncyByYXcgc2NvcmUgb3dlZCB0byBlYWNoIGNvbHVtbi4KCiAgICBDb2x1bW4gaidzIGNvbnRyaWJ1dGlvbiA9IGhvdyBtdWNoIHRoZSBzY29yZSBkcm9wcyB3aGVuIHhbal0gYWxvbmUgaXMKICAgIHJlc2V0IHRvIHRoZSBjb2x1bW4ncyB0eXBpY2FsIHZhbHVlICgwIGFmdGVyIHJvYnVzdCBzY2FsaW5nKS4KICAgICIiIgogICAgdmFyaWFudHMgPSBucC5yZXBlYXQoeFtOb25lLCA6XSwgbGVuKHgpLCBheGlzPTApCiAgICBucC5maWxsX2RpYWdvbmFsKHZhcmlhbnRzLCAwLjApCiAgICByZXR1cm4gX3NoYXJlcyhiYXNlIC0gc2NvcmVfZm4odmFyaWFudHMpKQoKCmRlZiBfZXhwbGFpbl9yb3coaTogaW50LCBYOiBucC5uZGFycmF5LCByZXN1bHQ6IGRpY3QpIC0+IGRpY3Rbc3RyLCBucC5uZGFycmF5XToKICAgIGZpdHRlZCwgcmF3ID0gcmVzdWx0WyJfZml0dGVkIl0sIHJlc3VsdFsicmF3Il0KICAgIGQgPSBYLnNoYXBlWzFdCiAgICBvdXQgPSB7ImF1dG9lbmNvZGVyIjogX3NoYXJlcyhmaXR0ZWRbImF1dG9lbmNvZGVyX2NlbGxfZXJyb3JzIl1baV0pfQogICAgZm9yZXN0ID0gZml0dGVkWyJpc29sYXRpb25fZm9yZXN0Il0KICAgIG91dFsiaXNvbGF0aW9uX2ZvcmVzdCJdID0gX3BlcnR1cmJhdGlvbl9zaGFyZXMoCiAgICAgICAgWFtpXSwgcmF3WyJpc29sYXRpb25fZm9yZXN0Il1baV0sIGxhbWJkYSByb3dzOiAtZm9yZXN0LnNjb3JlX3NhbXBsZXMocm93cykpCiAgICBsb2YgPSBmaXR0ZWRbImxvY2FsX291dGxpZXJfZmFjdG9yIl0KICAgIG91dFsibG9jYWxfb3V0bGllcl9mYWN0b3IiXSA9ICgKICAgICAgICBfcGVydHVyYmF0aW9uX3NoYXJlcyhYW2ldLCByYXdbImxvY2FsX291dGxpZXJfZmFjdG9yIl1baV0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbGFtYmRhIHJvd3M6IF9sb2Zfc2NvcmVfbmV3KGxvZiwgcm93cykpCiAgICAgICAgaWYgbG9mIGlzIG5vdCBOb25lIGVsc2UgbnAuemVyb3MoZCkpCiAgICByZXR1cm4gb3V0CgoKZGVmIF9mbXQodmFsdWU6IGZsb2F0KSAtPiBzdHI6CiAgICBpZiBub3QgbWF0aC5pc2Zpbml0ZSh2YWx1ZSk6CiAgICAgICAgcmV0dXJuIHN0cih2YWx1ZSkKICAgIGlmIGZsb2F0KHZhbHVlKS5pc19pbnRlZ2VyKCkgYW5kIGFicyh2YWx1ZSkgPCAxZTE1OgogICAgICAgIHJldHVybiBmIntpbnQodmFsdWUpOix9IgogICAgcmV0dXJuIGYie3ZhbHVlOiwuNGd9IiBpZiBhYnModmFsdWUpIDwgMWU2IGVsc2UgZiJ7dmFsdWU6LC4wZn0iCgoKZGVmIF9yZWFzb25fdGV4dChmZWF0dXJlOiBzdHIsIHZhbHVlOiBmbG9hdCwgbWVkaWFuOiBmbG9hdCwgbG86IGZsb2F0LCBoaTogZmxvYXQsCiAgICAgICAgICAgICAgICAgc2hhcmU6IGZsb2F0KSAtPiBzdHI6CiAgICBpZiB2YWx1ZSA+IGhpOgogICAgICAgIHdoZXJlID0gZiJmYXIgYWJvdmUgdGhlIHVzdWFsIHJhbmdlICh7X2ZtdChsbyl9IHRvIHtfZm10KGhpKX0sIHR5cGljYWwge19mbXQobWVkaWFuKX0pIgogICAgZWxpZiB2YWx1ZSA8IGxvOgogICAgICAgIHdoZXJlID0gZiJmYXIgYmVsb3cgdGhlIHVzdWFsIHJhbmdlICh7X2ZtdChsbyl9IHRvIHtfZm10KGhpKX0sIHR5cGljYWwge19mbXQobWVkaWFuKX0pIgogICAgZWxzZToKICAgICAgICB3aGVyZSA9IChmIndpdGhpbiB0aGUgdXN1YWwgcmFuZ2UgKHtfZm10KGxvKX0gdG8ge19mbXQoaGkpfSkgYnV0IGluIGFuIHVudXN1YWwgIgogICAgICAgICAgICAgICAgIGYiY29tYmluYXRpb24gd2l0aCB0aGUgb3RoZXIgY29sdW1ucyIpCiAgICByZXR1cm4gZiJ7ZmVhdHVyZX0gPSB7X2ZtdCh2YWx1ZSl9IGlzIHt3aGVyZX07IGRyb3ZlIHtzaGFyZTouMCV9IG9mIHRoZSBhbm9tYWx5IHNjb3JlIgoKCiMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KIyBQdWJsaWMgZW50cnkgcG9pbnQKIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKZGVmIF9za2lwcGVkKHJlYXNvbjogc3RyKSAtPiBkaWN0OgogICAgcmV0dXJuIHsic2tpcHBlZCI6IFRydWUsICJyZWFzb24iOiByZWFzb24sICJyb3dzIjogW119CgoKZGVmIGZpbmRfYW5vbWFsaWVzKGRmOiBwZC5EYXRhRnJhbWUsIHR5cGVzOiBkaWN0W3N0ciwgc3RyXSwgKiwKICAgICAgICAgICAgICAgICAgIHNlZWQ6IGludCA9IERFRkFVTFRfU0VFRCwKICAgICAgICAgICAgICAgICAgIHRocmVzaG9sZDogZmxvYXQgPSBERUZBVUxUX1RIUkVTSE9MRCwKICAgICAgICAgICAgICAgICAgIG1heF9yb3dzOiBpbnQgPSBERUZBVUxUX01BWF9ST1dTLAogICAgICAgICAgICAgICAgICAgdG9wX2s6IGludCA9IDMsCiAgICAgICAgICAgICAgICAgICB3ZWlnaHRzOiBkaWN0W3N0ciwgZmxvYXRdIHwgTm9uZSA9IE5vbmUpIC0+IGRpY3Q6CiAgICAiIiJGaW5kIGFub21hbG91cyByb3dzIGluIGEgcGFyc2VkIENTViBhbmQgZXhwbGFpbiBlYWNoIG9uZS4KCiAgICBJbnB1dHM6IGBkZmAgYXMgcmV0dXJuZWQgYnkgcGFyc2VfY3N2X2J5dGVzIChhbGwgc3RyaW5ncyksIGB0eXBlc2AgZnJvbQogICAgaW5mZXJfdHlwZXMuIE9ubHkgY29sdW1ucyB0eXBlZCAibnVtZXJpYyIgYXJlIHVzZWQgKElEcyBuZXZlciBhcmUpLgogICAgT3V0cHV0OiBKU09OLXNhZmUgZGljdC4gSWYgdGhlIGZpbGUgaXMgdG9vIHNtYWxsIGl0IGlzCiAgICB7InNraXBwZWQiOiBUcnVlLCAicmVhc29uIjogLi4uLCAicm93cyI6IFtdfTsgb3RoZXJ3aXNlIGl0IGxpc3RzIHRoZQogICAgZmxhZ2dlZCByb3dzIChlbnNlbWJsZSBzY29yZSA+PSB0aHJlc2hvbGQgQU5EIGF0IGxlYXN0IDIgb2YgMwogICAgZGV0ZWN0b3JzIGluZGl2aWR1YWxseSA+PSB0aHJlc2hvbGQsIHN0cm9uZ2VzdCBmaXJzdCwgYXQgbW9zdAogICAgYG1heF9yb3dzYCksIGVhY2ggd2l0aCBwZXItbW9kZWwgc2NvcmVzLCB2b3RlcywgdG9wIGZlYXR1cmVzIGFuZAogICAgaHVtYW4tcmVhZGFibGUgYHJlYXNvbnNgLgogICAgIiIiCiAgICBuZWVkID0gZiJuZWVkcyBhdCBsZWFzdCB7TUlOX1JPV1N9IHJvd3MgYW5kIHtNSU5fTlVNRVJJQ19DT0xTfSBudW1lcmljIGNvbHVtbnMiCiAgICBpZiBsZW4oZGYpIDwgTUlOX1JPV1M6CiAgICAgICAgcmV0dXJuIF9za2lwcGVkKGYie25lZWR9IChmaWxlIGhhcyB7bGVuKGRmKX0gcm93cykiKQogICAgdmFsdWVzLCBuYW1lcywgbWlzc2luZyA9IHByZXBhcmVfZmVhdHVyZXMoZGYsIHR5cGVzKQogICAgaWYgbGVuKG5hbWVzKSA8IE1JTl9OVU1FUklDX0NPTFM6CiAgICAgICAgcmV0dXJuIF9za2lwcGVkKGYie25lZWR9IChmaWxlIGhhcyB7bGVuKG5hbWVzKX0gdXNhYmxlIG51bWVyaWMgY29sdW1ucykiKQoKICAgIFggPSByb2J1c3Rfc2NhbGUodmFsdWVzKQogICAgcmVzdWx0ID0gc2NvcmVfbWF0cml4KFgsIHNlZWQ9c2VlZCwgd2VpZ2h0cz13ZWlnaHRzKQogICAgc2NvcmVzLCB3ID0gcmVzdWx0WyJzY29yZXMiXSwgcmVzdWx0WyJ3ZWlnaHRzIl0KICAgIGVuc2VtYmxlID0gc2NvcmVzWyJlbnNlbWJsZSJdCgogICAgIyBGbGFnIGdhdGU6IGVuc2VtYmxlIGFib3ZlIHRocmVzaG9sZCBBTkQgYSBtYWpvcml0eSBvZiBkZXRlY3RvcnMKICAgICMgKGF0IGxlYXN0IDIgb2YgMykgaW5kaXZpZHVhbGx5IGFib3ZlIHRocmVzaG9sZC4gQ2FsaWJyYXRlZCBzY29yZXMKICAgICMgYXJlIHJlbGF0aXZlIHRvIHRoZSBkYXRhJ3Mgb3duIGJ1bGssIHNvIGEgc2luZ2xlIGRldGVjdG9yJ3MgdGFpbAogICAgIyBhbHdheXMgZXhpc3RzIGV2ZW4gaW4gcGVyZmVjdGx5IGNsZWFuIGRhdGEg4oCUIG1ham9yaXR5IGFncmVlbWVudCBpcwogICAgIyB3aGF0IGtlZXBzIGNsZWFuIGZpbGVzIHF1aWV0IHdoaWxlIHBsYW50ZWQgb3V0bGllcnMsIHdoaWNoIHRyaXAKICAgICMgZXZlcnkgZGV0ZWN0b3IgZmFtaWx5IGF0IG9uY2UsIHN0aWxsIGZsYWcuCiAgICB2b3Rlc19hcnIgPSBucC5jb2x1bW5fc3RhY2soW3Njb3Jlc1ttXSA+PSB0aHJlc2hvbGQgZm9yIG0gaW4gTU9ERUxTXSkKICAgIGZsYWdnZWQgPSBucC5mbGF0bm9uemVybygoZW5zZW1ibGUgPj0gdGhyZXNob2xkKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICYgKHZvdGVzX2Fyci5zdW0oYXhpcz0xKSA+PSAyKSkKICAgICMgU3RhYmxlIHNvcnQ6IHRpZXMgcmVzb2x2ZSBieSByb3cgb3JkZXIsIHNvIG91dHB1dCBpcyByZXByb2R1Y2libGUuCiAgICBmbGFnZ2VkID0gZmxhZ2dlZFtucC5hcmdzb3J0KC1lbnNlbWJsZVtmbGFnZ2VkXSwga2luZD0ic3RhYmxlIildCgogICAgbWVkaWFuID0gbnAubWVkaWFuKHZhbHVlcywgYXhpcz0wKQogICAgbG8sIGhpID0gbnAucGVyY2VudGlsZSh2YWx1ZXMsIFs1LCA5NV0sIGF4aXM9MCkKCiAgICByb3dzID0gW10KICAgIGZvciBpIGluIGZsYWdnZWRbOm1heF9yb3dzXToKICAgICAgICBwZXJfbW9kZWwgPSBfZXhwbGFpbl9yb3coaW50KGkpLCBYLCByZXN1bHQpCiAgICAgICAgIyBNb2RlbHMgdGhhdCBzY29yZWQgdGhlIHJvdyBoaWdoZXIgZ2V0IG1vcmUgc2F5IGluIGl0cyBleHBsYW5hdGlvbi4KICAgICAgICBtaXggPSBzdW0od1ttXSAqIHNjb3Jlc1ttXVtpXSAqIHBlcl9tb2RlbFttXSBmb3IgbSBpbiBNT0RFTFMpCiAgICAgICAgY29tYmluZWQgPSBfc2hhcmVzKG1peCkKICAgICAgICBvcmRlciA9IFtqIGZvciBqIGluIG5wLmFyZ3NvcnQoLWNvbWJpbmVkLCBraW5kPSJzdGFibGUiKVs6dG9wX2tdIGlmIGNvbWJpbmVkW2pdID4gMF0KICAgICAgICB2b3RlcyA9IHttOiBib29sKHNjb3Jlc1ttXVtpXSA+PSB0aHJlc2hvbGQpIGZvciBtIGluIE1PREVMU30KICAgICAgICB0b3BfZmVhdHVyZXMgPSBbewogICAgICAgICAgICAiZmVhdHVyZSI6IG5hbWVzW2pdLAogICAgICAgICAgICAidmFsdWUiOiBmbG9hdCh2YWx1ZXNbaSwgal0pLAogICAgICAgICAgICAidmFsdWVfd2FzX21pc3NpbmciOiBib29sKG1pc3NpbmdbaSwgal0pLAogICAgICAgICAgICAidHlwaWNhbCI6IGZsb2F0KG1lZGlhbltqXSksCiAgICAgICAgICAgICJ1c3VhbF9sb3ciOiBmbG9hdChsb1tqXSksCiAgICAgICAgICAgICJ1c3VhbF9oaWdoIjogZmxvYXQoaGlbal0pLAogICAgICAgICAgICAiZGlyZWN0aW9uIjogKCJoaWdoIiBpZiB2YWx1ZXNbaSwgal0gPiBoaVtqXSBlbHNlCiAgICAgICAgICAgICAgICAgICAgICAgICAgImxvdyIgaWYgdmFsdWVzW2ksIGpdIDwgbG9bal0gZWxzZSAidW51c3VhbCBjb21iaW5hdGlvbiIpLAogICAgICAgICAgICAiY29udHJpYnV0aW9uIjogcm91bmQoZmxvYXQoY29tYmluZWRbal0pLCA0KSwKICAgICAgICB9IGZvciBqIGluIG9yZGVyXQogICAgICAgIHJlYXNvbnMgPSBbX3JlYXNvbl90ZXh0KG5hbWVzW2pdLCB2YWx1ZXNbaSwgal0sIG1lZGlhbltqXSwgbG9bal0sIGhpW2pdLCBjb21iaW5lZFtqXSkKICAgICAgICAgICAgICAgICAgIGZvciBqIGluIG9yZGVyXQogICAgICAgIGFncmVlID0gW01PREVMX0xBQkVMU1ttXSBmb3IgbSBpbiBNT0RFTFMgaWYgdm90ZXNbbV1dCiAgICAgICAgZGlzc2VudCA9IFtNT0RFTF9MQUJFTFNbbV0gZm9yIG0gaW4gTU9ERUxTIGlmIG5vdCB2b3Rlc1ttXV0KICAgICAgICB2ZXJkaWN0ID0gZiJ7bGVuKGFncmVlKX0gb2Yge2xlbihNT0RFTFMpfSBkZXRlY3RvcnMgZmxhZyB0aGlzIHJvdyIKICAgICAgICBpZiBhZ3JlZToKICAgICAgICAgICAgdmVyZGljdCArPSBmIiAoeycsICcuam9pbihhZ3JlZSl9KSIKICAgICAgICBpZiBkaXNzZW50IGFuZCBhZ3JlZToKICAgICAgICAgICAgdmVyZGljdCArPSBmIjsgeycsICcuam9pbihkaXNzZW50KX0gZGlkIG5vdCIKICAgICAgICByZWFzb25zLmFwcGVuZCh2ZXJkaWN0KQogICAgICAgIHJvd3MuYXBwZW5kKHsKICAgICAgICAgICAgInJvd19pbmRleCI6IGludChpKSwgICAgICAgICAgIyAwLWJhc2VkIHBvc2l0aW9uIGFtb25nIGRhdGEgcm93cwogICAgICAgICAgICAibGluZV9udW1iZXIiOiBpbnQoaSkgKyAyLCAgICAjIGxpbmUgaW4gdGhlIGZpbGUgKGhlYWRlciBpcyBsaW5lIDEpCiAgICAgICAgICAgICJzY29yZSI6IHJvdW5kKGZsb2F0KGVuc2VtYmxlW2ldKSwgNCksCiAgICAgICAgICAgICJtb2RlbF9zY29yZXMiOiB7bTogcm91bmQoZmxvYXQoc2NvcmVzW21dW2ldKSwgNCkgZm9yIG0gaW4gTU9ERUxTfSwKICAgICAgICAgICAgInZvdGVzIjogdm90ZXMsCiAgICAgICAgICAgICJhZ3JlZW1lbnQiOiBmIntsZW4oYWdyZWUpfS97bGVuKE1PREVMUyl9IiwKICAgICAgICAgICAgInRvcF9mZWF0dXJlcyI6IHRvcF9mZWF0dXJlcywKICAgICAgICAgICAgInBlcl9tb2RlbF90b3BfZmVhdHVyZXMiOiB7CiAgICAgICAgICAgICAgICBtOiBbeyJmZWF0dXJlIjogbmFtZXNbal0sICJjb250cmlidXRpb24iOiByb3VuZChmbG9hdChwZXJfbW9kZWxbbV1bal0pLCA0KX0KICAgICAgICAgICAgICAgICAgICBmb3IgaiBpbiBucC5hcmdzb3J0KC1wZXJfbW9kZWxbbV0sIGtpbmQ9InN0YWJsZSIpWzp0b3Bfa10KICAgICAgICAgICAgICAgICAgICBpZiBwZXJfbW9kZWxbbV1bal0gPiAwXQogICAgICAgICAgICAgICAgZm9yIG0gaW4gTU9ERUxTCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJyZWFzb25zIjogcmVhc29ucywKICAgICAgICB9KQoKICAgIHJldHVybiB7CiAgICAgICAgInNraXBwZWQiOiBGYWxzZSwKICAgICAgICAicmVhc29uIjogTm9uZSwKICAgICAgICAibWV0aG9kIjogKCJlbnNlbWJsZSBvZiBJc29sYXRpb24gRm9yZXN0LCBMb2NhbCBPdXRsaWVyIEZhY3RvciBhbmQgYW4gYXV0b2VuY29kZXI7ICIKICAgICAgICAgICAgICAgICAgICJlYWNoIHNjb3JlIGNhbGlicmF0ZWQgdG8gMC0xLCB0aGVuIGEgd2VpZ2h0ZWQgYXZlcmFnZSIpLAogICAgICAgICJmZWF0dXJlc191c2VkIjogbmFtZXMsCiAgICAgICAgInJvd3Nfc2NvcmVkIjogaW50KGxlbihkZikpLAogICAgICAgICJ0aHJlc2hvbGQiOiBmbG9hdCh0aHJlc2hvbGQpLAogICAgICAgICJ3ZWlnaHRzIjoge206IHJvdW5kKHYsIDQpIGZvciBtLCB2IGluIHcuaXRlbXMoKX0sCiAgICAgICAgInNlZWQiOiBpbnQoc2VlZCksCiAgICAgICAgImZsYWdnZWRfY291bnQiOiBpbnQobGVuKGZsYWdnZWQpKSwKICAgICAgICAiZmxhZ2dlZF9wY3QiOiByb3VuZCgxMDAuMCAqIGxlbihmbGFnZ2VkKSAvIGxlbihkZiksIDIpLAogICAgICAgICJyb3dzX3JldHVybmVkIjogbGVuKHJvd3MpLAogICAgICAgICJ0cnVuY2F0ZWQiOiBib29sKGxlbihmbGFnZ2VkKSA+IGxlbihyb3dzKSksCiAgICAgICAgInBlcl9tb2RlbF9mbGFnZ2VkIjoge206IGludCgoc2NvcmVzW21dID49IHRocmVzaG9sZCkuc3VtKCkpIGZvciBtIGluIE1PREVMU30sCiAgICAgICAgInJvd3MiOiByb3dzLAogICAgfQo=
+"""Step D — explainable anomaly ensemble (BLUEPRINT §12 T2, sprint Phase A1).
+
+Three detectors from three families score every row on the numeric columns:
+
+- Isolation Forest (trees): anomalies are isolated in few random splits.
+- Local Outlier Factor (density): anomalies sit in sparser regions than
+  their neighbours.
+- A small PyTorch autoencoder (reconstruction): anomalies break the
+  relationships between columns that normal rows follow.
+
+Their raw scores live on unrelated scales, so each is calibrated onto a
+common 0-1 scale (see `calibrate`) before a weighted average gives the single
+ensemble score. The calibrated score is a severity scale, not a probability:
+0.5 means "FLAG_Z robust standard deviations above the typical row".
+
+Every flagged row carries reasons: which columns drove the score, measured
+by per-column reconstruction error (autoencoder) and by perturbation
+(Isolation Forest / LOF: reset one column to its typical value, see how far
+the score drops).
+
+Everything is deterministic for a given `seed`.
+"""
+from __future__ import annotations
+
+import math
+
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import IsolationForest
+from sklearn.neighbors import LocalOutlierFactor
+
+MODELS = ("isolation_forest", "local_outlier_factor", "autoencoder")
+MODEL_LABELS = {
+    "isolation_forest": "Isolation Forest",
+    "local_outlier_factor": "Local Outlier Factor",
+    "autoencoder": "Autoencoder",
+}
+
+MIN_ROWS = 50
+MIN_NUMERIC_COLS = 2
+DEFAULT_SEED = 42
+DEFAULT_THRESHOLD = 0.5
+DEFAULT_MAX_ROWS = 50
+
+# Calibration: a raw score FLAG_Z robust standard deviations above the median
+# maps to 0.5; FLAG_SLOPE controls how fast it saturates around that point.
+FLAG_Z = 4.0
+FLAG_SLOPE = 1.0
+# Scaled features are clipped to this before model fitting so one absurd
+# value cannot dominate the autoencoder's loss or LOF's distances.
+CLIP = 10.0
+
+IF_TREES = 200
+LOF_NEIGHBORS = 20
+AE_STEPS = 600
+AE_BATCH = 256
+AE_LR = 5e-3
+# Fraction of each batch (the worst-reconstructed rows) excluded from the
+# gradient, so the autoencoder cannot simply memorise the anomalies.
+AE_TRIM = 0.1
+
+
+# --------------------------------------------------------------------------
+# Feature preparation
+# --------------------------------------------------------------------------
+
+def prepare_features(df: pd.DataFrame, types: dict[str, str]) -> tuple[np.ndarray, list[str], np.ndarray]:
+    """Turn the numeric columns of a parsed (all-string) frame into a matrix.
+
+    Returns (values, names, missing): `values` is float64 [rows, features]
+    with blanks/unparseable cells imputed by the column median, `missing`
+    marks the imputed cells. Columns that are numerically constant are
+    dropped — they carry no signal and break scaling.
+    """
+    names, cols, miss = [], [], []
+    for col in df.columns:
+        if types.get(col) != "numeric":
+            continue
+        nums = pd.to_numeric(df[col], errors="coerce").astype("float64")
+        nums = nums.where(np.isfinite(nums))
+        if nums.notna().sum() == 0:
+            continue
+        median = float(nums.median())
+        filled = nums.fillna(median).to_numpy()
+        if np.ptp(filled) == 0:
+            continue
+        names.append(col)
+        cols.append(filled)
+        miss.append(nums.isna().to_numpy())
+    if not names:
+        return np.empty((len(df), 0)), [], np.empty((len(df), 0), dtype=bool)
+    return np.column_stack(cols), names, np.column_stack(miss)
+
+
+def robust_scale(values: np.ndarray) -> np.ndarray:
+    """Centre each column on its median and divide by its IQR-based spread.
+
+    Median/IQR instead of mean/std so the anomalies we are hunting do not
+    stretch the scale they are measured on. Result is clipped to +-CLIP.
+    """
+    values = np.asarray(values, dtype=np.float64)
+    median = np.median(values, axis=0)
+    q25, q75 = np.percentile(values, [25, 75], axis=0)
+    spread = (q75 - q25) / 1.349  # IQR of a normal distribution = 1.349 sigma
+    std = values.std(axis=0)
+    spread = np.where(spread > 0, spread, std)
+    spread = np.where(spread > 0, spread, 1.0)
+    return np.clip((values - median) / spread, -CLIP, CLIP)
+
+
+# --------------------------------------------------------------------------
+# Calibration
+# --------------------------------------------------------------------------
+
+def calibrate(raw: np.ndarray) -> np.ndarray:
+    """Map raw anomaly scores (higher = stranger) onto a common 0-1 scale.
+
+    z = (score - median) / robust_sigma, then a logistic centred on FLAG_Z.
+    Median and MAD are used because the mean/std of the scores would be
+    inflated by the very anomalies being scored. If every row scores the
+    same, nothing stands out and all calibrated scores are ~0.
+    """
+    raw = np.asarray(raw, dtype=np.float64)
+    median = np.median(raw)
+    sigma = 1.4826 * np.median(np.abs(raw - median))
+    if sigma <= 0:
+        q25, q75 = np.percentile(raw, [25, 75])
+        sigma = (q75 - q25) / 1.349
+    if sigma <= 0:
+        sigma = raw.std()
+    if sigma <= 0:
+        z = np.zeros_like(raw)
+    else:
+        z = (raw - median) / sigma
+    return 1.0 / (1.0 + np.exp(-np.clip((z - FLAG_Z) / FLAG_SLOPE, -50, 50)))
+
+
+# --------------------------------------------------------------------------
+# The three detectors. Each returns raw scores where higher = more anomalous
+# plus whatever it needs to explain a row later.
+# --------------------------------------------------------------------------
+
+def _fit_isolation_forest(X: np.ndarray, seed: int) -> tuple[np.ndarray, IsolationForest]:
+    model = IsolationForest(n_estimators=IF_TREES, random_state=seed)
+    model.fit(X)
+    return -model.score_samples(X), model
+
+
+def _fit_lof(X: np.ndarray) -> tuple[np.ndarray, LocalOutlierFactor | None]:
+    # Exact duplicate rows give zero neighbour distances and make LOF blow
+    # up to ~1e10, so LOF is fitted on distinct rows and mapped back.
+    unique, inverse = np.unique(X, axis=0, return_inverse=True)
+    inverse = np.asarray(inverse).ravel()
+    if len(unique) < 3:
+        return np.zeros(len(X)), None
+    k = min(LOF_NEIGHBORS, len(unique) - 1)
+    # novelty=True only so score_samples() exists for the perturbation
+    # explanations; negative_outlier_factor_ is still the leave-self-out
+    # score of each fitted row.
+    model = LocalOutlierFactor(n_neighbors=k, novelty=True)
+    model.fit(unique)
+    lof = -model.negative_outlier_factor_
+    # LOF is a density ratio (1 = same density as neighbours): log makes it
+    # symmetric around 0 so calibration is not dominated by the ratio's tail.
+    return np.log(np.clip(lof, 1e-6, 1e6))[inverse], model
+
+
+def _lof_score_new(model: LocalOutlierFactor, rows: np.ndarray) -> np.ndarray:
+    return np.log(np.clip(-model.score_samples(rows), 1e-6, 1e6))
+
+
+def _fit_autoencoder(X: np.ndarray, seed: int) -> np.ndarray:
+    """Train a d -> h -> b -> h -> d autoencoder; return per-cell squared error.
+
+    Raw score per row is the mean of its row in the returned matrix; the
+    per-column errors are the autoencoder's own explanation.
+    """
+    import torch  # local import: keeps importing the engine cheap
+    from torch import nn
+
+    n, d = X.shape
+    hidden = max(8, 2 * d)
+    bottleneck = max(1, d // 2)
+
+    rng_state = torch.random.get_rng_state()  # do not disturb the caller's RNG
+    try:
+        torch.manual_seed(seed)
+        model = nn.Sequential(
+            nn.Linear(d, hidden), nn.Tanh(),
+            nn.Linear(hidden, bottleneck), nn.Tanh(),
+            nn.Linear(bottleneck, hidden), nn.Tanh(),
+            nn.Linear(hidden, d),
+        ).double()
+        data = torch.from_numpy(np.ascontiguousarray(X, dtype=np.float64))
+        optim = torch.optim.Adam(model.parameters(), lr=AE_LR)
+        gen = torch.Generator().manual_seed(seed)
+        batch = min(n, AE_BATCH)
+        keep = max(1, int(math.ceil(batch * (1.0 - AE_TRIM))))
+        for _ in range(AE_STEPS):
+            idx = torch.randperm(n, generator=gen)[:batch]
+            xb = data[idx]
+            per_row = ((model(xb) - xb) ** 2).mean(dim=1)
+            loss = torch.topk(per_row, keep, largest=False).values.mean()
+            optim.zero_grad()
+            loss.backward()
+            optim.step()
+        with torch.no_grad():
+            errors = ((model(data) - data) ** 2).numpy()
+    finally:
+        torch.random.set_rng_state(rng_state)
+    return errors
+
+
+# --------------------------------------------------------------------------
+# Scoring
+# --------------------------------------------------------------------------
+
+def _normalise_weights(weights: dict[str, float] | None) -> dict[str, float]:
+    if weights is None:
+        return {m: 1.0 / len(MODELS) for m in MODELS}
+    unknown = set(weights) - set(MODELS)
+    if unknown:
+        raise ValueError(f"unknown model(s) in weights: {sorted(unknown)}; expected {list(MODELS)}")
+    w = {m: float(weights.get(m, 0.0)) for m in MODELS}
+    total = sum(w.values())
+    if total <= 0 or min(w.values()) < 0:
+        raise ValueError("ensemble weights must be non-negative and sum to more than 0")
+    return {m: v / total for m, v in w.items()}
+
+
+def score_matrix(X: np.ndarray, seed: int = DEFAULT_SEED,
+                 weights: dict[str, float] | None = None) -> dict:
+    """Score an already-scaled numeric matrix with all three models.
+
+    Input: float matrix [rows, features] (use `robust_scale` first).
+    Output: {"scores": {model: calibrated 0-1 array, "ensemble": array},
+             "raw": {model: raw array}, "weights": {...}, "_fitted": {...}}.
+    This is the exact code path the benchmark measures.
+    """
+    X = np.asarray(X, dtype=np.float64)
+    if X.ndim != 2 or X.shape[0] < 3 or X.shape[1] < 1:
+        raise ValueError("score_matrix needs a 2-D matrix with at least 3 rows and 1 column")
+    if not np.isfinite(X).all():
+        raise ValueError("score_matrix input contains NaN or infinite values; impute first")
+    w = _normalise_weights(weights)
+
+    if_raw, if_model = _fit_isolation_forest(X, seed)
+    lof_raw, lof_model = _fit_lof(X)
+    ae_cells = _fit_autoencoder(X, seed)
+    # log: reconstruction errors spread multiplicatively, like LOF's ratio.
+    ae_raw = np.log(ae_cells.mean(axis=1) + 1e-12)
+
+    raw = {"isolation_forest": if_raw, "local_outlier_factor": lof_raw, "autoencoder": ae_raw}
+    scores = {m: calibrate(raw[m]) for m in MODELS}
+    scores["ensemble"] = sum(w[m] * scores[m] for m in MODELS)
+    return {
+        "scores": scores,
+        "raw": raw,
+        "weights": w,
+        "_fitted": {"isolation_forest": if_model, "local_outlier_factor": lof_model,
+                    "autoencoder_cell_errors": ae_cells},
+    }
+
+
+# --------------------------------------------------------------------------
+# Explanations
+# --------------------------------------------------------------------------
+
+def _shares(contrib: np.ndarray) -> np.ndarray:
+    contrib = np.clip(contrib, 0.0, None)
+    total = contrib.sum()
+    return contrib / total if total > 0 else np.zeros_like(contrib)
+
+
+def _perturbation_shares(x: np.ndarray, base: float, score_fn) -> np.ndarray:
+    """Share of a row's raw score owed to each column.
+
+    Column j's contribution = how much the score drops when x[j] alone is
+    reset to the column's typical value (0 after robust scaling).
+    """
+    variants = np.repeat(x[None, :], len(x), axis=0)
+    np.fill_diagonal(variants, 0.0)
+    return _shares(base - score_fn(variants))
+
+
+def _explain_row(i: int, X: np.ndarray, result: dict) -> dict[str, np.ndarray]:
+    fitted, raw = result["_fitted"], result["raw"]
+    d = X.shape[1]
+    out = {"autoencoder": _shares(fitted["autoencoder_cell_errors"][i])}
+    forest = fitted["isolation_forest"]
+    out["isolation_forest"] = _perturbation_shares(
+        X[i], raw["isolation_forest"][i], lambda rows: -forest.score_samples(rows))
+    lof = fitted["local_outlier_factor"]
+    out["local_outlier_factor"] = (
+        _perturbation_shares(X[i], raw["local_outlier_factor"][i],
+                             lambda rows: _lof_score_new(lof, rows))
+        if lof is not None else np.zeros(d))
+    return out
+
+
+def _fmt(value: float) -> str:
+    if not math.isfinite(value):
+        return str(value)
+    if float(value).is_integer() and abs(value) < 1e15:
+        return f"{int(value):,}"
+    return f"{value:,.4g}" if abs(value) < 1e6 else f"{value:,.0f}"
+
+
+def _reason_text(feature: str, value: float, median: float, lo: float, hi: float,
+                 share: float) -> str:
+    if value > hi:
+        where = f"far above the usual range ({_fmt(lo)} to {_fmt(hi)}, typical {_fmt(median)})"
+    elif value < lo:
+        where = f"far below the usual range ({_fmt(lo)} to {_fmt(hi)}, typical {_fmt(median)})"
+    else:
+        where = (f"within the usual range ({_fmt(lo)} to {_fmt(hi)}) but in an unusual "
+                 f"combination with the other columns")
+    return f"{feature} = {_fmt(value)} is {where}; drove {share:.0%} of the anomaly score"
+
+
+# --------------------------------------------------------------------------
+# Public entry point
+# --------------------------------------------------------------------------
+
+def _skipped(reason: str) -> dict:
+    return {"skipped": True, "reason": reason, "rows": []}
+
+
+def find_anomalies(df: pd.DataFrame, types: dict[str, str], *,
+                   seed: int = DEFAULT_SEED,
+                   threshold: float = DEFAULT_THRESHOLD,
+                   max_rows: int = DEFAULT_MAX_ROWS,
+                   top_k: int = 3,
+                   weights: dict[str, float] | None = None) -> dict:
+    """Find anomalous rows in a parsed CSV and explain each one.
+
+    Inputs: `df` as returned by parse_csv_bytes (all strings), `types` from
+    infer_types. Only columns typed "numeric" are used (IDs never are).
+    Output: JSON-safe dict. If the file is too small it is
+    {"skipped": True, "reason": ..., "rows": []}; otherwise it lists the
+    flagged rows (ensemble score >= threshold AND at least 2 of 3
+    detectors individually >= threshold, strongest first, at most
+    `max_rows`), each with per-model scores, votes, top features and
+    human-readable `reasons`.
+    """
+    need = f"needs at least {MIN_ROWS} rows and {MIN_NUMERIC_COLS} numeric columns"
+    if len(df) < MIN_ROWS:
+        return _skipped(f"{need} (file has {len(df)} rows)")
+    values, names, missing = prepare_features(df, types)
+    if len(names) < MIN_NUMERIC_COLS:
+        return _skipped(f"{need} (file has {len(names)} usable numeric columns)")
+
+    X = robust_scale(values)
+    result = score_matrix(X, seed=seed, weights=weights)
+    scores, w = result["scores"], result["weights"]
+    ensemble = scores["ensemble"]
+
+    # Flag gate: ensemble above threshold AND a majority of detectors
+    # (at least 2 of 3) individually above threshold. Calibrated scores
+    # are relative to the data's own bulk, so a single detector's tail
+    # always exists even in perfectly clean data — majority agreement is
+    # what keeps clean files quiet while planted outliers, which trip
+    # every detector family at once, still flag.
+    votes_arr = np.column_stack([scores[m] >= threshold for m in MODELS])
+    flagged = np.flatnonzero((ensemble >= threshold)
+                             & (votes_arr.sum(axis=1) >= 2))
+    # Stable sort: ties resolve by row order, so output is reproducible.
+    flagged = flagged[np.argsort(-ensemble[flagged], kind="stable")]
+
+    median = np.median(values, axis=0)
+    lo, hi = np.percentile(values, [5, 95], axis=0)
+
+    rows = []
+    for i in flagged[:max_rows]:
+        per_model = _explain_row(int(i), X, result)
+        # Models that scored the row higher get more say in its explanation.
+        mix = sum(w[m] * scores[m][i] * per_model[m] for m in MODELS)
+        combined = _shares(mix)
+        order = [j for j in np.argsort(-combined, kind="stable")[:top_k] if combined[j] > 0]
+        votes = {m: bool(scores[m][i] >= threshold) for m in MODELS}
+        top_features = [{
+            "feature": names[j],
+            "value": float(values[i, j]),
+            "value_was_missing": bool(missing[i, j]),
+            "typical": float(median[j]),
+            "usual_low": float(lo[j]),
+            "usual_high": float(hi[j]),
+            "direction": ("high" if values[i, j] > hi[j] else
+                          "low" if values[i, j] < lo[j] else "unusual combination"),
+            "contribution": round(float(combined[j]), 4),
+        } for j in order]
+        reasons = [_reason_text(names[j], values[i, j], median[j], lo[j], hi[j], combined[j])
+                   for j in order]
+        agree = [MODEL_LABELS[m] for m in MODELS if votes[m]]
+        dissent = [MODEL_LABELS[m] for m in MODELS if not votes[m]]
+        verdict = f"{len(agree)} of {len(MODELS)} detectors flag this row"
+        if agree:
+            verdict += f" ({', '.join(agree)})"
+        if dissent and agree:
+            verdict += f"; {', '.join(dissent)} did not"
+        reasons.append(verdict)
+        rows.append({
+            "row_index": int(i),          # 0-based position among data rows
+            "line_number": int(i) + 2,    # line in the file (header is line 1)
+            "score": round(float(ensemble[i]), 4),
+            "model_scores": {m: round(float(scores[m][i]), 4) for m in MODELS},
+            "votes": votes,
+            "agreement": f"{len(agree)}/{len(MODELS)}",
+            "top_features": top_features,
+            "per_model_top_features": {
+                m: [{"feature": names[j], "contribution": round(float(per_model[m][j]), 4)}
+                    for j in np.argsort(-per_model[m], kind="stable")[:top_k]
+                    if per_model[m][j] > 0]
+                for m in MODELS
+            },
+            "reasons": reasons,
+        })
+
+    return {
+        "skipped": False,
+        "reason": None,
+        "method": ("ensemble of Isolation Forest, Local Outlier Factor and an autoencoder; "
+                   "each score calibrated to 0-1, then a weighted average"),
+        "features_used": names,
+        "rows_scored": int(len(df)),
+        "threshold": float(threshold),
+        "weights": {m: round(v, 4) for m, v in w.items()},
+        "seed": int(seed),
+        "flagged_count": int(len(flagged)),
+        "flagged_pct": round(100.0 * len(flagged) / len(df), 2),
+        "rows_returned": len(rows),
+        "truncated": bool(len(flagged) > len(rows)),
+        "per_model_flagged": {m: int((scores[m] >= threshold).sum()) for m in MODELS},
+        "rows": rows,
+    }
