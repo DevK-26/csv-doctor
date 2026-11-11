@@ -1,1 +1,38 @@
-IyBDU1YgRG9jdG9yCgpEcm9wIGFueSBDU1YuIEluIDMwIHNlY29uZHMsIGtub3cgd2hhdCdzIHdyb25nLCB3aGF0J3Mgd2VpcmQsIGFuZCB3aGF0J3MKaW50ZXJlc3RpbmcgaW4geW91ciBkYXRhIOKAlCBpbiBwbGFpbiBFbmdsaXNoLgoKUmVhbCBNTCBydW5zIG9uIHRoZSBmdWxsIGZpbGUgKHByb2ZpbGluZywgYW5vbWFseSBkZXRlY3Rpb24sIGRyaWZ0IC8KY2hhbmdlLXBvaW50IGRldGVjdGlvbikuIEEgZnJlZSBMTE0gb25seSAqZXhwbGFpbnMqIHRoZSBjb21wdXRlZCBmYWN0cyDigJQKaXQgbmV2ZXIgc2VlcyB0aGUgcmF3IGZpbGUgYW5kIG5ldmVyIGludmVudHMgYSBudW1iZXIuCgoqKkluZGVwZW5kZW50IHByb2R1Y3QgYnkgS2h1c2hpIChEZXZLLTI2KS4gQnVpbHQgYW5kIHJ1biBlbnRpcmVseSBvbiBmcmVlIHRpZXJzLioqCgojIyBTdGF0dXMKRGF5IDEg4oCUIHJlcG8gKyBlbmdpbmUgc2tlbGV0b24uIFNlZSBgQkxVRVBSSU5ULm1kYCBmb3IgdGhlIGZ1bGwgcHJvZHVjdCBzcGVjCmFuZCB0aGUgMTQtZGF5IGJ1aWxkIHBsYW4sIGFuZCBgREFZMS5tZGAgZm9yIHdoYXQgdGhpcyBza2VsZXRvbiBjb250YWlucy4KCiMjIExheW91dApgYGAKYXBwcy93ZWIvICAgICAgICAgIE5leHQuanMgZnJvbnRlbmQgKERheSA3LTkpCnNlcnZpY2VzL2VuZ2luZS8gICBGYXN0QVBJICsgcGFuZGFzL3NjaWtpdC1sZWFybiBNTCBlbmdpbmUgKERheSAyLTYpCnNhbXBsZXMvICAgICAgICAgICBTYW1wbGUgZGF0YXNldHMgYW55b25lIGNhbiB0cnkgd2l0aG91dCB1cGxvYWRpbmcgYSBmaWxlCmxhbmVzLnlhbWwgICAgICAgICBGcmVlLW1vZGVsIHJvdXRlciBjb25maWcgKEdyb3EgLT4gT3BlblJvdXRlciA6ZnJlZSkKYGBgCgojIyBSdW4gdGhlIGVuZ2luZSB0ZXN0cyAoRGF5IDEgY2hlY2spCmBgYGJhc2gKY2Qgc2VydmljZXMvZW5naW5lCnBpcCBpbnN0YWxsIC1yIHJlcXVpcmVtZW50cy50eHQKcHl0aG9uIC1tIHB5dGVzdCB0ZXN0cy8gLXYKYGBgCgojIyBQcmluY2lwbGVzCjEuIERldGVybWluaXN0aWMgZmlyc3Q6IGV2ZXJ5IG51bWJlciBvbiBhIHJlcG9ydCBpcyBjb21wdXRlZCwgcmVwcm9kdWNpYmxlLAogICBhbmQgdW5pdC10ZXN0ZWQuIFNhbWUgZmlsZSA9IHNhbWUgc2NvcmUsIGFsd2F5cy4KMi4gVGhlIExMTSBpcyBnYXJuaXNoOiBpZiBpdHMgc3VtbWFyeSBkaXNhZ3JlZXMgd2l0aCBhIGNvbXB1dGVkIG51bWJlciwKICAgdGhlIG51bWJlciB3aW5zIGFuZCB0aGUgc3VtbWFyeSBpcyBkcm9wcGVkLgozLiBQcml2YWN5IGJ5IGFyY2hpdGVjdHVyZTogcmF3IGZpbGVzIGFyZSBuZXZlciBzdG9yZWQ7IGF1dG8tZGVsZXRlZAogICB3aXRoaW4gMSBob3VyLiBUaGUgTExNIHJlY2VpdmVzIG9ubHkgYSBtYXNrZWQgZmFjdHMgcGFjay4KNC4g4oK5MCBtb2RlbCBjb3N0OiBmcmVlIHRpZXJzIG9ubHksIGV2ZXJ5IGNhbGwgbG9nZ2VkIGFuZCBjYWNoZWQgYnkgZmlsZSBoYXNoLgo=
+# CSV Doctor
+
+Drop any CSV. In 30 seconds, know what's wrong, what's weird, and what's
+interesting in your data — in plain English.
+
+Real ML runs on the full file (profiling, anomaly detection, drift /
+change-point detection). A free LLM only *explains* the computed facts —
+it never sees the raw file and never invents a number.
+
+**Independent product by Khushi (DevK-26). Built and run entirely on free tiers.**
+
+## Status
+Day 1 — repo + engine skeleton. See `BLUEPRINT.md` for the full product spec
+and the 14-day build plan, and `DAY1.md` for what this skeleton contains.
+
+## Layout
+```
+apps/web/          Next.js frontend (Day 7-9)
+services/engine/   FastAPI + pandas/scikit-learn ML engine (Day 2-6)
+samples/           Sample datasets anyone can try without uploading a file
+lanes.yaml         Free-model router config (Groq -> OpenRouter :free)
+```
+
+## Run the engine tests (Day 1 check)
+```bash
+cd services/engine
+pip install -r requirements.txt
+python -m pytest tests/ -v
+```
+
+## Principles
+1. Deterministic first: every number on a report is computed, reproducible,
+   and unit-tested. Same file = same score, always.
+2. The LLM is garnish: if its summary disagrees with a computed number,
+   the number wins and the summary is dropped.
+3. Privacy by architecture: raw files are never stored; auto-deleted
+   within 1 hour. The LLM receives only a masked facts pack.
+4. ₹0 model cost: free tiers only, every call logged and cached by file hash.
