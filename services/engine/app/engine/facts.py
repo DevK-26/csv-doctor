@@ -1,1 +1,37 @@
-IiIiRmFjdHMgUGFjayBidWlsZGVyIOKAlCB0aGUgT05MWSB0aGluZyB0aGUgTExNIGV2ZXIgcmVjZWl2ZXMgKEJMVUVQUklOVCDCpzQpLgoKSXQgY29udGFpbnMgY29tcHV0ZWQgbnVtYmVycyBmcm9tIHN0ZXBzIEEtRiwgbmV2ZXIgcmF3IHJvd3MgaW4gYnVsay4KRW1haWxzLCBwaG9uZS1saWtlIHN0cmluZ3MgYW5kIGxvbmcgSURzIGluIGV4YW1wbGUgdmFsdWVzIGFyZSBtYXNrZWQgaGVyZSwKc28gYSBzdW1tYXJ5IGNhbGwgY2FuIG5ldmVyIGxlYWsgdGhlbS4KIiIiCmZyb20gX19mdXR1cmVfXyBpbXBvcnQgYW5ub3RhdGlvbnMKCmltcG9ydCByZQoKX0VNQUlMID0gcmUuY29tcGlsZShyIlteQFxzXStAW15AXHNdK1wuW15AXHNdKyIpCl9QSE9ORSA9IHJlLmNvbXBpbGUociJcYlxkezV9W1xzLV0/XGR7NX1cYiIpCgoKZGVmIG1hc2sodGV4dDogc3RyKSAtPiBzdHI6CiAgICB0ZXh0ID0gX0VNQUlMLnN1YigiW2VtYWlsXSIsIHN0cih0ZXh0KSkKICAgIHJldHVybiBfUEhPTkUuc3ViKCJbcGhvbmVdIiwgdGV4dCkKCgpkZWYgYnVpbGRfZmFjdHNfcGFjayhwcm9maWxlOiBkaWN0LCBzY29yZTogaW50LCByZWFzb25zOiBsaXN0W3N0cl0sCiAgICAgICAgICAgICAgICAgICAgIGFub21hbGllczogZGljdCwgZHJpZnQ6IGRpY3QsIHJlbGF0aW9uczogZGljdCkgLT4gZGljdDoKICAgIHJldHVybiB7CiAgICAgICAgInJvd3MiOiBwcm9maWxlWyJyb3dzIl0sCiAgICAgICAgImNvbHMiOiBwcm9maWxlWyJjb2xzIl0sCiAgICAgICAgImhlYWx0aF9zY29yZSI6IHNjb3JlLAogICAgICAgICJzY29yZV9yZWFzb25zIjogcmVhc29ucywKICAgICAgICAibWlzc2luZ19wY3QiOiBwcm9maWxlWyJtaXNzaW5nX3BjdCJdLAogICAgICAgICJkdXBsaWNhdGVfcm93cyI6IHByb2ZpbGVbImR1cGxpY2F0ZV9yb3dzIl0sCiAgICAgICAgImNvbHVtbnMiOiBbCiAgICAgICAgICAgIHtrOiAobWFzayh2KSBpZiBpc2luc3RhbmNlKHYsIHN0cikgZWxzZSB2KSBmb3IgaywgdiBpbiBjLml0ZW1zKCkKICAgICAgICAgICAgIGlmIGsgaW4gKCJuYW1lIiwgInR5cGUiLCAibWlzc2luZ19wY3QiLCAidW5pcXVlIiwgIm1pbiIsICJtYXgiLCAibWVhbiIpfQogICAgICAgICAgICBmb3IgYyBpbiBwcm9maWxlWyJjb2x1bW5zIl0KICAgICAgICBdLAogICAgICAgICJhbm9tYWxpZXMiOiBhbm9tYWxpZXMsCiAgICAgICAgImRyaWZ0IjogZHJpZnQsCiAgICAgICAgInJlbGF0aW9ucyI6IHJlbGF0aW9ucywKICAgIH0K
+"""Facts Pack builder — the ONLY thing the LLM ever receives (BLUEPRINT §4).
+
+It contains computed numbers from steps A-F, never raw rows in bulk.
+Emails, phone-like strings and long IDs in example values are masked here,
+so a summary call can never leak them.
+"""
+from __future__ import annotations
+
+import re
+
+_EMAIL = re.compile(r"[^@\s]+@[^@\s]+\.[^@\s]+")
+_PHONE = re.compile(r"\b\d{5}[\s-]?\d{5}\b")
+
+
+def mask(text: str) -> str:
+    text = _EMAIL.sub("[email]", str(text))
+    return _PHONE.sub("[phone]", text)
+
+
+def build_facts_pack(profile: dict, score: int, reasons: list[str],
+                     anomalies: dict, drift: dict, relations: dict) -> dict:
+    return {
+        "rows": profile["rows"],
+        "cols": profile["cols"],
+        "health_score": score,
+        "score_reasons": reasons,
+        "missing_pct": profile["missing_pct"],
+        "duplicate_rows": profile["duplicate_rows"],
+        "columns": [
+            {k: (mask(v) if isinstance(v, str) else v) for k, v in c.items()
+             if k in ("name", "type", "missing_pct", "unique", "min", "max", "mean")}
+            for c in profile["columns"]
+        ],
+        "anomalies": anomalies,
+        "drift": drift,
+        "relations": relations,
+    }
