@@ -1,1 +1,27 @@
-IyEvdXNyL2Jpbi9lbnYgYmFzaAojIENTViBEb2N0b3Ig4oCUIGRlcGxveSAvIHVwZGF0ZSBvbiB0aGUgVk0uIFVzZWQgYnkgaGFuZCBBTkQgYnkgR2l0SHViIEFjdGlvbnMuCiMgICBiYXNoIGRlcGxveS9zY3JpcHRzL2RlcGxveS5zaApzZXQgLWV1byBwaXBlZmFpbApjZCAiJChkaXJuYW1lICIkMCIpLy4uLy4uIgoKZWNobyAiPT0+IFB1bGwgbGF0ZXN0IGNvZGUiCmdpdCBwdWxsIC0tZmYtb25seQoKZWNobyAiPT0+IEJ1aWxkICsgc3RhcnQgKGRldGFjaGVkKSIKZG9ja2VyIGNvbXBvc2UgdXAgLWQgLS1idWlsZAoKZWNobyAiPT0+IFdhaXQgZm9yIGVuZ2luZSBoZWFsdGggdmlhIENhZGR5Igpmb3IgaSBpbiAkKHNlcSAxIDMwKTsgZG8KICBpZiBjdXJsIC1mc1MgaHR0cDovL2xvY2FsaG9zdC9hcGkvaGVhbHRoID4vZGV2L251bGwgMj4mMTsgdGhlbgogICAgZWNobyAiSEVBTFRIIE9LOiIKICAgIGN1cmwgLXMgaHR0cDovL2xvY2FsaG9zdC9hcGkvaGVhbHRoCiAgICBlY2hvCiAgICBkb2NrZXIgY29tcG9zZSBwcwogICAgZXhpdCAwCiAgZmkKICBzbGVlcCAyCmRvbmUKCmVjaG8gIkhFQUxUSCBGQUlMRUQg4oCUIGxhc3QgbG9nczoiCmRvY2tlciBjb21wb3NlIGxvZ3MgLS10YWlsPTgwCmV4aXQgMQo=
+#!/usr/bin/env bash
+# CSV Doctor — deploy / update on the VM. Used by hand AND by GitHub Actions.
+#   bash deploy/scripts/deploy.sh
+set -euo pipefail
+cd "$(dirname "$0")/../.."
+
+echo "==> Pull latest code"
+git pull --ff-only
+
+echo "==> Build + start (detached)"
+docker compose up -d --build
+
+echo "==> Wait for engine health via Caddy"
+for i in $(seq 1 30); do
+  if curl -fsS http://localhost/api/health >/dev/null 2>&1; then
+    echo "HEALTH OK:"
+    curl -s http://localhost/api/health
+    echo
+    docker compose ps
+    exit 0
+  fi
+  sleep 2
+done
+
+echo "HEALTH FAILED — last logs:"
+docker compose logs --tail=80
+exit 1
