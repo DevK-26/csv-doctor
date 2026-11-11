@@ -1,1 +1,72 @@
-IyBDU1YgRG9jdG9yIOKAlCBwcm9qZWN0IGluc3RydWN0aW9ucyBmb3IgQ2xhdWRlIENvZGUKCiMjIFdoYXQgdGhpcyBpcwoKQ1NWIERvY3RvciBpcyBhbiBpbmRlcGVuZGVudCBwcm9kdWN0IGJ5IEtodXNoaSBZYWRhdiAoR2l0SHViOiBEZXZLLTI2KS4KQSB1c2VyIHVwbG9hZHMgYSBDU1YgYW5kIGdldHMgYSBkaWFnbm9zaXM6IHByb2ZpbGluZywgYSBkZXRlcm1pbmlzdGljCkhlYWx0aCBTY29yZSwgYW5vbWFseSBkZXRlY3Rpb24gd2l0aCBleHBsYW5hdGlvbnMsIGRyaWZ0IGRldGVjdGlvbiwKZHVwbGljYXRlIGRldGVjdGlvbiwgYW5kIGEgcGxhaW4tRW5nbGlzaCByZXBvcnQuIEl0IGlzIGEgcmVzdW1lLWZsYWdzaGlwCnByb2plY3Q6IGV2ZXJ5IGNsYWltIGluIHRoZSBSRUFETUUgbXVzdCBiZSBiYWNrZWQgYnkgY29kZSB0aGF0IHJ1bnMgYW5kCm51bWJlcnMgdGhhdCB3ZXJlIGFjdHVhbGx5IG1lYXN1cmVkLgoKRnVsbCBwcm9kdWN0IHNwZWM6IGBCTFVFUFJJTlQubWRgIChlc3AuIMKnMTIgVGVjaG5pY2FsIERlcHRoIHYyKS4KQnVpbGQgb3JkZXIgYW5kIGFjY2VwdGFuY2UgY3JpdGVyaWE6IGBCVUlMRC1TUFJJTlQubWRgLgoKIyMgU3RhY2sKCi0gRW5naW5lOiBQeXRob24gMywgRmFzdEFQSSAoYHNlcnZpY2VzL2VuZ2luZS9gKSwgcGFuZGFzL251bXB5LAogIHNjaWtpdC1sZWFybiwgUHlUb3JjaCAoYXV0b2VuY29kZXIsIFBoYXNlIEIpLCBEdWNrREIgKFBoYXNlIEMpCi0gV2ViOiBOZXh0LmpzIChgYXBwcy93ZWIvYCkKLSBJbmZyYTogRG9ja2VyIENvbXBvc2UgKyBDYWRkeSAoYGRvY2tlci1jb21wb3NlLnltbGAsIGBkZXBsb3kvYCksCiAgUmVkaXMgKyBDZWxlcnkgKFBoYXNlIEMpLCBHaXRIdWIgQWN0aW9ucyAoYC5naXRodWIvd29ya2Zsb3dzL2RlcGxveS55bWxgKQoKIyMgRW5naW5lIGxheW91dCAoZG8gbm90IHJlc3RydWN0dXJlKQoKLSBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvcGFyc2UucHlgIOKAlCBDU1YgcGFyc2luZywgdHlwZSBpbmZlcmVuY2UKICAoSURzIG11c3Qgc3RheSBJRHMsIG5ldmVyIG51bWJlcnMpLiBXT1JLSU5HIOKAlCBleHRlbmQgY2FyZWZ1bGx5LgotIGBzZXJ2aWNlcy9lbmdpbmUvYXBwL2VuZ2luZS9wcm9maWxlLnB5YCDigJQgcGVyLWNvbHVtbiBwcm9maWxlICsKICBkZXRlcm1pbmlzdGljIEhlYWx0aCBTY29yZS4gV09SS0lORy4KLSBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvZmFjdHMucHlgIOKAlCBtYXNrZWQgRmFjdHMgUGFjayBmb3IgcmVwb3J0cy4KICBXT1JLSU5HLgotIGBzZXJ2aWNlcy9lbmdpbmUvYXBwL2VuZ2luZS9hbm9tYWxpZXMucHlgIOKAlCBTVFVCIOKGkiBQaGFzZSBBIHRhcmdldC4KLSBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvZHJpZnQucHlgIOKAlCBTVFVCIOKGkiBQaGFzZSBBIHRhcmdldC4KLSBgc2VydmljZXMvZW5naW5lL2FwcC9lbmdpbmUvcmVsYXRpb25zLnB5YCDigJQgU1RVQiDihpIgUGhhc2UgQiB0YXJnZXQuCi0gYHNlcnZpY2VzL2VuZ2luZS9hcHAvbWFpbi5weWAg4oCUIEZhc3RBUEkgYXBwIChgL2hlYWx0aGAsIGAvYW5hbHlzZWApLgotIGBzZXJ2aWNlcy9lbmdpbmUvdGVzdHMvYCDigJQgcHl0ZXN0OyBgc2FtcGxlcy9gIOKAlCAzIENTVnMgd2l0aCBwbGFudGVkIGRpcnQuCgojIyBIYXJkIHJ1bGVzCgoxLiAqKlRlc3RzIGFyZSB0aGUgY29udHJhY3QuKiogRXZlcnkgbmV3IG1vZHVsZSBzaGlwcyB3aXRoIHB5dGVzdCB0ZXN0cy4KICAgQWxsIGV4aXN0aW5nIHRlc3RzIG11c3Qga2VlcCBwYXNzaW5nIChgcHl0aG9uIC1tIHB5dGVzdCB0ZXN0cy8gLXZgCiAgIGZyb20gYHNlcnZpY2VzL2VuZ2luZS9gKS4gTmV2ZXIgd2Vha2VuIGEgdGVzdCB0byBtYWtlIGl0IHBhc3MuCjIuICoqRGV0ZXJtaW5pc3RpYyBjb3JlLioqIFByb2ZpbGluZywgSGVhbHRoIFNjb3JlLCBkcmlmdCBzdGF0aXN0aWNzIGFuZAogICBiZW5jaG1hcmtzIHJ1biB3aXRoIGZpeGVkIHNlZWRzIGFuZCBwcm9kdWNlIGlkZW50aWNhbCByZXN1bHRzIG9uCiAgIHJlLXJ1bnMuIE5vIHJhbmRvbW5lc3Mgd2l0aG91dCBhbiBleHBsaWNpdCBzZWVkIHBhcmFtZXRlci4KMy4gKipNZWFzdXJlZCBudW1iZXJzIG9ubHkuKiogQmVuY2htYXJrcyAoYW5vbWFseSBGMS9BVVJPQywgZHJpZnQKICAgZGV0ZWN0aW9uIGRlbGF5LCByb3dzL3NlYykgbXVzdCBjb21lIGZyb20gc2NyaXB0cyBpbgogICBgc2VydmljZXMvZW5naW5lL2JlbmNobWFya3MvYCB0aGF0IGFueW9uZSBjYW4gcmUtcnVuLiBOZXZlciBoYXJkY29kZQogICBhIG1ldHJpYyBpbnRvIHRoZSBSRUFETUUgb3IgVUkuCjQuICoqRnJvbSBzY3JhdGNoIG1lYW5zIGZyb20gc2NyYXRjaC4qKiBUaGUgZHJpZnQgZGV0ZWN0b3JzIChQU0ksIEtTLAogICBKZW5zZW7igJNTaGFubm9uLCBBRFdJTiwgUGFnZS1IaW5rbGV5KSBhcmUgaW1wbGVtZW50ZWQgYnkgaGFuZCBpbgogICBgZHJpZnQucHlgIOKAlCBubyBsaWJyYXJ5IGRyaWZ0IHBhY2thZ2UuIFRoZSBwb2ludCBpcyB0aGUgYXV0aG9yIGNhbgogICBleHBsYWluIGV2ZXJ5IGxpbmUuCjUuICoqRXhwbGFpbmFiaWxpdHkgaXMgYSBmZWF0dXJlLioqIEV2ZXJ5IGFub21hbHkgcmV0dXJuZWQgYnkgdGhlIEFQSQogICBjYXJyaWVzIGEgaHVtYW4tcmVhZGFibGUgcmVhc29uICh3aGljaCBmZWF0dXJlcyBkcm92ZSB0aGUgc2NvcmUpLgogICBObyBiYXJlIHNjb3Jlcy4KNi4gKipObyBwbGFjZWhvbGRlciBVSS4qKiBUaGUgd2ViIGFwcCBjYWxscyB0aGUgcmVhbCBBUEkuIElmIGFuIGVuZHBvaW50CiAgIGRvZXNuJ3QgZXhpc3QgeWV0LCBidWlsZCB0aGUgZW5kcG9pbnQsIG5vdCBhIG1vY2suCjcuICoqU21hbGwsIHJldmlld2FibGUgc3RlcHMuKiogT25lIG1vZHVsZSBwZXIgd29ya2luZyBzZXNzaW9uLCBjb21taXR0ZWQKICAgaW4gbG9naWNhbCBjaHVua3Mgd2l0aCBjbGVhciBtZXNzYWdlcy4gVGhlIGF1dGhvciByZXZpZXdzIGFuZCBtdXN0IGJlCiAgIGFibGUgdG8gZXhwbGFpbiBlYWNoIG1vZHVsZSBiZWZvcmUgdGhlIG5leHQgb25lIHN0YXJ0cy4KOC4gKipEZXBlbmRlbmNpZXMqKiBnbyBpbiBgc2VydmljZXMvZW5naW5lL3JlcXVpcmVtZW50cy50eHRgLCBwaW5uZWQgdG8KICAgY29tcGF0aWJsZSB2ZXJzaW9uczsgbm90ZSBpbiB0aGUgY29tbWl0IHdoeSBlYWNoIHdhcyBhZGRlZC4KOS4gTmV2ZXIgY29tbWl0IHNlY3JldHMsIGAuZW52YCBmaWxlcywgb3IgZ2VuZXJhdGVkIGJlbmNobWFyayBkYXRhIGZpbGVzCiAgIGxhcmdlciB0aGFuIDUgTUIuIERhdGFzZXRzIGZvciBiZW5jaG1hcmtzIGFyZSBkb3dubG9hZGVkIGJ5IHNjcmlwdCwKICAgbm90IHZlbmRvcmVkLgoKIyMgU3R5bGUKCi0gVHlwZSBoaW50cyBvbiBwdWJsaWMgZnVuY3Rpb25zOyBzaG9ydCBkb2NzdHJpbmcgc3RhdGluZyBpbnB1dHMvb3V0cHV0cy4KLSBDb21tZW50cyBleHBsYWluICp3aHkqLCBub3QgKndoYXQqIOKAlCBrZWVwIHRoZW0gc3BhcnNlLgotIEVycm9yczogcmFpc2Ugc3BlY2lmaWMgZXhjZXB0aW9ucyB3aXRoIGFjdGlvbmFibGUgbWVzc2FnZXM7IHRoZSBBUEkKICBsYXllciBjb252ZXJ0cyB0aGVtIHRvIGNsZWFuIDR4eCByZXNwb25zZXMsIG5ldmVyIHN0YWNrIHRyYWNlcy4K
+# CSV Doctor — project instructions for Claude Code
+
+## What this is
+
+CSV Doctor is an independent product by Khushi Yadav (GitHub: DevK-26).
+A user uploads a CSV and gets a diagnosis: profiling, a deterministic
+Health Score, anomaly detection with explanations, drift detection,
+duplicate detection, and a plain-English report. It is a resume-flagship
+project: every claim in the README must be backed by code that runs and
+numbers that were actually measured.
+
+Full product spec: `BLUEPRINT.md` (esp. §12 Technical Depth v2).
+Build order and acceptance criteria: `BUILD-SPRINT.md`.
+
+## Stack
+
+- Engine: Python 3, FastAPI (`services/engine/`), pandas/numpy,
+  scikit-learn, PyTorch (autoencoder, Phase B), DuckDB (Phase C)
+- Web: Next.js (`apps/web/`)
+- Infra: Docker Compose + Caddy (`docker-compose.yml`, `deploy/`),
+  Redis + Celery (Phase C), GitHub Actions (`.github/workflows/deploy.yml`)
+
+## Engine layout (do not restructure)
+
+- `services/engine/app/engine/parse.py` — CSV parsing, type inference
+  (IDs must stay IDs, never numbers). WORKING — extend carefully.
+- `services/engine/app/engine/profile.py` — per-column profile +
+  deterministic Health Score. WORKING.
+- `services/engine/app/engine/facts.py` — masked Facts Pack for reports.
+  WORKING.
+- `services/engine/app/engine/anomalies.py` — STUB → Phase A target.
+- `services/engine/app/engine/drift.py` — STUB → Phase A target.
+- `services/engine/app/engine/relations.py` — STUB → Phase B target.
+- `services/engine/app/main.py` — FastAPI app (`/health`, `/analyse`).
+- `services/engine/tests/` — pytest; `samples/` — 3 CSVs with planted dirt.
+
+## Hard rules
+
+1. **Tests are the contract.** Every new module ships with pytest tests.
+   All existing tests must keep passing (`python -m pytest tests/ -v`
+   from `services/engine/`). Never weaken a test to make it pass.
+2. **Deterministic core.** Profiling, Health Score, drift statistics and
+   benchmarks run with fixed seeds and produce identical results on
+   re-runs. No randomness without an explicit seed parameter.
+3. **Measured numbers only.** Benchmarks (anomaly F1/AUROC, drift
+   detection delay, rows/sec) must come from scripts in
+   `services/engine/benchmarks/` that anyone can re-run. Never hardcode
+   a metric into the README or UI.
+4. **From scratch means from scratch.** The drift detectors (PSI, KS,
+   Jensen–Shannon, ADWIN, Page-Hinkley) are implemented by hand in
+   `drift.py` — no library drift package. The point is the author can
+   explain every line.
+5. **Explainability is a feature.** Every anomaly returned by the API
+   carries a human-readable reason (which features drove the score).
+   No bare scores.
+6. **No placeholder UI.** The web app calls the real API. If an endpoint
+   doesn't exist yet, build the endpoint, not a mock.
+7. **Small, reviewable steps.** One module per working session, committed
+   in logical chunks with clear messages. The author reviews and must be
+   able to explain each module before the next one starts.
+8. **Dependencies** go in `services/engine/requirements.txt`, pinned to
+   compatible versions; note in the commit why each was added.
+9. Never commit secrets, `.env` files, or generated benchmark data files
+   larger than 5 MB. Datasets for benchmarks are downloaded by script,
+   not vendored.
+
+## Style
+
+- Type hints on public functions; short docstring stating inputs/outputs.
+- Comments explain *why*, not *what* — keep them sparse.
+- Errors: raise specific exceptions with actionable messages; the API
+  layer converts them to clean 4xx responses, never stack traces.
