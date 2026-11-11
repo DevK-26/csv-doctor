@@ -1,1 +1,19 @@
-RlJPTSBub2RlOjIwLWFscGluZSBBUyBkZXBzCldPUktESVIgL2FwcApDT1BZIHBhY2thZ2UuanNvbiAuLwpSVU4gbnBtIGluc3RhbGwgLS1uby1hdWRpdCAtLW5vLWZ1bmQKCkZST00gbm9kZToyMC1hbHBpbmUgQVMgYnVpbGRlcgpXT1JLRElSIC9hcHAKQ09QWSAtLWZyb209ZGVwcyAvYXBwL25vZGVfbW9kdWxlcyAuL25vZGVfbW9kdWxlcwpDT1BZIC4gLgpSVU4gbnBtIHJ1biBidWlsZAoKRlJPTSBub2RlOjIwLWFscGluZSBBUyBydW5uZXIKV09SS0RJUiAvYXBwCkVOViBOT0RFX0VOVj1wcm9kdWN0aW9uCkNPUFkgLS1mcm9tPWJ1aWxkZXIgL2FwcC9wYWNrYWdlLmpzb24gLi9wYWNrYWdlLmpzb24KQ09QWSAtLWZyb209YnVpbGRlciAvYXBwL25vZGVfbW9kdWxlcyAuL25vZGVfbW9kdWxlcwpDT1BZIC0tZnJvbT1idWlsZGVyIC9hcHAvLm5leHQgLi8ubmV4dApFWFBPU0UgMzAwMApDTUQgWyJucG0iLCAicnVuIiwgInN0YXJ0Il0K
+FROM node:20-alpine AS deps
+WORKDIR /app
+COPY package.json ./
+RUN npm install --no-audit --no-fund
+
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+RUN npm run build
+
+FROM node:20-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/.next ./.next
+EXPOSE 3000
+CMD ["npm", "run", "start"]
