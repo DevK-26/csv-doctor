@@ -1,1 +1,88 @@
-IiIiU3RlcCBBIOKAlCBwYXJzZSBhIENTViBhbmQgaW5mZXIgZWFjaCBjb2x1bW4ncyByZWFsIHR5cGUuCgpXaHkgdGhpcyBleGlzdHM6IGV2ZXJ5IGxhdGVyIHN0ZXAgKHByb2ZpbGluZywgYW5vbWFsaWVzLCBkcmlmdCkgdHJ1c3RzIHRoZXNlCnR5cGVzLiBBIHdyb25nIHR5cGUgaGVyZSBwb2lzb25zIGV2ZXJ5dGhpbmcgYWZ0ZXIgaXQg4oCUIGUuZy4gYW4gSUQgY29sdW1uIGxpa2UKMDAxMjMgbXVzdCBzdGF5IFRFWFQsIG9yIGl0IGJlY29tZXMgdGhlIG51bWJlciAxMjMgYW5kIGxvc2VzIGl0cyBtZWFuaW5nLgpUaGF0IGlzIHdoeSBJRHMgYXJlIGRldGVjdGVkIGV4cGxpY2l0bHkgYW5kIGV4Y2x1ZGVkIGZyb20gbnVtZXJpYyBtYXRocy4KIiIiCmZyb20gX19mdXR1cmVfXyBpbXBvcnQgYW5ub3RhdGlvbnMKCmltcG9ydCBpbwppbXBvcnQgcmUKCmltcG9ydCBwYW5kYXMgYXMgcGQKCk1BWF9ST1dTID0gNTBfMDAwCk1BWF9CWVRFUyA9IDEwICogMTAyNCAqIDEwMjQgICMgMTAgTUIKCl9JRF9OQU1FID0gcmUuY29tcGlsZShyIihefF8pKGlkfGNvZGV8c2t1fHJlZikoJHxfKSIsIHJlLkkpCgoKY2xhc3MgUGFyc2VFcnJvcihWYWx1ZUVycm9yKToKICAgICIiIlJhaXNlZCB3aXRoIGEgaHVtYW4tcmVhZGFibGUgcmVhc29uIHRoZSBBUEkgY2FuIHNob3cgYXMtaXMuIiIiCgoKZGVmIHBhcnNlX2Nzdl9ieXRlcyhyYXc6IGJ5dGVzKSAtPiBwZC5EYXRhRnJhbWU6CiAgICBpZiBsZW4ocmF3KSA+IE1BWF9CWVRFUzoKICAgICAgICByYWlzZSBQYXJzZUVycm9yKCJmaWxlX3Rvb19sYXJnZTogQ1NWIERvY3RvciB2MSBhY2NlcHRzIGZpbGVzIHVwIHRvIDEwIE1CLiIpCiAgICBmb3IgZW5jb2RpbmcgaW4gKCJ1dGYtOCIsICJsYXRpbi0xIik6CiAgICAgICAgdHJ5OgogICAgICAgICAgICBkZiA9IHBkLnJlYWRfY3N2KGlvLkJ5dGVzSU8ocmF3KSwgc2VwPU5vbmUsIGVuZ2luZT0icHl0aG9uIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbmNvZGluZz1lbmNvZGluZywgZHR5cGU9c3RyLCBrZWVwX2RlZmF1bHRfbmE9RmFsc2UpCiAgICAgICAgICAgIGJyZWFrCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgY29udGludWUKICAgIGVsc2U6CiAgICAgICAgcmFpc2UgUGFyc2VFcnJvcigibm90X2FfY3N2OiB0aGlzIGZpbGUgY291bGQgbm90IGJlIHBhcnNlZCBhcyBDU1YuIikKICAgIGlmIGRmLmVtcHR5IG9yIGxlbihkZi5jb2x1bW5zKSA9PSAwOgogICAgICAgIHJhaXNlIFBhcnNlRXJyb3IoImVtcHR5X2ZpbGU6IHRoZSBDU1YgaGFzIG5vIHJvd3Mgb3Igbm8gY29sdW1ucy4iKQogICAgaWYgbGVuKGRmKSA+IE1BWF9ST1dTOgogICAgICAgIHJhaXNlIFBhcnNlRXJyb3IoZiJ0b29fbWFueV9yb3dzOiB2MSBhY2NlcHRzIHVwIHRvIHtNQVhfUk9XUzosfSByb3dzLCBnb3Qge2xlbihkZik6LH0uIikKICAgIGRmLmNvbHVtbnMgPSBbc3RyKGMpLnN0cmlwKCkgZm9yIGMgaW4gZGYuY29sdW1uc10KICAgIHJldHVybiBkZgoKCmRlZiBfaXNfZGF0ZXRpbWUoc2VyaWVzOiBwZC5TZXJpZXMpIC0+IGJvb2w6CiAgICBzYW1wbGUgPSBzZXJpZXNbc2VyaWVzICE9ICIiXS5oZWFkKDIwMCkKICAgIGlmIGxlbihzYW1wbGUpIDwgMzoKICAgICAgICByZXR1cm4gRmFsc2UKICAgIHRyeToKICAgICAgICBwYXJzZWQgPSBwZC50b19kYXRldGltZShzYW1wbGUsIGVycm9ycz0iY29lcmNlIiwgZm9ybWF0PSJtaXhlZCIpCiAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgIHJldHVybiBGYWxzZQogICAgcmV0dXJuIHBhcnNlZC5ub3RuYSgpLm1lYW4oKSA+PSAwLjgKCgpkZWYgX2lzX251bWVyaWMoc2VyaWVzOiBwZC5TZXJpZXMpIC0+IGJvb2w6CiAgICBzYW1wbGUgPSBzZXJpZXNbc2VyaWVzICE9ICIiXS5oZWFkKDUwMCkKICAgIGlmIGxlbihzYW1wbGUpID09IDA6CiAgICAgICAgcmV0dXJuIEZhbHNlCiAgICByZXR1cm4gcGQudG9fbnVtZXJpYyhzYW1wbGUsIGVycm9ycz0iY29lcmNlIikubm90bmEoKS5tZWFuKCkgPj0gMC45CgoKZGVmIGluZmVyX2NvbHVtbl90eXBlKG5hbWU6IHN0ciwgc2VyaWVzOiBwZC5TZXJpZXMpIC0+IHN0cjoKICAgICIiIk9uZSBvZjogZW1wdHksIGNvbnN0YW50LCBpZCwgZGF0ZXRpbWUsIG51bWVyaWMsIGJvb2xlYW4sIGNhdGVnb3JpY2FsLCB0ZXh0LiIiIgogICAgdmFsdWVzID0gc2VyaWVzLmFzdHlwZShzdHIpCiAgICBub25fZW1wdHkgPSB2YWx1ZXNbdmFsdWVzICE9ICIiXQogICAgaWYgbGVuKG5vbl9lbXB0eSkgPT0gMDoKICAgICAgICByZXR1cm4gImVtcHR5IgogICAgaWYgbm9uX2VtcHR5Lm51bmlxdWUoKSA9PSAxOgogICAgICAgIHJldHVybiAiY29uc3RhbnQiCiAgICAjIFRhcmdldGluZyBndWFyZDogdW5pcXVlIC8gSUQtbmFtZWQgY29sdW1ucyBhcmUgaWRlbnRpZmllcnMsIG5vdCBtZWFzdXJlcy4KICAgIGlmIF9JRF9OQU1FLnNlYXJjaChuYW1lKSBvciAobm9uX2VtcHR5Lm51bmlxdWUoKSA9PSBsZW4obm9uX2VtcHR5KSBhbmQgX2lzX251bWVyaWMobm9uX2VtcHR5KSk6CiAgICAgICAgaWYgX0lEX05BTUUuc2VhcmNoKG5hbWUpIG9yIG5vbl9lbXB0eS5udW5pcXVlKCkgPiAyMDoKICAgICAgICAgICAgcmV0dXJuICJpZCIKICAgIGxvd2VyZWQgPSBzZXQobm9uX2VtcHR5LnN0ci5sb3dlcigpLnVuaXF1ZSgpKQogICAgaWYgbG93ZXJlZCA8PSB7InRydWUiLCAiZmFsc2UiLCAieWVzIiwgIm5vIiwgIjAiLCAiMSJ9IGFuZCBsZW4obG93ZXJlZCkgPD0gMjoKICAgICAgICByZXR1cm4gImJvb2xlYW4iCiAgICBpZiBfaXNfZGF0ZXRpbWUobm9uX2VtcHR5KToKICAgICAgICByZXR1cm4gImRhdGV0aW1lIgogICAgaWYgX2lzX251bWVyaWMobm9uX2VtcHR5KToKICAgICAgICByZXR1cm4gIm51bWVyaWMiCiAgICBpZiBub25fZW1wdHkubnVuaXF1ZSgpIDw9IG1heCgyMCwgaW50KDAuMDUgKiBsZW4obm9uX2VtcHR5KSkpOgogICAgICAgIHJldHVybiAiY2F0ZWdvcmljYWwiCiAgICByZXR1cm4gInRleHQiCgoKZGVmIGluZmVyX3R5cGVzKGRmOiBwZC5EYXRhRnJhbWUpIC0+IGRpY3Rbc3RyLCBzdHJdOgogICAgcmV0dXJuIHtjb2w6IGluZmVyX2NvbHVtbl90eXBlKGNvbCwgZGZbY29sXSkgZm9yIGNvbCBpbiBkZi5jb2x1bW5zfQo=
+"""Step A — parse a CSV and infer each column's real type.
+
+Why this exists: every later step (profiling, anomalies, drift) trusts these
+types. A wrong type here poisons everything after it — e.g. an ID column like
+00123 must stay TEXT, or it becomes the number 123 and loses its meaning.
+That is why IDs are detected explicitly and excluded from numeric maths.
+"""
+from __future__ import annotations
+
+import io
+import re
+
+import pandas as pd
+
+MAX_ROWS = 50_000
+MAX_BYTES = 10 * 1024 * 1024  # 10 MB
+
+_ID_NAME = re.compile(r"(^|_)(id|code|sku|ref)($|_)", re.I)
+
+
+class ParseError(ValueError):
+    """Raised with a human-readable reason the API can show as-is."""
+
+
+def parse_csv_bytes(raw: bytes) -> pd.DataFrame:
+    if len(raw) > MAX_BYTES:
+        raise ParseError("file_too_large: CSV Doctor v1 accepts files up to 10 MB.")
+    for encoding in ("utf-8", "latin-1"):
+        try:
+            df = pd.read_csv(io.BytesIO(raw), sep=None, engine="python",
+                             encoding=encoding, dtype=str, keep_default_na=False)
+            break
+        except Exception:
+            continue
+    else:
+        raise ParseError("not_a_csv: this file could not be parsed as CSV.")
+    if df.empty or len(df.columns) == 0:
+        raise ParseError("empty_file: the CSV has no rows or no columns.")
+    if len(df) > MAX_ROWS:
+        raise ParseError(f"too_many_rows: v1 accepts up to {MAX_ROWS:,} rows, got {len(df):,}.")
+    df.columns = [str(c).strip() for c in df.columns]
+    return df
+
+
+def _is_datetime(series: pd.Series) -> bool:
+    sample = series[series != ""].head(200)
+    if len(sample) < 3:
+        return False
+    try:
+        parsed = pd.to_datetime(sample, errors="coerce", format="mixed")
+    except Exception:
+        return False
+    return parsed.notna().mean() >= 0.8
+
+
+def _is_numeric(series: pd.Series) -> bool:
+    sample = series[series != ""].head(500)
+    if len(sample) == 0:
+        return False
+    return pd.to_numeric(sample, errors="coerce").notna().mean() >= 0.9
+
+
+def infer_column_type(name: str, series: pd.Series) -> str:
+    """One of: empty, constant, id, datetime, numeric, boolean, categorical, text."""
+    values = series.astype(str)
+    non_empty = values[values != ""]
+    if len(non_empty) == 0:
+        return "empty"
+    if non_empty.nunique() == 1:
+        return "constant"
+    # Targeting guard: unique / ID-named columns are identifiers, not measures.
+    if _ID_NAME.search(name) or (non_empty.nunique() == len(non_empty) and _is_numeric(non_empty)):
+        if _ID_NAME.search(name) or non_empty.nunique() > 20:
+            return "id"
+    lowered = set(non_empty.str.lower().unique())
+    if lowered <= {"true", "false", "yes", "no", "0", "1"} and len(lowered) <= 2:
+        return "boolean"
+    if _is_datetime(non_empty):
+        return "datetime"
+    if _is_numeric(non_empty):
+        return "numeric"
+    if non_empty.nunique() <= max(20, int(0.05 * len(non_empty))):
+        return "categorical"
+    return "text"
+
+
+def infer_types(df: pd.DataFrame) -> dict[str, str]:
+    return {col: infer_column_type(col, df[col]) for col in df.columns}
