@@ -1,1 +1,55 @@
-IiIiQ1NWIERvY3RvciBlbmdpbmUgQVBJIChGYXN0QVBJKS4KCkdFVCAvaGVhbHRoIGFuZCBQT1NUIC9hbmFseXNlOiBwYXJzZSArIHByb2ZpbGUgKyBoZWFsdGggc2NvcmUgKyB0aGUgYW5vbWFseQplbnNlbWJsZSAoUGhhc2UgQTE6IHBlci1yb3cgcmVzdWx0cyB3aXRoIHJlYXNvbnMgdW5kZXIgImFub21hbGllcyIpLgpEcmlmdC9yZWxhdGlvbnMgc3RpbGwgcmV0dXJuIHRoZWlyIGhvbmVzdCAnc2tpcHBlZCAvIG5vdCBpbXBsZW1lbnRlZCB5ZXQnCnN0dWJzLiBUaGUgTExNIHN1bW1hcnkgaXMgYSBzZXBhcmF0ZSB3ZWItYXBwIHJvdXRlIChEYXkgMTApIOKAlAp0aGlzIHNlcnZpY2UgbmV2ZXIgY2FsbHMgYSBtb2RlbC4KIiIiCmZyb20gX19mdXR1cmVfXyBpbXBvcnQgYW5ub3RhdGlvbnMKCmltcG9ydCBoYXNobGliCgpmcm9tIGZhc3RhcGkgaW1wb3J0IEZhc3RBUEksIEZpbGUsIEhUVFBFeGNlcHRpb24sIFVwbG9hZEZpbGUKCmZyb20gLmVuZ2luZSBpbXBvcnQgYW5vbWFsaWVzLCBkcmlmdCwgZmFjdHMsIHByb2ZpbGUgYXMgcHJvZmlsZV9tb2QsIHJlbGF0aW9ucwpmcm9tIC5lbmdpbmUucGFyc2UgaW1wb3J0IFBhcnNlRXJyb3IsIGluZmVyX3R5cGVzLCBwYXJzZV9jc3ZfYnl0ZXMKCiMgQnVtcCBvbiBhbnkgY2hhbmdlIHRvIGFuYWx5c2lzIG91dHB1dDogcmVwb3J0cyBhcmUgY2FjaGVkIGJ5IGZpbGUgaGFzaCArIHZlcnNpb24uCkVOR0lORV9WRVJTSU9OID0gIjAuMi4wLWExIgoKYXBwID0gRmFzdEFQSSh0aXRsZT0iQ1NWIERvY3RvciBFbmdpbmUiLCB2ZXJzaW9uPUVOR0lORV9WRVJTSU9OKQoKCkBhcHAuZ2V0KCIvaGVhbHRoIikKZGVmIGhlYWx0aCgpOgogICAgcmV0dXJuIHsib2siOiBUcnVlLCAiZW5naW5lX3ZlcnNpb24iOiBFTkdJTkVfVkVSU0lPTn0KCgpAYXBwLnBvc3QoIi9hbmFseXNlIikKYXN5bmMgZGVmIGFuYWx5c2UoZmlsZTogVXBsb2FkRmlsZSA9IEZpbGUoLi4uKSk6CiAgICByYXcgPSBhd2FpdCBmaWxlLnJlYWQoKQogICAgdHJ5OgogICAgICAgIGRmID0gcGFyc2VfY3N2X2J5dGVzKHJhdykKICAgIGV4Y2VwdCBQYXJzZUVycm9yIGFzIGV4YzoKICAgICAgICByYWlzZSBIVFRQRXhjZXB0aW9uKHN0YXR1c19jb2RlPTQyMiwgZGV0YWlsPXN0cihleGMpKSBmcm9tIGV4YwoKICAgIHR5cGVzID0gaW5mZXJfdHlwZXMoZGYpCiAgICBwcm9mID0gcHJvZmlsZV9tb2QucHJvZmlsZV9kYXRhZnJhbWUoZGYpCiAgICBzY29yZSwgcmVhc29ucyA9IHByb2ZpbGVfbW9kLmhlYWx0aF9zY29yZShwcm9mKQogICAgYW5vbSA9IGFub21hbGllcy5maW5kX2Fub21hbGllcyhkZiwgdHlwZXMpCiAgICBkciA9IGRyaWZ0LmZpbmRfY2hhbmdlX3BvaW50cyhkZiwgdHlwZXMpCiAgICByZWwgPSByZWxhdGlvbnMuZmluZF9yZWxhdGlvbnNoaXBzKGRmLCB0eXBlcykKICAgIHBhY2sgPSBmYWN0cy5idWlsZF9mYWN0c19wYWNrKHByb2YsIHNjb3JlLCByZWFzb25zLCBhbm9tLCBkciwgcmVsKQoKICAgIHJldHVybiB7CiAgICAgICAgImZpbGVfaGFzaCI6IGhhc2hsaWIuc2hhMjU2KHJhdykuaGV4ZGlnZXN0KCksCiAgICAgICAgImVuZ2luZV92ZXJzaW9uIjogRU5HSU5FX1ZFUlNJT04sCiAgICAgICAgImhlYWx0aF9zY29yZSI6IHNjb3JlLAogICAgICAgICJzY29yZV9yZWFzb25zIjogcmVhc29ucywKICAgICAgICAicHJvZmlsZSI6IHByb2YsCiAgICAgICAgImFub21hbGllcyI6IGFub20sCiAgICAgICAgImRyaWZ0IjogZHIsCiAgICAgICAgInJlbGF0aW9ucyI6IHJlbCwKICAgICAgICAiZmFjdHNfcGFjayI6IHBhY2ssCiAgICB9Cg==
+"""CSV Doctor engine API (FastAPI).
+
+GET /health and POST /analyse: parse + profile + health score + the anomaly
+ensemble (Phase A1: per-row results with reasons under "anomalies").
+Drift/relations still return their honest 'skipped / not implemented yet'
+stubs. The LLM summary is a separate web-app route (Day 10) —
+this service never calls a model.
+"""
+from __future__ import annotations
+
+import hashlib
+
+from fastapi import FastAPI, File, HTTPException, UploadFile
+
+from .engine import anomalies, drift, facts, profile as profile_mod, relations
+from .engine.parse import ParseError, infer_types, parse_csv_bytes
+
+# Bump on any change to analysis output: reports are cached by file hash + version.
+ENGINE_VERSION = "0.2.0-a1"
+
+app = FastAPI(title="CSV Doctor Engine", version=ENGINE_VERSION)
+
+
+@app.get("/health")
+def health():
+    return {"ok": True, "engine_version": ENGINE_VERSION}
+
+
+@app.post("/analyse")
+async def analyse(file: UploadFile = File(...)):
+    raw = await file.read()
+    try:
+        df = parse_csv_bytes(raw)
+    except ParseError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+    types = infer_types(df)
+    prof = profile_mod.profile_dataframe(df)
+    score, reasons = profile_mod.health_score(prof)
+    anom = anomalies.find_anomalies(df, types)
+    dr = drift.find_change_points(df, types)
+    rel = relations.find_relationships(df, types)
+    pack = facts.build_facts_pack(prof, score, reasons, anom, dr, rel)
+
+    return {
+        "file_hash": hashlib.sha256(raw).hexdigest(),
+        "engine_version": ENGINE_VERSION,
+        "health_score": score,
+        "score_reasons": reasons,
+        "profile": prof,
+        "anomalies": anom,
+        "drift": dr,
+        "relations": rel,
+        "facts_pack": pack,
+    }
