@@ -1,1 +1,141 @@
-IyBDU1YgRG9jdG9yIOKAlCBQcm9kdWN0aW9uIEd1aWRlICh0aGUgZnVsbCB3b3JraW5nIG1vZGVsKQoKR29hbDogQ1NWIERvY3RvciBsaXZlIG9uIHRoZSBwdWJsaWMgaW50ZXJuZXQgYXMgS2h1c2hpJ3MgT1dOIHByb2R1Y3Qg4oCUCm93biBkb21haW4sIG93biBjbG91ZCBWTSwgcmVhbCBiYWNrZW5kLCBDSS9DRCBzaGlwcGluZyBmcm9tIEdpdEh1YiDigJQKYnVpbHQgdG8gdGhlIHNhbWUgcHJvZHVjdGlvbiBzdGFuZGFyZCBhcyBjb2Rlc2NyaWV0LmRldiwgd2hvc2Ugc3RhY2sKd2FzIHZlcmlmaWVkIGxpdmUgb24gMjAyNi0xMS0xMSAoc2VlIMKnMSkuIEV2ZXJ5dGhpbmcgaGVyZSBpcyBlaXRoZXIKYWxyZWFkeSBidWlsdCBpbiB0aGlzIHJlcG8gb3IgYW4gZXhwbGljaXQgc3RlcCB3aXRoIGFuIG93bmVyLgoKIyMgMS4gUmVmZXJlbmNlIHRlYXJkb3duOiBjb2Rlc2NyaWV0LmRldiAodmVyaWZpZWQgMjAyNi0xMS0xMSkKCkV2aWRlbmNlIGZyb20gdGhlIHNpdGUncyBvd24gcGFnZSB0ZXh0ICsgbGl2ZSBIVFRQL0ROUyBjaGVja3M6Cgp8IExheWVyIHwgY29kZXNjcmlldC5kZXYgKG9ic2VydmVkKSB8IEV2aWRlbmNlIHwKfC0tLXwtLS18LS0tfAp8IEVkZ2UgLyBETlMgLyBUTFMgfCBDbG91ZGZsYXJlIGluIGZyb250IChDRE4sIFdBRiwgSFRUUFMsIEhUVFAvMykgfCBgU2VydmVyOiBjbG91ZGZsYXJlYCwgQ0YtUmF5LCBgYWx0LXN2YzogaDNgLCBIU1RTIHByZWxvYWQgfAp8IFNlY3VyaXR5IGhlYWRlcnMgfCBTdHJpY3QgQ1NQLCBYLUZyYW1lLU9wdGlvbnMgREVOWSwgbm9zbmlmZiwgUmVmZXJyZXItUG9saWN5IHwgcmVzcG9uc2UgaGVhZGVycyB8CnwgQW5hbHl0aWNzIHwgQ2xvdWRmbGFyZSBXZWIgQW5hbHl0aWNzIChwcml2YWN5LWZyaWVuZGx5LCBubyBjb29raWVzKSB8IENTUCBhbGxvd3MgYHN0YXRpYy5jbG91ZGZsYXJlaW5zaWdodHMuY29tYCB8CnwgSG9zdGluZyB8ICoqT3JhY2xlIENsb3VkIFZNKiogfCBzaXRlIHRleHQ6ICJkZXBsb3llZCBvbiBPcmFjbGUgQ2xvdWQiIHwKfCBXZWIgc2VydmVyIHwgKipDYWRkeSoqIChyZXZlcnNlIHByb3h5LCBhdXRvLUhUVFBTKSB8IHNpdGUgdGV4dDogInNlcnZlZCBieSBDYWRkeSIgfAp8IFNoaXBwaW5nIHwgR2l0SHViIG9yZ2FuaXNhdGlvbiDihpIgZGVwbG95IHBpcGVsaW5lIHwgc2l0ZSB0ZXh0OiAic2hpcHBlZCB0aHJvdWdoIHRoZSBjb2Rlc2NyaWV0IEdpdEh1YiBvcmdhbmlzYXRpb24iIHwKfCBBcHAgc3RhY2sgfCBSZWFjdCArIFR5cGVTY3JpcHQgKyBOb2RlICsgUHJpc21hICsgUG9zdGdyZVNRTCB8IHNpdGUgdGV4dCAod2ViL3Byb2R1Y3QgcGlsbGFyKSB8CnwgUHJvZHVjdHMgfCBtYWluIHNpdGUgKyBgY29kZS5gIHBsYXlncm91bmQgc3ViZG9tYWluLCBldmVudHMsIHRlYW0sIHJlY3J1aXRtZW50IChKb2luIFVzKSB8IHBhZ2Ugc3RydWN0dXJlIHwKCioqVGhlIHBhdHRlcm4gaW4gb25lIGxpbmU6KiogQ2xvdWRmbGFyZSDihpIgT3JhY2xlIFZNIOKGkiBDYWRkeSDihpIgYXBwICsKZGF0YWJhc2UsIHNoaXBwZWQgZnJvbSBHaXRIdWIuIENTViBEb2N0b3IncyBkZXBsb3kgYXV0b21hdGlvbgooYnVpbHQgMjAyNi0xMS0wOCkgYWxyZWFkeSBpbXBsZW1lbnRzIHRoaXMgZXhhY3QgcGF0dGVybi4KCiMjIDIuIENTViBEb2N0b3IgdGFyZ2V0IGFyY2hpdGVjdHVyZQoKYGBgClVzZXIg4pSA4pSA4pa6IENsb3VkZmxhcmUgKEROUyDCtyBDRE4gwrcgV0FGIMK3IFRMUyDCtyBXZWIgQW5hbHl0aWNzKQogICAgICAgICAgICDilIIgIHByb3hpZWQgKG9yYW5nZS1jbG91ZCkgQSByZWNvcmQKICAgICAgICAgICAg4pa8CiAgICAgIE9yYWNsZSBDbG91ZCBWTSDigJQgVWJ1bnR1IDI0LjA0LCBBbHdheXMgRnJlZSBBUk0gNCBPQ1BVIC8gMjQgR0IKICAgICAgICAgICAg4pSCICBDYWRkeSDigJQgb25seSBwdWJsaWMgZG9vciAoODAvNDQzKSwgYXV0by1IVFRQUywKICAgICAgICAgICAg4pSCICAvYXBpLyog4oaSIGVuZ2luZSwgZXZlcnl0aGluZyBlbHNlIOKGkiB3ZWIKICAgICAgICAgICAg4pSc4pSA4pSA4pa6IHdlYiAgICAoTmV4dC5qcywgaW50ZXJuYWwgOjMwMDApCiAgICAgICAgICAgIOKUnOKUgOKUgOKWuiBlbmdpbmUgKEZhc3RBUEksIGludGVybmFsIDo3ODYwKQogICAgICAgICAgICDilIIgICAgICAgcGFyc2Ug4oaSIHByb2ZpbGUg4oaSIEhlYWx0aCBTY29yZSDihpIgYW5vbWFsaWVzCiAgICAgICAgICAgIOKUgiAgICAgICAoZW5zZW1ibGUpIOKGkiBkcmlmdCDihpIgZGVkdXBlIOKGkiBBc2stWW91ci1EYXRhCiAgICAgICAgICAgIOKUnOKUgOKUgOKWuiB3b3JrZXIgKENlbGVyeSArIFJlZGlzIOKAlCBQaGFzZSBDOiBiaWcgZmlsZXMsIGFzeW5jCiAgICAgICAgICAgIOKUgiAgICAgICBqb2JzLCBsaXZlIHByb2dyZXNzIG92ZXIgU1NFKQogICAgICAgICAgICDilJTilIDilIDilrogZGF0YSAgICh1cGxvYWRzIHZvbHVtZSwgRHVja0RCIGZvciB+MU0tcm93IHNjYW5zOwogICAgICAgICAgICAgICAgICAgICAgICBTUUxpdGUvUG9zdGdyZXMgYWRkZWQgb25seSB3aGVuIHVzZXIKICAgICAgICAgICAgICAgICAgICAgICAgYWNjb3VudHMgbGFuZCDigJQgWUFHTkkgdW50aWwgdGhlbikKICAgICAgR2l0SHViIEFjdGlvbnMg4pSA4pSAU1NI4pSA4pSA4pa6IFZNOiBnaXQgcHVsbCArIGRvY2tlciBjb21wb3NlIHVwIC0tYnVpbGQKICAgICAgICAgICAgICAgICAgICAgICAgKHRlc3RzIG11c3QgcGFzcyBiZWZvcmUgZGVwbG95IHJ1bnMpCmBgYAoKRGlmZmVyZW5jZXMgZnJvbSB0aGUgY2x1YiBzaXRlLCBvbiBwdXJwb3NlOiB0aGUgZW5naW5lIGlzIFB5dGhvbi9GYXN0QVBJCih0aGUgTUwgaXMgdGhlIHByb2R1Y3QpLCBhbmQgQ2VsZXJ5L1JlZGlzIGV4aXN0IGJlY2F1c2UgcHJvZmlsaW5nIGEgMU0tcm93CkNTViBjYW5ub3QgYmxvY2sgYSB3ZWIgcmVxdWVzdCB0aGUgd2F5IGEgbm9ybWFsIENSVUQgcGFnZSBjYW4uCgojIyAzLiBHYXAgdGFibGUg4oCUIHdoYXQgZXhpc3RzIHZzIHdoYXQncyBtaXNzaW5nCgp8IFBpZWNlIHwgU3RhdHVzIHwKfC0tLXwtLS18CnwgRG9ja2VyIENvbXBvc2Ugc3RhY2sgKENhZGR5ICsgd2ViICsgZW5naW5lICsgUmVkaXMpIHwg4pyFIEJ1aWx0IDIwMjYtMTEtMDggfAp8IFZNIHNldHVwIHNjcmlwdCAoRG9ja2VyLCBmaXJld2FsbCwgZmFpbDJiYW4sIHN3YXApIHwg4pyFIEJ1aWx0IHwKfCBEZXBsb3kgc2NyaXB0ICsgR2l0SHViIEFjdGlvbnMgKHRlc3Qg4oaSIFNTSCBkZXBsb3kpIHwg4pyFIEJ1aWx0IHwKfCBFbmdpbmU6IHByb2ZpbGUgKyBIZWFsdGggU2NvcmUgfCDinIUgV29ya2luZyAoRGF5IDEpIHwKfCBFbmdpbmU6IGFub21hbHkgZW5zZW1ibGUgfCDinIUgQnVpbHQgYnkgQ2xhdWRlIENvZGUgMjAyNi0xMS0xMSAoMSB0ZXN0IGZpeCBwZW5kaW5nKSB8CnwgRW5naW5lOiBiZW5jaG1hcmssIGRyaWZ0LCBkZWR1cGUsIEFzay1Zb3VyLURhdGEgfCDij7MgU3ByaW50IFBoYXNlcyBBMuKAk0IgfAp8IEdpdEh1YiByZXBvIHB1c2ggKERldkstMjYvY3N2LWRvY3RvcikgfCDinYwgUmVwbyBleGlzdHMsIHN0aWxsIGVtcHR5IOKAlCBLaHVzaGkgfAp8IE9yYWNsZSBDbG91ZCBhY2NvdW50ICsgVk0gfCDinYwgQmxvY2tlZCBvbiBTaHViaGFtIHNpZ251cCAoYWNjb3VudCBpbiBoaXMgbmFtZSwgS2h1c2hpIGFzIE9DSSBhZG1pbikgfAp8IERvbWFpbiB8IOKdjCBOb3QgYm91Z2h0IHlldCDigJQgS2h1c2hpIChwYXltZW50IHN0ZXApIHwKfCBDbG91ZGZsYXJlIEROUyArIHByb3h5IGluIGZyb250IG9mIHRoZSBWTSB8IOKdjCAxNS1taW4gc2V0dXAgb25jZSBkb21haW4gKyBWTSBleGlzdCDigJQgZ3VpZGVkIHwKfCBVcHRpbWUgbW9uaXRvciArIGJhY2t1cHMgfCDinYwgQ29uZmlndXJlZCBhdCBmaXJzdCBkZXBsb3kg4oCUIGd1aWRlZCB8CgojIyA0LiBCdWlsZCBvcmRlciAoZWFjaCBzdGVwOiBvd25lciArIGRvbmUtdGVzdCkKCjEuICoqW0todXNoaV0gR2l0SHViIHB1c2gqKiDigJQgcmVwbyBzdG9wcyBiZWluZyBlbXB0eTsgQWN0aW9ucyBydW5zIHRoZQogICB0ZXN0IGpvYiBvbiBldmVyeSBwdXNoIGZyb20gbm93IG9uLiBEb25lLXRlc3Q6IGZpbGVzIHZpc2libGUgYXQKICAgZ2l0aHViLmNvbS9EZXZLLTI2L2Nzdi1kb2N0b3IuCjIuICoqW0todXNoaSArIFNodWJoYW1dIE9yYWNsZSBhY2NvdW50Kiog4oCUIGhpcyBzaWdudXAgKHRlbmFuY3kKICAgYHN5MzIzMzMzYCwgTXVtYmFpKSwgY2FyZCBPbmxpbmUrSW50ZXJuYXRpb25hbCBPTiBmaXJzdDsgdGhlbiBoZSBhZGRzCiAgIEtodXNoaSBhcyBhbiBPQ0kgYWRtaW4gdXNlci4gRG9uZS10ZXN0OiBLaHVzaGkgY2FuIHNpZ24gaW4gdG8gdGhlCiAgIGNvbnNvbGUgaGVyc2VsZi4KMy4gKipbR3VpZGVkXSBWTSBjcmVhdGlvbioqIOKAlCBVYnVudHUgMjQuMDQsIEExLkZsZXggNCBPQ1BVLzI0IEdCLAogICA1MCBHQiBib290LCBwdWJsaWMgSVAsIFNTSCBrZXk7IG9wZW4gaW5ncmVzcyA4MC80NDMuIFRoZW4KICAgYGRlcGxveS9vcmFjbGUvc2V0dXAtdm0uc2hgIOKGkiBsb2cgb3V0L2luIOKGkiBgZGVwbG95L3NjcmlwdHMvZGVwbG95LnNoYC4KICAgRG9uZS10ZXN0OiBgSEVBTFRIIE9LYCBhbmQgdGhlIHNpdGUgYW5zd2VycyBvbiB0aGUgVk0ncyBwdWJsaWMgSVAuCjQuICoqW0todXNoaV0gRG9tYWluKiog4oCUIGJ1eSBvbiAqKkNsb3VkZmxhcmUgUmVnaXN0cmFyKiogKGF0LWNvc3QKICAgcHJpY2luZywgZnJlZSBXSE9JUyBwcml2YWN5LCBETlMgYWxyZWFkeSBpbiB0aGUgcmlnaHQgcGxhY2UpLgogICBGaXJzdCBjaG9pY2UgYGNzdmRvY3Rvci5kZXZgICguZGV2IGZvcmNlcyBIVFRQUyDigJQgZmluZSwgQ2FkZHkKICAgaXNzdWVzIGNlcnRzIGF1dG9tYXRpY2FsbHkpOyBmYWxsYmFja3MgYC5hcHBgLCBgLmlvYC4gQnVkZ2V0CiAgIHJvdWdobHkg4oK5OTAw4oCTMSwzMDAveWVhciAocmVnaXN0cmFyIHNob3dzIHRoZSBleGFjdCBwcmljZSBiZWZvcmUKICAgcGF5bWVudCDigJQgdGhhdCBudW1iZXIgd2lucyBvdmVyIGFueSBlc3RpbWF0ZSBoZXJlKS4KNS4gKipbR3VpZGVkXSBDbG91ZGZsYXJlIHdpcmluZyoqIOKAlCBhZGQgc2l0ZSB0byBDbG91ZGZsYXJlLCBBIHJlY29yZAogICBgY3N2ZG9jdG9yLmRldiDihpIgPFZNIHB1YmxpYyBJUD5gIHdpdGggcHJveHkgT04sIGB3d3dgIENOQU1FIHRvCiAgIHJvb3QsIFNTTC9UTFMgbW9kZSAqKkZ1bGwgKHN0cmljdCkqKiwgc2V0IGBET01BSU49Y3N2ZG9jdG9yLmRldmAKICAgaW4gdGhlIFZNIGAuZW52YCwgcmUtcnVuIGRlcGxveS4gRG9uZS10ZXN0OiBgaHR0cHM6Ly9jc3Zkb2N0b3IuZGV2YAogICBsb2FkcyB3aXRoIGEgdmFsaWQgcGFkbG9jayBhbmQgdGhlIHJlc3BvbnNlIGNhcnJpZXMgQ2xvdWRmbGFyZQogICBoZWFkZXJzIOKAlCB0aGUgc2FtZSBmaW5nZXJwcmludCBhcyBjb2Rlc2NyaWV0LmRldi4KNi4gKipbR3VpZGVkXSBHaXRIdWIgc2VjcmV0cyoqIOKAlCBPUkFDTEVfSE9TVCAvIE9SQUNMRV9VU0VSIC8KICAgT1JBQ0xFX1NTSF9LRVkgKGRlZGljYXRlZCBkZXBsb3kga2V5IG9uIHRoZSBWTSkuIERvbmUtdGVzdDogYSBwdXNoCiAgIHRvIGBtYWluYCBkZXBsb3lzIGl0c2VsZjsgbm9ib2R5IFNTSGVzIGJ5IGhhbmQgZm9yIHJlbGVhc2VzIGFnYWluLgo3LiAqKltHdWlkZWRdIE9wcyBiYXNpY3MgKDMwIG1pbiwgb25jZSkqKiDigJQgVXB0aW1lUm9ib3QgZnJlZSBtb25pdG9yCiAgIG9uIGAvYXBpL2hlYWx0aGAgKGVtYWlsIGFsZXJ0IGlmIHRoZSBzaXRlIGRpZXMpLCBDbG91ZGZsYXJlIFdlYgogICBBbmFseXRpY3MgYmVhY29uIGluIHRoZSB3ZWIgYXBwLCBsb2cgcm90YXRpb24gY2hlY2ssIGFuZCBhIHdlZWtseQogICBiYWNrdXAgc2NyaXB0ICh1cGxvYWRzIHZvbHVtZSArIGFueSBEQiBkdW1wLCB0aW1lc3RhbXBlZCwga2VwdCBvbgogICB0aGUgVk07IGNvcHkgdG8gb2JqZWN0IHN0b3JhZ2Ugd2hlbiBhY2NvdW50cyBsYW5kKS4KOC4gKipbQ2xhdWRlIENvZGVdIFByb2R1Y3QgcGhhc2VzIGNvbnRpbnVlKiog4oCUIEEyIGJlbmNobWFyayDihpIgQTMgZHJpZnQKICAg4oaSIEIgZGVkdXBlL0Fzay1Zb3VyLURhdGEg4oaSIEMgYXN5bmMgc2NhbGUg4oCUIGVhY2ggbWVyZ2VkIG9ubHkgd2l0aAogICB0ZXN0cyBncmVlbiwgZWFjaCBhdXRvLWRlcGxveWVkIGJ5IHN0ZXAgNi4KCiMjIDUuIEV4cGVydCBydWxlcyBiYWtlZCBpbnRvIHRoaXMgc2V0dXAKCi0gKipPbmUgcHVibGljIGRvb3IuKiogT25seSBDYWRkeSBmYWNlcyB0aGUgaW50ZXJuZXQ7IHdlYi9lbmdpbmUvUmVkaXMKICBwb3J0cyBhcmUgaW50ZXJuYWwgdG8gdGhlIENvbXBvc2UgbmV0d29yay4gU2FtZSByZWFzb24gY29kZXNjcmlldAogIHNpdHMgYmVoaW5kIENsb3VkZmxhcmUgKmFuZCogQ2FkZHkg4oCUIHR3byBjaGVhcCBsYXllcnMsIGVhY2ggZG9pbmcKICBvbmUgam9iLgotICoqVGVzdHMgZ2F0ZSBkZXBsb3lzLioqIEFjdGlvbnMgcnVucyBweXRlc3QgZmlyc3Q7IGEgcmVkIHN1aXRlIG1lYW5zCiAgdGhlIFZNIG5ldmVyIHNlZXMgdGhlIGNvZGUuCi0gKipTZWNyZXRzIGxpdmUgaW4gZXhhY3RseSB0d28gcGxhY2VzOioqIHRoZSBWTSdzIGAuZW52YCAobmV2ZXIgaW4KICBHaXQpIGFuZCBHaXRIdWIgQWN0aW9ucyBzZWNyZXRzLiBUaGUgQ2xhdWRlIE9BdXRoIHRva2VuIHN0YXlzIG9uIHRoZQogIGJ1aWxkIG1hY2hpbmUsIG5ldmVyIG9uIHRoZSBWTS4KLSAqKlVwbG9hZHMgYXJlIGhvc3RpbGUgaW5wdXQuKiogU2l6ZSBjYXAgYXQgQ2FkZHksIHBhcnNlIGluIHRoZQogIGVuZ2luZSB3aXRoIHJvdy9jb2x1bW4gbGltaXRzLCBmaWxlcyBkZWxldGVkIGFmdGVyIGFuYWx5c2lzIHVubGVzcwogIHRoZSB1c2VyIGV4cGxpY2l0bHkgc2F2ZXMgdGhlbS4KLSAqKk1lYXN1cmUsIGRvbid0IGNsYWltLioqIFVwdGltZSAlLCBwOTUgbGF0ZW5jeSwgcm93cy9zZWMgYW5kIHRoZQogIGFub21hbHkgYmVuY2htYXJrIHRhYmxlIGluIHRoZSBSRUFETUUgYWxsIGNvbWUgZnJvbSBtb25pdG9ycyBhbmQKICBiZW5jaG1hcmsgc2NyaXB0cyDigJQgdGhlIHNhbWUgZXZpZGVuY2Ugc3RhbmRhcmQgYXMgdGhlIGVuZ2luZSBpdHNlbGYuCgojIyA2LiBSdW5uaW5nIGNvc3QKCnwgSXRlbSB8IENvc3QgfAp8LS0tfC0tLXwKfCBPcmFjbGUgQWx3YXlzIEZyZWUgVk0gKDQgT0NQVSAvIDI0IEdCLCBNdW1iYWkpIHwg4oK5MCDigJQgbmV2ZXIgZXhwaXJlcyB8CnwgQ2xvdWRmbGFyZSAoRE5TL0NETi9XQUYvYW5hbHl0aWNzLCBmcmVlIHRpZXIpIHwg4oK5MCB8CnwgVXB0aW1lUm9ib3QgZnJlZSB0aWVyIHwg4oK5MCB8CnwgRG9tYWluICh+MSB5ZWFyKSB8IH7igrk5MDDigJMxLDMwMCDigJQgdGhlIG9ubHkgcmVjdXJyaW5nIGNvc3QgfAoKIyMgNy4gV2h5IHRoaXMgc2hhcGUgd2lucyBpbnRlcnZpZXdzCgpJdCBpcyB0aGUgY2x1YiBwbGF0Zm9ybSdzIHByb2R1Y3Rpb24gcGF0dGVybiDigJQgQ2xvdWRmbGFyZSDihpIgT3JhY2xlIOKGkgpDYWRkeSDihpIgR2l0SHViLXNoaXBwZWQgYXBwcyDigJQgcmVidWlsdCB1bmRlciBoZXIgb3duIGJyYW5kLCB3aXRoIGEKaGFyZGVyIGJhY2tlbmQ6IGEgcmVhbCBNTCBlbmdpbmUsIGFzeW5jIHdvcmtlcnMsIGJlbmNobWFya3MgYW5kIGEKdGVzdC1nYXRlZCBwaXBlbGluZS4gIkkgcnVuIG15IG93biBwcm9kdWN0IG9uIHRoZSBzYW1lIGFyY2hpdGVjdHVyZQphcyBvdXIgY29sbGVnZSdzIHBsYXRmb3JtLCB3aGljaCBJIGFsc28gaGVscGVkIGJ1aWxkIiBpcyBhIHN0b3J5CndpdGggdHdvIGxpdmUgVVJMcyBhcyBwcm9vZi4K
+# CSV Doctor — Production Guide (the full working model)
+
+Goal: CSV Doctor live on the public internet as Khushi's OWN product —
+own domain, own cloud VM, real backend, CI/CD shipping from GitHub —
+built to the same production standard as codescriet.dev, whose stack
+was verified live on 2026-11-11 (see §1). Everything here is either
+already built in this repo or an explicit step with an owner.
+
+## 1. Reference teardown: codescriet.dev (verified 2026-11-11)
+
+Evidence from the site's own page text + live HTTP/DNS checks:
+
+| Layer | codescriet.dev (observed) | Evidence |
+|---|---|---|
+| Edge / DNS / TLS | Cloudflare in front (CDN, WAF, HTTPS, HTTP/3) | `Server: cloudflare`, CF-Ray, `alt-svc: h3`, HSTS preload |
+| Security headers | Strict CSP, X-Frame-Options DENY, nosniff, Referrer-Policy | response headers |
+| Analytics | Cloudflare Web Analytics (privacy-friendly, no cookies) | CSP allows `static.cloudflareinsights.com` |
+| Hosting | **Oracle Cloud VM** | site text: "deployed on Oracle Cloud" |
+| Web server | **Caddy** (reverse proxy, auto-HTTPS) | site text: "served by Caddy" |
+| Shipping | GitHub organisation → deploy pipeline | site text: "shipped through the codescriet GitHub organisation" |
+| App stack | React + TypeScript + Node + Prisma + PostgreSQL | site text (web/product pillar) |
+| Products | main site + `code.` playground subdomain, events, team, recruitment (Join Us) | page structure |
+
+**The pattern in one line:** Cloudflare → Oracle VM → Caddy → app +
+database, shipped from GitHub. CSV Doctor's deploy automation
+(built 2026-11-08) already implements this exact pattern.
+
+## 2. CSV Doctor target architecture
+
+```
+User ──► Cloudflare (DNS · CDN · WAF · TLS · Web Analytics)
+            │  proxied (orange-cloud) A record
+            ▼
+      Oracle Cloud VM — Ubuntu 24.04, Always Free ARM 4 OCPU / 24 GB
+            │  Caddy — only public door (80/443), auto-HTTPS,
+            │  /api/* → engine, everything else → web
+            ├──► web    (Next.js, internal :3000)
+            ├──► engine (FastAPI, internal :7860)
+            │       parse → profile → Health Score → anomalies
+            │       (ensemble) → drift → dedupe → Ask-Your-Data
+            ├──► worker (Celery + Redis — Phase C: big files, async
+            │       jobs, live progress over SSE)
+            └──► data   (uploads volume, DuckDB for ~1M-row scans;
+                        SQLite/Postgres added only when user
+                        accounts land — YAGNI until then)
+      GitHub Actions ──SSH──► VM: git pull + docker compose up --build
+                        (tests must pass before deploy runs)
+```
+
+Differences from the club site, on purpose: the engine is Python/FastAPI
+(the ML is the product), and Celery/Redis exist because profiling a 1M-row
+CSV cannot block a web request the way a normal CRUD page can.
+
+## 3. Gap table — what exists vs what's missing
+
+| Piece | Status |
+|---|---|
+| Docker Compose stack (Caddy + web + engine + Redis) | ✅ Built 2026-11-08 |
+| VM setup script (Docker, firewall, fail2ban, swap) | ✅ Built |
+| Deploy script + GitHub Actions (test → SSH deploy) | ✅ Built |
+| Engine: profile + Health Score | ✅ Working (Day 1) |
+| Engine: anomaly ensemble | ✅ Built by Claude Code 2026-11-11 (1 test fix pending) |
+| Engine: benchmark, drift, dedupe, Ask-Your-Data | ⏳ Sprint Phases A2–B |
+| GitHub repo push (DevK-26/csv-doctor) | ❌ Repo exists, still empty — Khushi |
+| Oracle Cloud account + VM | ❌ Blocked on Shubham signup (account in his name, Khushi as OCI admin) |
+| Domain | ❌ Not bought yet — Khushi (payment step) |
+| Cloudflare DNS + proxy in front of the VM | ❌ 15-min setup once domain + VM exist — guided |
+| Uptime monitor + backups | ❌ Configured at first deploy — guided |
+
+## 4. Build order (each step: owner + done-test)
+
+1. **[Khushi] GitHub push** — repo stops being empty; Actions runs the
+   test job on every push from now on. Done-test: files visible at
+   github.com/DevK-26/csv-doctor.
+2. **[Khushi + Shubham] Oracle account** — his signup (tenancy
+   `sy323333`, Mumbai), card Online+International ON first; then he adds
+   Khushi as an OCI admin user. Done-test: Khushi can sign in to the
+   console herself.
+3. **[Guided] VM creation** — Ubuntu 24.04, A1.Flex 4 OCPU/24 GB,
+   50 GB boot, public IP, SSH key; open ingress 80/443. Then
+   `deploy/oracle/setup-vm.sh` → log out/in → `deploy/scripts/deploy.sh`.
+   Done-test: `HEALTH OK` and the site answers on the VM's public IP.
+4. **[Khushi] Domain** — buy on **Cloudflare Registrar** (at-cost
+   pricing, free WHOIS privacy, DNS already in the right place).
+   First choice `csvdoctor.dev` (.dev forces HTTPS — fine, Caddy
+   issues certs automatically); fallbacks `.app`, `.io`. Budget
+   roughly ₹900–1,300/year (registrar shows the exact price before
+   payment — that number wins over any estimate here).
+5. **[Guided] Cloudflare wiring** — add site to Cloudflare, A record
+   `csvdoctor.dev → <VM public IP>` with proxy ON, `www` CNAME to
+   root, SSL/TLS mode **Full (strict)**, set `DOMAIN=csvdoctor.dev`
+   in the VM `.env`, re-run deploy. Done-test: `https://csvdoctor.dev`
+   loads with a valid padlock and the response carries Cloudflare
+   headers — the same fingerprint as codescriet.dev.
+6. **[Guided] GitHub secrets** — ORACLE_HOST / ORACLE_USER /
+   ORACLE_SSH_KEY (dedicated deploy key on the VM). Done-test: a push
+   to `main` deploys itself; nobody SSHes by hand for releases again.
+7. **[Guided] Ops basics (30 min, once)** — UptimeRobot free monitor
+   on `/api/health` (email alert if the site dies), Cloudflare Web
+   Analytics beacon in the web app, log rotation check, and a weekly
+   backup script (uploads volume + any DB dump, timestamped, kept on
+   the VM; copy to object storage when accounts land).
+8. **[Claude Code] Product phases continue** — A2 benchmark → A3 drift
+   → B dedupe/Ask-Your-Data → C async scale — each merged only with
+   tests green, each auto-deployed by step 6.
+
+## 5. Expert rules baked into this setup
+
+- **One public door.** Only Caddy faces the internet; web/engine/Redis
+  ports are internal to the Compose network. Same reason codescriet
+  sits behind Cloudflare *and* Caddy — two cheap layers, each doing
+  one job.
+- **Tests gate deploys.** Actions runs pytest first; a red suite means
+  the VM never sees the code.
+- **Secrets live in exactly two places:** the VM's `.env` (never in
+  Git) and GitHub Actions secrets. The Claude OAuth token stays on the
+  build machine, never on the VM.
+- **Uploads are hostile input.** Size cap at Caddy, parse in the
+  engine with row/column limits, files deleted after analysis unless
+  the user explicitly saves them.
+- **Measure, don't claim.** Uptime %, p95 latency, rows/sec and the
+  anomaly benchmark table in the README all come from monitors and
+  benchmark scripts — the same evidence standard as the engine itself.
+
+## 6. Running cost
+
+| Item | Cost |
+|---|---|
+| Oracle Always Free VM (4 OCPU / 24 GB, Mumbai) | ₹0 — never expires |
+| Cloudflare (DNS/CDN/WAF/analytics, free tier) | ₹0 |
+| UptimeRobot free tier | ₹0 |
+| Domain (~1 year) | ~₹900–1,300 — the only recurring cost |
+
+## 7. Why this shape wins interviews
+
+It is the club platform's production pattern — Cloudflare → Oracle →
+Caddy → GitHub-shipped apps — rebuilt under her own brand, with a
+harder backend: a real ML engine, async workers, benchmarks and a
+test-gated pipeline. "I run my own product on the same architecture
+as our college's platform, which I also helped build" is a story
+with two live URLs as proof.
