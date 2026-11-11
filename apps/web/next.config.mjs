@@ -1,1 +1,3 @@
-LyoqIEB0eXBlIHtpbXBvcnQoJ25leHQnKS5OZXh0Q29uZmlnfSAqLwpjb25zdCBuZXh0Q29uZmlnID0ge307CmV4cG9ydCBkZWZhdWx0IG5leHRDb25maWc7Cg==
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+export default nextConfig;
