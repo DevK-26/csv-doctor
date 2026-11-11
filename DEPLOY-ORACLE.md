@@ -1,1 +1,105 @@
-IyBDU1YgRG9jdG9yIG9uIE9yYWNsZSBWTSDigJQgRnVsbCBBdXRvbWF0aW9uIEd1aWRlCgpDb25maXJtZWQgdGFyZ2V0ICgyMDI2LTExLTA4KTogKipDU1YgRG9jdG9yIOKGkiBPcmFjbGUgQ2xvdWQgVk0sIGZ1bGx5IGF1dG9tYXRlZC4qKgoKIyMgV2hhdCBpcyBhbHJlYWR5IGJ1aWx0IGFuZCB2ZXJpZmllZAoKSW4gdGhlIHJlcG8gKG5ldyBmaWxlcywgcmVhZHkgZm9yIHlvdSB0byBjb21taXQpOgoKfCBGaWxlIHwgV2hhdCBpdCBkb2VzIHwKfC0tLXwtLS18CnwgYGRvY2tlci1jb21wb3NlLnltbGAgfCBXaG9sZSBzdGFjayBpbiBvbmUgY29tbWFuZDogQ2FkZHkgKyBXZWIgKE5leHQuanMpICsgRW5naW5lIChGYXN0QVBJKSArIFJlZGlzIHwKfCBgZGVwbG95L2NhZGR5L0NhZGR5ZmlsZWAgfCBPbmx5IHB1YmxpYyBkb29yLiBgL2FwaS8qYCDihpIgZW5naW5lLCBldmVyeXRoaW5nIGVsc2Ug4oaSIHdlYi4gQXV0by1IVFRQUyB3aGVuIGEgZG9tYWluIGlzIHNldCB8CnwgYGFwcHMvd2ViL0RvY2tlcmZpbGVgICsgYHRzY29uZmlnLmpzb25gICsgYG5leHQuY29uZmlnLm1qc2AgfCBXZWIgYXBwIGNhbiBub3cgYWN0dWFsbHkgYnVpbGQgaW4gRG9ja2VyICh0aGVzZSB3ZXJlIG1pc3NpbmcgaW4gRGF5IDEgc2tlbGV0b24pIHwKfCBgZGVwbG95L29yYWNsZS9zZXR1cC12bS5zaGAgfCBPbmUtdGltZSBWTSBzZXR1cDogdXBkYXRlcywgRG9ja2VyLCBmaXJld2FsbCwgZmFpbDJiYW4sIDJHQiBzd2FwIHwKfCBgZGVwbG95L3NjcmlwdHMvZGVwbG95LnNoYCB8IERlcGxveS91cGRhdGUgaW4gb25lIGNvbW1hbmQgKyBhdXRvbWF0aWMgaGVhbHRoIGNoZWNrIChgL2FwaS9oZWFsdGhgKSB8CnwgYC5naXRodWIvd29ya2Zsb3dzL2RlcGxveS55bWxgIHwgUHVzaCB0byBgbWFpbmAg4oaSIGVuZ2luZSB0ZXN0cyBydW4g4oaSIFNTSCBpbnRvIFZNIOKGkiBhdXRvLWRlcGxveSB8CnwgYC5lbnYuZXhhbXBsZWAgfCBPbmx5IHNldHRpbmcgbmVlZGVkOiBgRE9NQUlOYCAoYmxhbmsgPSBJUC1vbmx5IG1vZGUpIHwKClZlcmlmaWVkIGhlcmU6IGVuZ2luZSBydW5zIG9uIHRoZSBzYW1wbGUgZGF0YSAoc2FsZXMuY3N2IOKGkiAxODMgcm93cywgaGVhbHRoIHNjb3JlIDk4KSwgYWxsIHNjcmlwdHMgcGFzcyBiYXNoIHN5bnRheCBjaGVjaywgYm90aCBZQU1MIGZpbGVzIHBhcnNlLgoqKk5vdCB2ZXJpZmllZCBoZXJlOioqIGEgbGl2ZSBgZG9ja2VyIGNvbXBvc2UgdXBgIOKAlCBEb2NrZXIgaXMgbm90IGluc3RhbGxlZCBpbiBteSBzYW5kYm94IFZNLCBzbyB0aGUgZmlyc3QgbGl2ZSB0ZXN0IGlzIHRoZSBoZWFsdGggY2hlY2sgYnVpbHQgaW50byBgZGVwbG95LnNoYCBvbiB5b3VyIE9yYWNsZSBWTS4gSWYgaXQgZmFpbHMsIGl0IHByaW50cyB0aGUgbG9ncyBhdXRvbWF0aWNhbGx5LgoKSG9uZXN0IG5vdGUgb24gQ2xhdWRlOiB0aGUgZGVwbG95bWVudCBhdXRvbWF0aW9uIGRvZXMgKipub3QqKiBuZWVkIENsYXVkZSDigJQgaXQgaXMgc2NyaXB0ZWQgYWJvdmUuIFlvdXIgQ2xhdWRlIHN1YnNjcmlwdGlvbiBpcyB1c2VmdWwgZm9yIHRoZSAqbmV4dCBidWlsZCB3b3JrKiAoZmVhdHVyZXMpLiBXaGVuIHlvdSB3YW50IHRoYXQsIHRoZSBsb2dpbiByb3V0ZSBpczogSSBvcGVuIGNsYXVkZS5haSBpbiBteSBicm93c2VyLCB5b3UgbG9nIGluIHlvdXJzZWxmIHRocm91Z2ggdGhlIHNlY3VyZSBjYXJkIC8gdGFrZW92ZXIgKEkgbmV2ZXIgc2VlIHlvdXIgcGFzc3dvcmQpLCBhbmQgd2Ugd29yayBmcm9tIHRoZXJlLiBEb24ndCBzaGFyZSB5b3VyIHBhc3N3b3JkIGluIGNoYXQuCgotLS0KCiMjIFN0ZXAgMCDigJQgQ29kZSBtdXN0IGJlIG9uIEdpdEh1YiBmaXJzdCAoYmxvY2tlciBpZiBub3QgZG9uZSkKCllvdXIgRGF5IDEgc3RlcHMgd2VyZSBuZXZlciBjb25maXJtZWQ6IHB1YmxpYyByZXBvIGBjc3YtZG9jdG9yYCB1bmRlciAqKkRldkstMjYqKiwgZmlyc3QgY29tbWl0L3B1c2ggYnkgeW91LCBgcHl0ZXN0YCA9IDMgcGFzc2VkLgoKSWYgdGhlIHJlcG8gZG9lc24ndCBleGlzdCB5ZXQsIGRvIERheSAxIGZpcnN0IChEQVkxLm1kKSwgdGhlbiBhZGQgdGhlc2UgbmV3IGRlcGxveSBmaWxlcyBhbmQgY29tbWl0IHRoZW0geW91cnNlbGY6CgpgYGAKZ2l0IGFkZCBkb2NrZXItY29tcG9zZS55bWwgZGVwbG95IGFwcHMvd2ViL0RvY2tlcmZpbGUgYXBwcy93ZWIvdHNjb25maWcuanNvbiBhcHBzL3dlYi9uZXh0LmNvbmZpZy5tanMgLmdpdGh1YiAuZW52LmV4YW1wbGUgREVQTE9ZLU9SQUNMRS5tZApnaXQgY29tbWl0IC1tICJEZXBsb3k6IE9yYWNsZSBWTSBhdXRvbWF0aW9uIChEb2NrZXIgQ29tcG9zZSwgQ2FkZHksIEdpdEh1YiBBY3Rpb25zKSIKZ2l0IHB1c2gKYGBgCgojIyBTdGVwIDEg4oCUIE9yYWNsZSBDbG91ZCBhY2NvdW50CgoxLiBHbyB0byAqKmNsb3VkLm9yYWNsZS5jb20qKiDihpIgU2lnbiBVcCBmb3IgT3JhY2xlIENsb3VkLgoyLiBFbWFpbCB5b3UgY29udHJvbCArIGEgZGViaXQvY3JlZGl0IGNhcmQgZm9yIGlkZW50aXR5IHZlcmlmaWNhdGlvbiAoQWx3YXlzIEZyZWUgdGllciDigJQgYSBzbWFsbCB0ZW1wb3JhcnkgaG9sZCwgbm90IGEgY2hhcmdlIGZvciBmcmVlIHJlc291cmNlcykuCjMuICoqSG9tZSByZWdpb246IE11bWJhaSAoYXAtbXVtYmFpLTEpKiog4oCUIGNsb3Nlc3QgdG8gTWVlcnV0LCBsb3dlc3QgbGF0ZW5jeS4gUmVnaW9uIGNhbm5vdCBiZSBjaGFuZ2VkIGxhdGVyLgoKSWYgeW91IGFscmVhZHkgaGF2ZSBhbiBhY2NvdW50LCBza2lwIHRvIFN0ZXAgMiBhbmQgdGVsbCBtZSDigJQgSSBjYW4gZG8gU3RlcHMgMuKAkzUgd2l0aCB5b3UgbG9nZ2VkIGluIHZpYSBicm93c2VyIHRha2VvdmVyLgoKIyMgU3RlcCAyIOKAlCBDcmVhdGUgdGhlIFZNIChleGFjdCBzZXR0aW5ncykKCkNvbnNvbGUg4oaSIOKYsCDihpIgQ29tcHV0ZSDihpIgSW5zdGFuY2VzIOKGkiAqKkNyZWF0ZSBpbnN0YW5jZSoqCgotIE5hbWU6IGBjc3YtZG9jdG9yYAotIEltYWdlOiAqKkNhbm9uaWNhbCBVYnVudHUgMjQuMDQqKgotIFNoYXBlOiBDaGFuZ2Ugc2hhcGUg4oaSICoqQW1wZXJlKiog4oaSIGBWTS5TdGFuZGFyZC5BMS5GbGV4YCDihpIgKio0IE9DUFUsIDI0IEdCIFJBTSoqIChBbHdheXMgRnJlZSBlbGlnaWJsZSkKICAtIElmIGl0IHNheXMgIm91dCBvZiBjYXBhY2l0eSI6IHRyeSAyIE9DUFUgLyAxMiBHQiwgb3IgYSBkaWZmZXJlbnQgQXZhaWxhYmlsaXR5IERvbWFpbi4gVGhpcyBpcyBjb21tb24gZm9yIHRoZSBmcmVlIEFSTSBzaGFwZSDigJQgcmV0cnksIGRvbid0IHBheS4KLSBCb290IHZvbHVtZTogNTAgR0IKLSBOZXR3b3JraW5nOiBjcmVhdGUvc2VsZWN0IHRoZSBkZWZhdWx0IFZDTiArIHB1YmxpYyBzdWJuZXQsICoqYXNzaWduIGEgcHVibGljIElQdjQqKgotIFNTSCBrZXlzOiAqKkdlbmVyYXRlIGEga2V5IHBhaXIgZm9yIG1lKiog4oaSIGRvd25sb2FkIEJPVEgga2V5cyBhbmQga2VlcCB0aGVtIHNhZmUsIE9SIHBhc3RlIHlvdXIgb3duIHB1YmxpYyBrZXkuIFlvdSB3aWxsIG5lZWQgdGhlIHByaXZhdGUga2V5IHRvIGxvZyBpbiBhbmQgZm9yIEdpdEh1YiBBY3Rpb25zLgoKQ3JlYXRlIOKGkiB3YWl0IHVudGlsIHN0YXRlID0gKipSVU5OSU5HKiog4oaSIGNvcHkgdGhlICoqUHVibGljIElQKiouCgojIyBTdGVwIDMg4oCUIE9wZW4gdGhlIGRvb3JzIChtb3N0IHBlb3BsZSBnZXQgc3R1Y2sgaGVyZSkKClR3byBmaXJld2FsbHMsIGJvdGggbXVzdCBhbGxvdyA4MC80NDM6CgoxLiAqKkNsb3VkIHNpZGU6KiogSW5zdGFuY2UgZGV0YWlscyDihpIgU3VibmV0IOKGkiBEZWZhdWx0IFNlY3VyaXR5IExpc3Qg4oaSIEFkZCBJbmdyZXNzIFJ1bGVzOgogICAtIFNvdXJjZSBgMC4wLjAuMC8wYCwgVENQLCBEZXN0aW5hdGlvbiBwb3J0ICoqODAqKgogICAtIFNvdXJjZSBgMC4wLjAuMC8wYCwgVENQLCBEZXN0aW5hdGlvbiBwb3J0ICoqNDQzKioKICAgLSAoUG9ydCAyMi9TU0ggaXMgYWxyZWFkeSB0aGVyZSBieSBkZWZhdWx0KQoyLiAqKk9TIHNpZGU6KiogaGFuZGxlZCBhdXRvbWF0aWNhbGx5IGJ5IGBzZXR1cC12bS5zaGAgaW4gU3RlcCA0LgoKIyMgU3RlcCA0IOKAlCBTZXQgdXAgKyBkZXBsb3kgKDMgY29tbWFuZHMpCgpGcm9tIHlvdXIgbGFwdG9wIChyZXBsYWNlIElQKToKCmBgYGJhc2gKc3NoIC1pIDx5b3VyLWtleT4gdWJ1bnR1QDxWTS1QVUJMSUMtSVA+CmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vRGV2Sy0yNi9jc3YtZG9jdG9yLmdpdCB+L2Nzdi1kb2N0b3IKY2Qgfi9jc3YtZG9jdG9yICYmIGJhc2ggZGVwbG95L29yYWNsZS9zZXR1cC12bS5zaAojIGxvZyBvdXQgYW5kIGJhY2sgaW4gb25jZSAoRG9ja2VyIGdyb3VwKSwgdGhlbjoKY3AgLmVudi5leGFtcGxlIC5lbnYKYmFzaCBkZXBsb3kvc2NyaXB0cy9kZXBsb3kuc2gKYGBgCgpTdWNjZXNzIGxvb2tzIGxpa2U6IGBIRUFMVEggT0s6IHsib2siOiB0cnVlLCAuLi59YCBhbmQgdGhlIHNpdGUgbG9hZGluZyBhdCBgaHR0cDovLzxWTS1QVUJMSUMtSVA+YCB3aXRoIHRoZSBBUEkgYXQgYGh0dHA6Ly88Vk0tUFVCTElDLUlQPi9hcGkvaGVhbHRoYC4KCiMjIFN0ZXAgNSDigJQgVHVybiBvbiBwdXNoLXRvLWRlcGxveQoKMS4gT24gdGhlIFZNLCBjcmVhdGUgYSBkZWRpY2F0ZWQgZGVwbG95IGtleTogYHNzaC1rZXlnZW4gLXQgZWQyNTUxOSAtZiB+Ly5zc2gvZ2l0aHViX2RlcGxveSAtTiAiImAsIGFkZCBpdHMgYC5wdWJgIHRvIGB+Ly5zc2gvYXV0aG9yaXplZF9rZXlzYC4KMi4gSW4gR2l0SHViIHJlcG8g4oaSIFNldHRpbmdzIOKGkiBTZWNyZXRzIGFuZCB2YXJpYWJsZXMg4oaSIEFjdGlvbnMsIGFkZDoKICAgLSBgT1JBQ0xFX0hPU1RgID0gVk0gcHVibGljIElQCiAgIC0gYE9SQUNMRV9VU0VSYCA9IGB1YnVudHVgCiAgIC0gYE9SQUNMRV9TU0hfS0VZYCA9IHRoZSBwcml2YXRlIGtleSBmcm9tIHN0ZXAgMSAodGhlIG5vbi0ucHViIGZpbGUncyBjb250ZW50cykKMy4gUHVzaCBhbnl0aGluZyB0byBgbWFpbmAg4oaSIHdhdGNoIHRoZSAqKkFjdGlvbnMqKiB0YWI6IHRlc3RzIOKGkiBTU0gg4oaSIGRlcGxveSDihpIgaGVhbHRoIGNoZWNrLgoKIyMgU3RlcCA2IChsYXRlcikg4oCUIERvbWFpbiArIEhUVFBTCgpCdXkvcG9pbnQgYSBkb21haW4ncyBBIHJlY29yZCB0byB0aGUgVk0gSVAsIHNldCBgRE9NQUlOPXlvdXItZG9tYWluLmNvbWAgaW4gYC5lbnZgIG9uIHRoZSBWTSwgcmUtcnVuIGBkZXBsb3kuc2hgLiBDYWRkeSBnZXRzIHRoZSBIVFRQUyBjZXJ0aWZpY2F0ZSBhdXRvbWF0aWNhbGx5IOKAlCBubyBjZXJ0Ym90LCBubyBtYW51YWwgcmVuZXdhbC4KCiMjIFRyb3VibGVzaG9vdGluZwoKfCBTeW1wdG9tIHwgQ2F1c2UgLyBmaXggfAp8LS0tfC0tLXwKfCBTaXRlIHRpbWVzIG91dCwgU1NIIHdvcmtzIHwgU3RlcCAzIGNsb3VkIFNlY3VyaXR5IExpc3Qg4oCUIDgwLzQ0MyBub3Qgb3BlbiB8CnwgYGRvY2tlcjogcGVybWlzc2lvbiBkZW5pZWRgIHwgWW91IGRpZG4ndCBsb2cgb3V0L2luIGFmdGVyIHNldHVwLXZtLnNoIHwKfCBBY3Rpb25zIGRlcGxveSBmYWlscyBhdCBTU0ggfCBXcm9uZyBrZXkgaW4gYE9SQUNMRV9TU0hfS0VZYCBzZWNyZXQsIG9yIElQIGNoYW5nZWQgfAp8IEhlYWx0aCBjaGVjayBmYWlscyB8IGRlcGxveS5zaCBhbHJlYWR5IHByaW50cyB0aGUgbGFzdCA4MCBsb2cgbGluZXMg4oCUIHNlbmQgbWUgdGhhdCBzY3JlZW5zaG90L291dHB1dCB8Cg==
+# CSV Doctor on Oracle VM — Full Automation Guide
+
+Confirmed target (2026-11-08): **CSV Doctor → Oracle Cloud VM, fully automated.**
+
+## What is already built and verified
+
+In the repo (new files, ready for you to commit):
+
+| File | What it does |
+|---|---|
+| `docker-compose.yml` | Whole stack in one command: Caddy + Web (Next.js) + Engine (FastAPI) + Redis |
+| `deploy/caddy/Caddyfile` | Only public door. `/api/*` → engine, everything else → web. Auto-HTTPS when a domain is set |
+| `apps/web/Dockerfile` + `tsconfig.json` + `next.config.mjs` | Web app can now actually build in Docker (these were missing in Day 1 skeleton) |
+| `deploy/oracle/setup-vm.sh` | One-time VM setup: updates, Docker, firewall, fail2ban, 2GB swap |
+| `deploy/scripts/deploy.sh` | Deploy/update in one command + automatic health check (`/api/health`) |
+| `.github/workflows/deploy.yml` | Push to `main` → engine tests run → SSH into VM → auto-deploy |
+| `.env.example` | Only setting needed: `DOMAIN` (blank = IP-only mode) |
+
+Verified here: engine runs on the sample data (sales.csv → 183 rows, health score 98), all scripts pass bash syntax check, both YAML files parse.
+**Not verified here:** a live `docker compose up` — Docker is not installed in my sandbox VM, so the first live test is the health check built into `deploy.sh` on your Oracle VM. If it fails, it prints the logs automatically.
+
+Honest note on Claude: the deployment automation does **not** need Claude — it is scripted above. Your Claude subscription is useful for the *next build work* (features). When you want that, the login route is: I open claude.ai in my browser, you log in yourself through the secure card / takeover (I never see your password), and we work from there. Don't share your password in chat.
+
+---
+
+## Step 0 — Code must be on GitHub first (blocker if not done)
+
+Your Day 1 steps were never confirmed: public repo `csv-doctor` under **DevK-26**, first commit/push by you, `pytest` = 3 passed.
+
+If the repo doesn't exist yet, do Day 1 first (DAY1.md), then add these new deploy files and commit them yourself:
+
+```
+git add docker-compose.yml deploy apps/web/Dockerfile apps/web/tsconfig.json apps/web/next.config.mjs .github .env.example DEPLOY-ORACLE.md
+git commit -m "Deploy: Oracle VM automation (Docker Compose, Caddy, GitHub Actions)"
+git push
+```
+
+## Step 1 — Oracle Cloud account
+
+1. Go to **cloud.oracle.com** → Sign Up for Oracle Cloud.
+2. Email you control + a debit/credit card for identity verification (Always Free tier — a small temporary hold, not a charge for free resources).
+3. **Home region: Mumbai (ap-mumbai-1)** — closest to Meerut, lowest latency. Region cannot be changed later.
+
+If you already have an account, skip to Step 2 and tell me — I can do Steps 2–5 with you logged in via browser takeover.
+
+## Step 2 — Create the VM (exact settings)
+
+Console → ☰ → Compute → Instances → **Create instance**
+
+- Name: `csv-doctor`
+- Image: **Canonical Ubuntu 24.04**
+- Shape: Change shape → **Ampere** → `VM.Standard.A1.Flex` → **4 OCPU, 24 GB RAM** (Always Free eligible)
+  - If it says "out of capacity": try 2 OCPU / 12 GB, or a different Availability Domain. This is common for the free ARM shape — retry, don't pay.
+- Boot volume: 50 GB
+- Networking: create/select the default VCN + public subnet, **assign a public IPv4**
+- SSH keys: **Generate a key pair for me** → download BOTH keys and keep them safe, OR paste your own public key. You will need the private key to log in and for GitHub Actions.
+
+Create → wait until state = **RUNNING** → copy the **Public IP**.
+
+## Step 3 — Open the doors (most people get stuck here)
+
+Two firewalls, both must allow 80/443:
+
+1. **Cloud side:** Instance details → Subnet → Default Security List → Add Ingress Rules:
+   - Source `0.0.0.0/0`, TCP, Destination port **80**
+   - Source `0.0.0.0/0`, TCP, Destination port **443**
+   - (Port 22/SSH is already there by default)
+2. **OS side:** handled automatically by `setup-vm.sh` in Step 4.
+
+## Step 4 — Set up + deploy (3 commands)
+
+From your laptop (replace IP):
+
+```bash
+ssh -i <your-key> ubuntu@<VM-PUBLIC-IP>
+git clone https://github.com/DevK-26/csv-doctor.git ~/csv-doctor
+cd ~/csv-doctor && bash deploy/oracle/setup-vm.sh
+# log out and back in once (Docker group), then:
+cp .env.example .env
+bash deploy/scripts/deploy.sh
+```
+
+Success looks like: `HEALTH OK: {"ok": true, ...}` and the site loading at `http://<VM-PUBLIC-IP>` with the API at `http://<VM-PUBLIC-IP>/api/health`.
+
+## Step 5 — Turn on push-to-deploy
+
+1. On the VM, create a dedicated deploy key: `ssh-keygen -t ed25519 -f ~/.ssh/github_deploy -N ""`, add its `.pub` to `~/.ssh/authorized_keys`.
+2. In GitHub repo → Settings → Secrets and variables → Actions, add:
+   - `ORACLE_HOST` = VM public IP
+   - `ORACLE_USER` = `ubuntu`
+   - `ORACLE_SSH_KEY` = the private key from step 1 (the non-.pub file's contents)
+3. Push anything to `main` → watch the **Actions** tab: tests → SSH → deploy → health check.
+
+## Step 6 (later) — Domain + HTTPS
+
+Buy/point a domain's A record to the VM IP, set `DOMAIN=your-domain.com` in `.env` on the VM, re-run `deploy.sh`. Caddy gets the HTTPS certificate automatically — no certbot, no manual renewal.
+
+## Troubleshooting
+
+| Symptom | Cause / fix |
+|---|---|
+| Site times out, SSH works | Step 3 cloud Security List — 80/443 not open |
+| `docker: permission denied` | You didn't log out/in after setup-vm.sh |
+| Actions deploy fails at SSH | Wrong key in `ORACLE_SSH_KEY` secret, or IP changed |
+| Health check fails | deploy.sh already prints the last 80 log lines — send me that screenshot/output |
