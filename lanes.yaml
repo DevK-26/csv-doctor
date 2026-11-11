@@ -1,1 +1,25 @@
-IyBDU1YgRG9jdG9yIG1vZGVsIHJvdXRlciDigJQgRlJFRSBUSUVSUyBPTkxZLgojIFRoZSBzdW1tYXJ5IGxheWVyIGNhbGxzIGxhbmVzIGluIG9yZGVyIHVudGlsIG9uZSBhbnN3ZXJzLgojIEV2ZXJ5IGNhbGwgaXMgbG9nZ2VkIChtb2RlbF9jYWxscyB0YWJsZSkgYW5kIGNhY2hlZCBieSBmaWxlIGhhc2gsCiMgc28gYSByZXBlYXQgdXBsb2FkIGNvc3RzIDAgY2FsbHMuIENhcHMgY2hlY2tlZCBPY3QtTm92IDIwMjYg4oCUIHJlLWNoZWNrIG1vbnRobHkuCmxhbmVzOgogIC0gaWQ6IGdyb3EtOGIKICAgIHByb3ZpZGVyOiBncm9xCiAgICBtb2RlbDogbGxhbWEtMy4xLThiLWluc3RhbnQKICAgIHJvbGU6IHN1bW1hcnkgICAgICAgICAgICAjIGRlZmF1bHQ6IGV4cGxhaW5zIHRoZSBmYWN0cyBwYWNrCiAgICBkYWlseV9jYXA6IDE0NDAwCiAgLSBpZDogZ3JvcS03MGIKICAgIHByb3ZpZGVyOiBncm9xCiAgICBtb2RlbDogbGxhbWEtMy4zLTcwYi12ZXJzYXRpbGUKICAgIHJvbGU6IGRlZXAtc3VtbWFyeSAgICAgICAjIG9ubHkgd2hlbiB1c2VyIGNsaWNrcyAiRGVlcCBkaXZlIgogICAgZGFpbHlfY2FwOiAxMDAwCiAgLSBpZDogb3ItZnJlZQogICAgcHJvdmlkZXI6IG9wZW5yb3V0ZXIKICAgIG1vZGVsOiBvcGVucm91dGVyL2ZyZWUKICAgIHJvbGU6IGZhbGxiYWNrCiAgICBkYWlseV9jYXA6IDUwCnJ1bGVzOgogIC0gY2FjaGUtYnktZmlsZS1oYXNoICAgICAgICMgc2hhMjU2KGZpbGUgYnl0ZXMgKyBlbmdpbmVfdmVyc2lvbikKICAtIDhiLWZpcnN0CiAgLSBsb2ctZXZlcnktY2FsbAogIC0gc3RvcC1hdC1jYXAtYW5kLWRlZ3JhZGUgICMgcmVwb3J0IHNoaXBzIHdpdGhvdXQgc3VtbWFyeSBpZiBhbGwgbGFuZXMgYXJlIGNhcHBlZAo=
+# CSV Doctor model router — FREE TIERS ONLY.
+# The summary layer calls lanes in order until one answers.
+# Every call is logged (model_calls table) and cached by file hash,
+# so a repeat upload costs 0 calls. Caps checked Oct-Nov 2026 — re-check monthly.
+lanes:
+  - id: groq-8b
+    provider: groq
+    model: llama-3.1-8b-instant
+    role: summary            # default: explains the facts pack
+    daily_cap: 14400
+  - id: groq-70b
+    provider: groq
+    model: llama-3.3-70b-versatile
+    role: deep-summary       # only when user clicks "Deep dive"
+    daily_cap: 1000
+  - id: or-free
+    provider: openrouter
+    model: openrouter/free
+    role: fallback
+    daily_cap: 50
+rules:
+  - cache-by-file-hash       # sha256(file bytes + engine_version)
+  - 8b-first
+  - log-every-call
+  - stop-at-cap-and-degrade  # report ships without summary if all lanes are capped
