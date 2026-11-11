@@ -1,1 +1,282 @@
-IiIiVGVzdHMgZm9yIHRoZSBhbm9tYWx5IGVuc2VtYmxlIChQaGFzZSBBMSkuCgpSdW46ICBweXRob24gLW0gcHl0ZXN0IHRlc3RzLyAtdiAgIChmcm9tIHNlcnZpY2VzL2VuZ2luZS8pCiIiIgppbXBvcnQganNvbgppbXBvcnQgc3lzCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKc3lzLnBhdGguaW5zZXJ0KDAsIHN0cihQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50c1sxXSkpCgppbXBvcnQgbnVtcHkgYXMgbnAKaW1wb3J0IHBhbmRhcyBhcyBwZAppbXBvcnQgcHl0ZXN0Cgpmcm9tIGFwcC5lbmdpbmUgaW1wb3J0IGFub21hbGllcwpmcm9tIGFwcC5lbmdpbmUuYW5vbWFsaWVzIGltcG9ydCAoTU9ERUxTLCBjYWxpYnJhdGUsIGZpbmRfYW5vbWFsaWVzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJlcGFyZV9mZWF0dXJlcywgcm9idXN0X3NjYWxlLCBzY29yZV9tYXRyaXgpCmZyb20gYXBwLmVuZ2luZS5wYXJzZSBpbXBvcnQgaW5mZXJfdHlwZXMsIHBhcnNlX2Nzdl9ieXRlcwoKUkVQTyA9IFBhdGgoX19maWxlX18pLnJlc29sdmUoKS5wYXJlbnRzWzNdClNBTVBMRVMgPSBSRVBPIC8gInNhbXBsZXMiCkZJWFRVUkVTID0gUGF0aChfX2ZpbGVfXykucGFyZW50IC8gImZpeHR1cmVzIgoKCmRlZiBfbG9hZChwYXRoOiBQYXRoKToKICAgIGRmID0gcGFyc2VfY3N2X2J5dGVzKHBhdGgucmVhZF9ieXRlcygpKQogICAgcmV0dXJuIGRmLCBpbmZlcl90eXBlcyhkZikKCgpkZWYgX2NsZWFuX2ZyYW1lKG46IGludCA9IDQwMCwgc2VlZDogaW50ID0gMCkgLT4gcGQuRGF0YUZyYW1lOgogICAgIiIiV2VsbC1iZWhhdmVkIGNvcnJlbGF0ZWQgbnVtZXJpYyBkYXRhIHdpdGggbm90aGluZyBwbGFudGVkLiIiIgogICAgcm5nID0gbnAucmFuZG9tLmRlZmF1bHRfcm5nKHNlZWQpCiAgICB1bml0cyA9IHJuZy5ub3JtYWwoNDAsIDgsIG4pLnJvdW5kKCkKICAgIHByaWNlID0gcm5nLm5vcm1hbCgxMDAsIDUsIG4pCiAgICByZXR1cm4gcGQuRGF0YUZyYW1lKHsKICAgICAgICAidW5pdHMiOiB1bml0cywKICAgICAgICAicmV2ZW51ZSI6ICh1bml0cyAqIHByaWNlKS5yb3VuZCgpLAogICAgICAgICJyZXR1cm5zIjogcm5nLnBvaXNzb24oMiwgbiksCiAgICAgICAgInJlZ2lvbiI6IHJuZy5jaG9pY2UoWyJOb3J0aCIsICJTb3V0aCIsICJFYXN0IiwgIldlc3QiXSwgbiksCiAgICB9KS5hc3R5cGUoc3RyKQoKCkBweXRlc3QuZml4dHVyZShzY29wZT0ibW9kdWxlIikKZGVmIHNhbGVzX3Jlc3VsdCgpOgogICAgZGYsIHR5cGVzID0gX2xvYWQoU0FNUExFUyAvICJzYWxlcy5jc3YiKQogICAgcmV0dXJuIGRmLCBmaW5kX2Fub21hbGllcyhkZiwgdHlwZXMpCgoKIyAtLS0tIHRoZSBwbGFudGVkIG91dGxpZXIgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgpkZWYgdGVzdF9wbGFudGVkXzk4MDBfdW5pdHNfcm93X2lzX2ZsYWdnZWRfd2l0aF9yZWFzb25zKHNhbGVzX3Jlc3VsdCk6CiAgICBkZiwgcmVzdWx0ID0gc2FsZXNfcmVzdWx0CiAgICBhc3NlcnQgcmVzdWx0WyJza2lwcGVkIl0gaXMgRmFsc2UKICAgIHBsYW50ZWQgPSBpbnQobnAuZmxhdG5vbnplcm8oKGRmWyJ1bml0cyJdID09ICI5ODAwIikudG9fbnVtcHkoKSlbMF0pCgogICAgaGl0ID0gW3IgZm9yIHIgaW4gcmVzdWx0WyJyb3dzIl0gaWYgclsicm93X2luZGV4Il0gPT0gcGxhbnRlZF0KICAgIGFzc2VydCBoaXQsICJ0aGUgOTgwMC11bml0cyByb3cgd2FzIG5vdCBmbGFnZ2VkIgogICAgcm93ID0gaGl0WzBdCiAgICBhc3NlcnQgcm93WyJsaW5lX251bWJlciJdID09IHBsYW50ZWQgKyAyCiAgICBhc3NlcnQgcm93WyJzY29yZSJdID49IHJlc3VsdFsidGhyZXNob2xkIl0KCiAgICAjIFJlYXNvbnMgbXVzdCBleGlzdCwgYmUgaHVtYW4tcmVhZGFibGUgYW5kIG5hbWUgdGhlIGd1aWx0eSBjb2x1bW5zLgogICAgYXNzZXJ0IHJvd1sicmVhc29ucyJdIGFuZCBhbGwoaXNpbnN0YW5jZShyLCBzdHIpIGFuZCByIGZvciByIGluIHJvd1sicmVhc29ucyJdKQogICAgbmFtZWQgPSB7ZlsiZmVhdHVyZSJdIGZvciBmIGluIHJvd1sidG9wX2ZlYXR1cmVzIl19CiAgICBhc3NlcnQgbmFtZWQgJiB7InVuaXRzIiwgInJldmVudWUifQogICAgdGV4dCA9ICIgIi5qb2luKHJvd1sicmVhc29ucyJdKQogICAgYXNzZXJ0ICJ1bml0cyIgaW4gdGV4dCBvciAicmV2ZW51ZSIgaW4gdGV4dAogICAgYXNzZXJ0ICI5LDgwMCIgaW4gdGV4dCBvciAiOTgwLDAwMCIgaW4gdGV4dAogICAgZm9yIGYgaW4gcm93WyJ0b3BfZmVhdHVyZXMiXToKICAgICAgICBhc3NlcnQgMCA8IGZbImNvbnRyaWJ1dGlvbiJdIDw9IDEKCgpkZWYgdGVzdF9wbGFudGVkX3Jvd19pc190aGVfdG9wX2Fub21hbHlfYW5kX2FsbF9kZXRlY3RvcnNfYWdyZWUoc2FsZXNfcmVzdWx0KToKICAgIGRmLCByZXN1bHQgPSBzYWxlc19yZXN1bHQKICAgIHRvcCA9IHJlc3VsdFsicm93cyJdWzBdCiAgICBhc3NlcnQgZGYuaWxvY1t0b3BbInJvd19pbmRleCJdXVsidW5pdHMiXSA9PSAiOTgwMCIKICAgIGFzc2VydCB0b3BbImFncmVlbWVudCJdID09ICIzLzMiCiAgICBhc3NlcnQgYWxsKHRvcFsidm90ZXMiXS52YWx1ZXMoKSkKCgpkZWYgdGVzdF9zYWxlc19yZXN1bHRzX2FyZV9ub3RfZmxvb2RlZChzYWxlc19yZXN1bHQpOgogICAgZGYsIHJlc3VsdCA9IHNhbGVzX3Jlc3VsdAogICAgYXNzZXJ0IHJlc3VsdFsiZmxhZ2dlZF9jb3VudCJdIDw9IDAuMDUgKiBsZW4oZGYpCiAgICBhc3NlcnQgcmVzdWx0WyJmbGFnZ2VkX2NvdW50Il0gPT0gbGVuKHJlc3VsdFsicm93cyJdKQoKCmRlZiB0ZXN0X2lkc19hcmVfbmV2ZXJfdXNlZF9hc19mZWF0dXJlcyhzYWxlc19yZXN1bHQpOgogICAgXywgcmVzdWx0ID0gc2FsZXNfcmVzdWx0CiAgICBhc3NlcnQgIm9yZGVyX2lkIiBub3QgaW4gcmVzdWx0WyJmZWF0dXJlc191c2VkIl0KICAgIGFzc2VydCBzZXQocmVzdWx0WyJmZWF0dXJlc191c2VkIl0pID09IHsidW5pdHMiLCAicmV2ZW51ZSIsICJyZXR1cm5zIn0KCgojIC0tLS0gZXZlcnkgZmxhZ2dlZCByb3cgaXMgZXhwbGFpbmVkIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKQHB5dGVzdC5tYXJrLnBhcmFtZXRyaXplKCJuYW1lIiwgWyJzYWxlcy5jc3YiLCAiYW5hbHl0aWNzLmNzdiIsICJzdXJ2ZXkuY3N2Il0pCmRlZiB0ZXN0X2V2ZXJ5X2ZsYWdnZWRfcm93X2hhc19yZWFzb25zX29uX2FsbF9zYW1wbGVzKG5hbWUpOgogICAgZGYsIHR5cGVzID0gX2xvYWQoU0FNUExFUyAvIG5hbWUpCiAgICByZXN1bHQgPSBmaW5kX2Fub21hbGllcyhkZiwgdHlwZXMpCiAgICBqc29uLmR1bXBzKHJlc3VsdCwgYWxsb3dfbmFuPUZhbHNlKSAgIyBBUEktc2FmZTogbm8gTmFOL2luZiwgbm8gbnVtcHkgdHlwZXMKICAgIGlmIHJlc3VsdFsic2tpcHBlZCJdOgogICAgICAgIGFzc2VydCByZXN1bHRbInJlYXNvbiJdCiAgICAgICAgcmV0dXJuCiAgICBhc3NlcnQgcmVzdWx0WyJmbGFnZ2VkX2NvdW50Il0gPD0gMC4wNSAqIGxlbihkZikKICAgIGZvciByb3cgaW4gcmVzdWx0WyJyb3dzIl06CiAgICAgICAgYXNzZXJ0IHJvd1sicmVhc29ucyJdCiAgICAgICAgYXNzZXJ0IHJvd1sidG9wX2ZlYXR1cmVzIl0KICAgICAgICBhc3NlcnQgc2V0KHJvd1sibW9kZWxfc2NvcmVzIl0pID09IHNldChNT0RFTFMpCiAgICAgICAgYXNzZXJ0IDAgPD0gcm93WyJzY29yZSJdIDw9IDEKICAgICAgICBhc3NlcnQgc2V0KHJvd1sicGVyX21vZGVsX3RvcF9mZWF0dXJlcyJdKSA9PSBzZXQoTU9ERUxTKQoKCmRlZiB0ZXN0X2Rpc2FncmVlbWVudF9iZXR3ZWVuX2RldGVjdG9yc19pc19yZXBvcnRlZCgpOgogICAgZGYgPSBfY2xlYW5fZnJhbWUoMzAwLCBzZWVkPTMpCiAgICBkZi5sb2NbMTAsICJ1bml0cyJdID0gIjQwMDAiCiAgICBkZi5sb2NbMTAsICJyZXZlbnVlIl0gPSAiNDAwMDAwIgogICAgcmVzdWx0ID0gZmluZF9hbm9tYWxpZXMoZGYsIGluZmVyX3R5cGVzKGRmKSwgdGhyZXNob2xkPTAuMikKICAgIGZvciByb3cgaW4gcmVzdWx0WyJyb3dzIl06CiAgICAgICAgeWVzID0gc3VtKHJvd1sidm90ZXMiXS52YWx1ZXMoKSkKICAgICAgICBhc3NlcnQgcm93WyJhZ3JlZW1lbnQiXSA9PSBmInt5ZXN9LzMiCiAgICAgICAgYXNzZXJ0IGYie3llc30gb2YgMyBkZXRlY3RvcnMiIGluIHJvd1sicmVhc29ucyJdWy0xXQoKCiMgLS0tLSBjbGVhbiAvIHNtYWxsIC8gYXdrd2FyZCBpbnB1dHMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgpkZWYgdGVzdF9jbGVhbl9kYXRhX2RvZXNfbm90X2Zsb29kKCk6CiAgICBkZiA9IF9jbGVhbl9mcmFtZSgpCiAgICByZXN1bHQgPSBmaW5kX2Fub21hbGllcyhkZiwgaW5mZXJfdHlwZXMoZGYpKQogICAgYXNzZXJ0IHJlc3VsdFsic2tpcHBlZCJdIGlzIEZhbHNlCiAgICBhc3NlcnQgcmVzdWx0WyJmbGFnZ2VkX2NvdW50Il0gPD0gMC4wMiAqIGxlbihkZikKCgpkZWYgdGVzdF9zbWFsbF9jbGVhbl9pbnB1dF9pc19za2lwcGVkX25vdF9jcmFzaGVkKCk6CiAgICBkZiA9IHBkLkRhdGFGcmFtZSh7ImEiOiBbMSwgMiwgMywgNF0sICJiIjogWzUuMCwgNi41LCA3LjEsIDguMl19KS5hc3R5cGUoc3RyKQogICAgcmVzdWx0ID0gZmluZF9hbm9tYWxpZXMoZGYsIGluZmVyX3R5cGVzKGRmKSkKICAgIGFzc2VydCByZXN1bHQgPT0geyJza2lwcGVkIjogVHJ1ZSwgInJlYXNvbiI6IHJlc3VsdFsicmVhc29uIl0sICJyb3dzIjogW119CiAgICBhc3NlcnQgIjUwIHJvd3MiIGluIHJlc3VsdFsicmVhc29uIl0KCgpkZWYgdGVzdF9kaXJ0eV9maXh0dXJlX2lzX3NraXBwZWRfbm90X2NyYXNoZWQoKToKICAgIGRmLCB0eXBlcyA9IF9sb2FkKEZJWFRVUkVTIC8gImRpcnR5X3NhbGVzLmNzdiIpCiAgICByZXN1bHQgPSBmaW5kX2Fub21hbGllcyhkZiwgdHlwZXMpCiAgICBhc3NlcnQgcmVzdWx0WyJza2lwcGVkIl0gaXMgVHJ1ZSBhbmQgcmVzdWx0WyJyb3dzIl0gPT0gW10KCgpkZWYgdGVzdF9zaW5nbGVfcm93X2FuZF9ub19udW1lcmljX2NvbHVtbnNfZG9fbm90X2NyYXNoKCk6CiAgICBvbmUgPSBwZC5EYXRhRnJhbWUoeyJhIjogWyIxIl0sICJiIjogWyIyIl19KQogICAgYXNzZXJ0IGZpbmRfYW5vbWFsaWVzKG9uZSwgaW5mZXJfdHlwZXMob25lKSlbInNraXBwZWQiXSBpcyBUcnVlCgogICAgdGV4dF9vbmx5ID0gcGQuRGF0YUZyYW1lKHsibmFtZSI6IFtmIm57aSAlIDd9IiBmb3IgaSBpbiByYW5nZSg4MCldLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiY2l0eSI6IFtmImN7aSAlIDV9IiBmb3IgaSBpbiByYW5nZSg4MCldfSkKICAgIHJlc3VsdCA9IGZpbmRfYW5vbWFsaWVzKHRleHRfb25seSwgaW5mZXJfdHlwZXModGV4dF9vbmx5KSkKICAgIGFzc2VydCByZXN1bHRbInNraXBwZWQiXSBpcyBUcnVlCiAgICBhc3NlcnQgIm51bWVyaWMiIGluIHJlc3VsdFsicmVhc29uIl0KCgpkZWYgdGVzdF9leGFjdGx5X21pbmltdW1fcm93c19ydW5zKCk6CiAgICBkZiA9IF9jbGVhbl9mcmFtZShhbm9tYWxpZXMuTUlOX1JPV1MsIHNlZWQ9MSkKICAgIHJlc3VsdCA9IGZpbmRfYW5vbWFsaWVzKGRmLCBpbmZlcl90eXBlcyhkZikpCiAgICBhc3NlcnQgcmVzdWx0WyJza2lwcGVkIl0gaXMgRmFsc2UKICAgIGFzc2VydCByZXN1bHRbInJvd3Nfc2NvcmVkIl0gPT0gYW5vbWFsaWVzLk1JTl9ST1dTCgoKZGVmIHRlc3RfbWlzc2luZ19hbmRfZ2FyYmFnZV9jZWxsc19kb19ub3RfY3Jhc2goKToKICAgIGRmID0gX2NsZWFuX2ZyYW1lKDIwMCwgc2VlZD0yKQogICAgZGYubG9jW1szLCAxNywgNDBdLCAicmV2ZW51ZSJdID0gIiIKICAgIGRmLmxvY1tbNSwgOV0sICJ1bml0cyJdID0gIm4vYSIKICAgIHJlc3VsdCA9IGZpbmRfYW5vbWFsaWVzKGRmLCBpbmZlcl90eXBlcyhkZikpCiAgICBhc3NlcnQgcmVzdWx0WyJza2lwcGVkIl0gaXMgRmFsc2UKICAgIGpzb24uZHVtcHMocmVzdWx0LCBhbGxvd19uYW49RmFsc2UpCgoKZGVmIHRlc3RfaGVhdmlseV9kdXBsaWNhdGVkX3Jvd3NfZG9fbm90X2NyYXNoX29yX2Zsb29kKCk6CiAgICAjIER1cGxpY2F0ZXMgZ2l2ZSB6ZXJvIG5laWdoYm91ciBkaXN0YW5jZXMg4oCUIHRoZSBjbGFzc2ljIExPRiBibG93LXVwLgogICAgYmFzZSA9IF9jbGVhbl9mcmFtZSg0MCwgc2VlZD00KQogICAgZGYgPSBwZC5jb25jYXQoW2Jhc2VdICogNiwgaWdub3JlX2luZGV4PVRydWUpCiAgICByZXN1bHQgPSBmaW5kX2Fub21hbGllcyhkZiwgaW5mZXJfdHlwZXMoZGYpKQogICAgYXNzZXJ0IHJlc3VsdFsic2tpcHBlZCJdIGlzIEZhbHNlCiAgICBqc29uLmR1bXBzKHJlc3VsdCwgYWxsb3dfbmFuPUZhbHNlKQogICAgYXNzZXJ0IHJlc3VsdFsiZmxhZ2dlZF9jb3VudCJdIDw9IDAuMDUgKiBsZW4oZGYpCgoKZGVmIHRlc3RfbnVtZXJpY2FsbHlfY29uc3RhbnRfY29sdW1uX2lzX2Ryb3BwZWQoKToKICAgIGRmID0gX2NsZWFuX2ZyYW1lKDEyMCwgc2VlZD01KQogICAgZGZbImZsYXQiXSA9IFsiMSIsICIxLjAiXSAqIDYwICAjIHR3byBzcGVsbGluZ3MsIG9uZSBudW1iZXIKICAgIHR5cGVzID0gaW5mZXJfdHlwZXMoZGYpCiAgICB0eXBlc1siZmxhdCJdID0gIm51bWVyaWMiCiAgICB2YWx1ZXMsIG5hbWVzLCBfID0gcHJlcGFyZV9mZWF0dXJlcyhkZiwgdHlwZXMpCiAgICBhc3NlcnQgImZsYXQiIG5vdCBpbiBuYW1lcwogICAgYXNzZXJ0IHZhbHVlcy5zaGFwZSA9PSAoMTIwLCBsZW4obmFtZXMpKQoKCiMgLS0tLSBkZXRlcm1pbmlzbSAoQ0xBVURFLm1kIGhhcmQgcnVsZSAyKSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKZGVmIHRlc3Rfc2FtZV9zZWVkX2dpdmVzX2lkZW50aWNhbF9yZXN1bHRzKCk6CiAgICBkZiwgdHlwZXMgPSBfbG9hZChTQU1QTEVTIC8gInNhbGVzLmNzdiIpCiAgICBmaXJzdCA9IGZpbmRfYW5vbWFsaWVzKGRmLCB0eXBlcywgc2VlZD03KQogICAgc2Vjb25kID0gZmluZF9hbm9tYWxpZXMoZGYsIHR5cGVzLCBzZWVkPTcpCiAgICBhc3NlcnQganNvbi5kdW1wcyhmaXJzdCwgc29ydF9rZXlzPVRydWUpID09IGpzb24uZHVtcHMoc2Vjb25kLCBzb3J0X2tleXM9VHJ1ZSkKCgpkZWYgdGVzdF9zY29yaW5nX2RvZXNfbm90X2Rpc3R1cmJfZ2xvYmFsX3RvcmNoX3JuZygpOgogICAgaW1wb3J0IHRvcmNoCiAgICBkZiwgdHlwZXMgPSBfbG9hZChTQU1QTEVTIC8gInNhbGVzLmNzdiIpCiAgICB0b3JjaC5tYW51YWxfc2VlZCgxMjMpCiAgICBleHBlY3RlZCA9IHRvcmNoLnJhbmQoMykKICAgIHRvcmNoLm1hbnVhbF9zZWVkKDEyMykKICAgIGZpbmRfYW5vbWFsaWVzKGRmLCB0eXBlcykKICAgIGFzc2VydCB0b3JjaC5lcXVhbCh0b3JjaC5yYW5kKDMpLCBleHBlY3RlZCkKCgojIC0tLS0gYnVpbGRpbmcgYmxvY2tzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCmRlZiB0ZXN0X2NhbGlicmF0ZV9pc19ib3VuZGVkX21vbm90b25pY19hbmRfcXVpZXRfb25fY29uc3RhbnRfc2NvcmVzKCk6CiAgICBybmcgPSBucC5yYW5kb20uZGVmYXVsdF9ybmcoMCkKICAgIHJhdyA9IG5wLmFwcGVuZChybmcubm9ybWFsKDAsIDEsIDUwMCksIFsxNS4wLCAzMC4wXSkKICAgIGNhbCA9IGNhbGlicmF0ZShyYXcpCiAgICBhc3NlcnQgY2FsLm1pbigpID49IDAgYW5kIGNhbC5tYXgoKSA8PSAxCiAgICBvcmRlciA9IG5wLmFyZ3NvcnQocmF3KQogICAgYXNzZXJ0IG5wLmFsbChucC5kaWZmKGNhbFtvcmRlcl0pID49IDApCiAgICBhc3NlcnQgY2FsWy0xXSA+IDAuOTkgYW5kIGNhbFstMl0gPiAwLjk5CiAgICBhc3NlcnQgbnAubWVkaWFuKGNhbCkgPCAwLjA1CiAgICBhc3NlcnQgbnAuYWxsKGNhbGlicmF0ZShucC5mdWxsKDUwLCAzLjMpKSA8IDAuMDUpCgoKZGVmIHRlc3Rfcm9idXN0X3NjYWxlX2lzX25vdF9zdHJldGNoZWRfYnlfdGhlX291dGxpZXIoKToKICAgIGNvbCA9IG5wLmFwcGVuZChucC5hcmFuZ2UoMTAwLCBkdHlwZT1mbG9hdCksIDFlOSkKICAgIHNjYWxlZCA9IHJvYnVzdF9zY2FsZShucC5jb2x1bW5fc3RhY2soW2NvbCwgY29sWzo6LTFdXSkpCiAgICBhc3NlcnQgbnAuaXNmaW5pdGUoc2NhbGVkKS5hbGwoKQogICAgYXNzZXJ0IG5wLmFicyhzY2FsZWRbOjEwMCwgMF0pLm1heCgpIDwgMwogICAgYXNzZXJ0IHNjYWxlZFsxMDAsIDBdID09IGFub21hbGllcy5DTElQCgoKZGVmIHRlc3Rfc2NvcmVfbWF0cml4X3NoYXBlc19hbmRfd2VpZ2h0cygpOgogICAgcm5nID0gbnAucmFuZG9tLmRlZmF1bHRfcm5nKDApCiAgICBYID0gcm9idXN0X3NjYWxlKHJuZy5ub3JtYWwoc2l6ZT0oMTIwLCA0KSkpCiAgICBvdXQgPSBzY29yZV9tYXRyaXgoWCwgc2VlZD0xLCB3ZWlnaHRzPXsiaXNvbGF0aW9uX2ZvcmVzdCI6IDIsICJhdXRvZW5jb2RlciI6IDJ9KQogICAgYXNzZXJ0IHNldChvdXRbInNjb3JlcyJdKSA9PSBzZXQoTU9ERUxTKSB8IHsiZW5zZW1ibGUifQogICAgYXNzZXJ0IGFsbCh2LnNoYXBlID09ICgxMjAsKSBmb3IgdiBpbiBvdXRbInNjb3JlcyJdLnZhbHVlcygpKQogICAgYXNzZXJ0IG91dFsid2VpZ2h0cyJdWyJsb2NhbF9vdXRsaWVyX2ZhY3RvciJdID09IDAKICAgIG5wLnRlc3RpbmcuYXNzZXJ0X2FsbGNsb3NlKAogICAgICAgIG91dFsic2NvcmVzIl1bImVuc2VtYmxlIl0sCiAgICAgICAgMC41ICogb3V0WyJzY29yZXMiXVsiaXNvbGF0aW9uX2ZvcmVzdCJdICsgMC41ICogb3V0WyJzY29yZXMiXVsiYXV0b2VuY29kZXIiXSkKCgpkZWYgdGVzdF9iYWRfaW5wdXRzX3JhaXNlX3NwZWNpZmljX2Vycm9ycygpOgogICAgd2l0aCBweXRlc3QucmFpc2VzKFZhbHVlRXJyb3IsIG1hdGNoPSJ1bmtub3duIG1vZGVsIik6CiAgICAgICAgc2NvcmVfbWF0cml4KG5wLnplcm9zKCgxMCwgMikpLCB3ZWlnaHRzPXsia25uIjogMX0pCiAgICB3aXRoIHB5dGVzdC5yYWlzZXMoVmFsdWVFcnJvciwgbWF0Y2g9Ik5hTiIpOgogICAgICAgIHNjb3JlX21hdHJpeChucC5mdWxsKCgxMCwgMiksIG5wLm5hbikpCiAgICB3aXRoIHB5dGVzdC5yYWlzZXMoVmFsdWVFcnJvciwgbWF0Y2g9ImF0IGxlYXN0IDMgcm93cyIpOgogICAgICAgIHNjb3JlX21hdHJpeChucC56ZXJvcygoMiwgMikpKQoKCiMgLS0tLSBBUEkgd2lyaW5nIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCmRlZiB0ZXN0X2FuYWx5c2VfZW5kcG9pbnRfcmV0dXJuc19hbm9tYWxpZXNfd2l0aF9yZWFzb25zKCk6CiAgICBmcm9tIGZhc3RhcGkudGVzdGNsaWVudCBpbXBvcnQgVGVzdENsaWVudAoKICAgIGZyb20gYXBwLm1haW4gaW1wb3J0IGFwcAoKICAgIHJhdyA9IChTQU1QTEVTIC8gInNhbGVzLmNzdiIpLnJlYWRfYnl0ZXMoKQogICAgcmVzcCA9IFRlc3RDbGllbnQoYXBwKS5wb3N0KCIvYW5hbHlzZSIsIGZpbGVzPXsiZmlsZSI6ICgic2FsZXMuY3N2IiwgcmF3LCAidGV4dC9jc3YiKX0pCiAgICBhc3NlcnQgcmVzcC5zdGF0dXNfY29kZSA9PSAyMDAKICAgIGJvZHkgPSByZXNwLmpzb24oKQogICAgYW5vbSA9IGJvZHlbImFub21hbGllcyJdCiAgICBhc3NlcnQgYW5vbVsic2tpcHBlZCJdIGlzIEZhbHNlCiAgICBhc3NlcnQgYW5vbVsicm93cyJdLCAiQVBJIHJldHVybmVkIG5vIGFub21hbHkgcm93cyBmb3Igc2FsZXMuY3N2IgogICAgdG9wID0gYW5vbVsicm93cyJdWzBdCiAgICBhc3NlcnQgdG9wWyJyZWFzb25zIl0gYW5kIHRvcFsidG9wX2ZlYXR1cmVzIl0KICAgIGFzc2VydCBhbnkoIjksODAwIiBpbiByIG9yICI5ODAsMDAwIiBpbiByIGZvciByIGluIHRvcFsicmVhc29ucyJdKQogICAgYXNzZXJ0IGJvZHlbImZhY3RzX3BhY2siXVsiYW5vbWFsaWVzIl1bImZsYWdnZWRfY291bnQiXSA9PSBhbm9tWyJmbGFnZ2VkX2NvdW50Il0KCgpkZWYgdGVzdF9hbmFseXNlX2VuZHBvaW50X3NtYWxsX2ZpbGVfcmVwb3J0c19za2lwcGVkKCk6CiAgICBmcm9tIGZhc3RhcGkudGVzdGNsaWVudCBpbXBvcnQgVGVzdENsaWVudAoKICAgIGZyb20gYXBwLm1haW4gaW1wb3J0IGFwcAoKICAgIHJhdyA9IChGSVhUVVJFUyAvICJkaXJ0eV9zYWxlcy5jc3YiKS5yZWFkX2J5dGVzKCkKICAgIHJlc3AgPSBUZXN0Q2xpZW50KGFwcCkucG9zdCgiL2FuYWx5c2UiLCBmaWxlcz17ImZpbGUiOiAoImQuY3N2IiwgcmF3LCAidGV4dC9jc3YiKX0pCiAgICBhc3NlcnQgcmVzcC5zdGF0dXNfY29kZSA9PSAyMDAKICAgIGFzc2VydCByZXNwLmpzb24oKVsiYW5vbWFsaWVzIl1bInNraXBwZWQiXSBpcyBUcnVlCg==
+"""Tests for the anomaly ensemble (Phase A1).
+
+Run:  python -m pytest tests/ -v   (from services/engine/)
+"""
+import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+import numpy as np
+import pandas as pd
+import pytest
+
+from app.engine import anomalies
+from app.engine.anomalies import (MODELS, calibrate, find_anomalies,
+                                  prepare_features, robust_scale, score_matrix)
+from app.engine.parse import infer_types, parse_csv_bytes
+
+REPO = Path(__file__).resolve().parents[3]
+SAMPLES = REPO / "samples"
+FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def _load(path: Path):
+    df = parse_csv_bytes(path.read_bytes())
+    return df, infer_types(df)
+
+
+def _clean_frame(n: int = 400, seed: int = 0) -> pd.DataFrame:
+    """Well-behaved correlated numeric data with nothing planted."""
+    rng = np.random.default_rng(seed)
+    units = rng.normal(40, 8, n).round()
+    price = rng.normal(100, 5, n)
+    return pd.DataFrame({
+        "units": units,
+        "revenue": (units * price).round(),
+        "returns": rng.poisson(2, n),
+        "region": rng.choice(["North", "South", "East", "West"], n),
+    }).astype(str)
+
+
+@pytest.fixture(scope="module")
+def sales_result():
+    df, types = _load(SAMPLES / "sales.csv")
+    return df, find_anomalies(df, types)
+
+
+# ---- the planted outlier ---------------------------------------------------
+
+def test_planted_9800_units_row_is_flagged_with_reasons(sales_result):
+    df, result = sales_result
+    assert result["skipped"] is False
+    planted = int(np.flatnonzero((df["units"] == "9800").to_numpy())[0])
+
+    hit = [r for r in result["rows"] if r["row_index"] == planted]
+    assert hit, "the 9800-units row was not flagged"
+    row = hit[0]
+    assert row["line_number"] == planted + 2
+    assert row["score"] >= result["threshold"]
+
+    # Reasons must exist, be human-readable and name the guilty columns.
+    assert row["reasons"] and all(isinstance(r, str) and r for r in row["reasons"])
+    named = {f["feature"] for f in row["top_features"]}
+    assert named & {"units", "revenue"}
+    text = " ".join(row["reasons"])
+    assert "units" in text or "revenue" in text
+    assert "9,800" in text or "980,000" in text
+    for f in row["top_features"]:
+        assert 0 < f["contribution"] <= 1
+
+
+def test_planted_row_is_the_top_anomaly_and_all_detectors_agree(sales_result):
+    df, result = sales_result
+    top = result["rows"][0]
+    assert df.iloc[top["row_index"]]["units"] == "9800"
+    assert top["agreement"] == "3/3"
+    assert all(top["votes"].values())
+
+
+def test_sales_results_are_not_flooded(sales_result):
+    df, result = sales_result
+    assert result["flagged_count"] <= 0.05 * len(df)
+    assert result["flagged_count"] == len(result["rows"])
+
+
+def test_ids_are_never_used_as_features(sales_result):
+    _, result = sales_result
+    assert "order_id" not in result["features_used"]
+    assert set(result["features_used"]) == {"units", "revenue", "returns"}
+
+
+# ---- every flagged row is explained ---------------------------------------
+
+@pytest.mark.parametrize("name", ["sales.csv", "analytics.csv", "survey.csv"])
+def test_every_flagged_row_has_reasons_on_all_samples(name):
+    df, types = _load(SAMPLES / name)
+    result = find_anomalies(df, types)
+    json.dumps(result, allow_nan=False)  # API-safe: no NaN/inf, no numpy types
+    if result["skipped"]:
+        assert result["reason"]
+        return
+    assert result["flagged_count"] <= 0.05 * len(df)
+    for row in result["rows"]:
+        assert row["reasons"]
+        assert row["top_features"]
+        assert set(row["model_scores"]) == set(MODELS)
+        assert 0 <= row["score"] <= 1
+        assert set(row["per_model_top_features"]) == set(MODELS)
+
+
+def test_disagreement_between_detectors_is_reported():
+    df = _clean_frame(300, seed=3)
+    df.loc[10, "units"] = "4000"
+    df.loc[10, "revenue"] = "400000"
+    result = find_anomalies(df, infer_types(df), threshold=0.2)
+    for row in result["rows"]:
+        yes = sum(row["votes"].values())
+        assert row["agreement"] == f"{yes}/3"
+        assert f"{yes} of 3 detectors" in row["reasons"][-1]
+
+
+# ---- clean / small / awkward inputs ---------------------------------------
+
+def test_clean_data_does_not_flood():
+    df = _clean_frame()
+    result = find_anomalies(df, infer_types(df))
+    assert result["skipped"] is False
+    assert result["flagged_count"] <= 0.02 * len(df)
+
+
+def test_small_clean_input_is_skipped_not_crashed():
+    df = pd.DataFrame({"a": [1, 2, 3, 4], "b": [5.0, 6.5, 7.1, 8.2]}).astype(str)
+    result = find_anomalies(df, infer_types(df))
+    assert result == {"skipped": True, "reason": result["reason"], "rows": []}
+    assert "50 rows" in result["reason"]
+
+
+def test_dirty_fixture_is_skipped_not_crashed():
+    df, types = _load(FIXTURES / "dirty_sales.csv")
+    result = find_anomalies(df, types)
+    assert result["skipped"] is True and result["rows"] == []
+
+
+def test_single_row_and_no_numeric_columns_do_not_crash():
+    one = pd.DataFrame({"a": ["1"], "b": ["2"]})
+    assert find_anomalies(one, infer_types(one))["skipped"] is True
+
+    text_only = pd.DataFrame({"name": [f"n{i % 7}" for i in range(80)],
+                              "city": [f"c{i % 5}" for i in range(80)]})
+    result = find_anomalies(text_only, infer_types(text_only))
+    assert result["skipped"] is True
+    assert "numeric" in result["reason"]
+
+
+def test_exactly_minimum_rows_runs():
+    df = _clean_frame(anomalies.MIN_ROWS, seed=1)
+    result = find_anomalies(df, infer_types(df))
+    assert result["skipped"] is False
+    assert result["rows_scored"] == anomalies.MIN_ROWS
+
+
+def test_missing_and_garbage_cells_do_not_crash():
+    df = _clean_frame(200, seed=2)
+    df.loc[[3, 17, 40], "revenue"] = ""
+    df.loc[[5, 9], "units"] = "n/a"
+    result = find_anomalies(df, infer_types(df))
+    assert result["skipped"] is False
+    json.dumps(result, allow_nan=False)
+
+
+def test_heavily_duplicated_rows_do_not_crash_or_flood():
+    # Duplicates give zero neighbour distances — the classic LOF blow-up.
+    base = _clean_frame(40, seed=4)
+    df = pd.concat([base] * 6, ignore_index=True)
+    result = find_anomalies(df, infer_types(df))
+    assert result["skipped"] is False
+    json.dumps(result, allow_nan=False)
+    assert result["flagged_count"] <= 0.05 * len(df)
+
+
+def test_numerically_constant_column_is_dropped():
+    df = _clean_frame(120, seed=5)
+    df["flat"] = ["1", "1.0"] * 60  # two spellings, one number
+    types = infer_types(df)
+    types["flat"] = "numeric"
+    values, names, _ = prepare_features(df, types)
+    assert "flat" not in names
+    assert values.shape == (120, len(names))
+
+
+# ---- determinism (CLAUDE.md hard rule 2) -----------------------------------
+
+def test_same_seed_gives_identical_results():
+    df, types = _load(SAMPLES / "sales.csv")
+    first = find_anomalies(df, types, seed=7)
+    second = find_anomalies(df, types, seed=7)
+    assert json.dumps(first, sort_keys=True) == json.dumps(second, sort_keys=True)
+
+
+def test_scoring_does_not_disturb_global_torch_rng():
+    import torch
+    df, types = _load(SAMPLES / "sales.csv")
+    torch.manual_seed(123)
+    expected = torch.rand(3)
+    torch.manual_seed(123)
+    find_anomalies(df, types)
+    assert torch.equal(torch.rand(3), expected)
+
+
+# ---- building blocks -------------------------------------------------------
+
+def test_calibrate_is_bounded_monotonic_and_quiet_on_constant_scores():
+    rng = np.random.default_rng(0)
+    raw = np.append(rng.normal(0, 1, 500), [15.0, 30.0])
+    cal = calibrate(raw)
+    assert cal.min() >= 0 and cal.max() <= 1
+    order = np.argsort(raw)
+    assert np.all(np.diff(cal[order]) >= 0)
+    assert cal[-1] > 0.99 and cal[-2] > 0.99
+    assert np.median(cal) < 0.05
+    assert np.all(calibrate(np.full(50, 3.3)) < 0.05)
+
+
+def test_robust_scale_is_not_stretched_by_the_outlier():
+    col = np.append(np.arange(100, dtype=float), 1e9)
+    scaled = robust_scale(np.column_stack([col, col[::-1]]))
+    assert np.isfinite(scaled).all()
+    assert np.abs(scaled[:100, 0]).max() < 3
+    assert scaled[100, 0] == anomalies.CLIP
+
+
+def test_score_matrix_shapes_and_weights():
+    rng = np.random.default_rng(0)
+    X = robust_scale(rng.normal(size=(120, 4)))
+    out = score_matrix(X, seed=1, weights={"isolation_forest": 2, "autoencoder": 2})
+    assert set(out["scores"]) == set(MODELS) | {"ensemble"}
+    assert all(v.shape == (120,) for v in out["scores"].values())
+    assert out["weights"]["local_outlier_factor"] == 0
+    np.testing.assert_allclose(
+        out["scores"]["ensemble"],
+        0.5 * out["scores"]["isolation_forest"] + 0.5 * out["scores"]["autoencoder"])
+
+
+def test_bad_inputs_raise_specific_errors():
+    with pytest.raises(ValueError, match="unknown model"):
+        score_matrix(np.zeros((10, 2)), weights={"knn": 1})
+    with pytest.raises(ValueError, match="NaN"):
+        score_matrix(np.full((10, 2), np.nan))
+    with pytest.raises(ValueError, match="at least 3 rows"):
+        score_matrix(np.zeros((2, 2)))
+
+
+# ---- API wiring -------------------------------------------------------------
+
+def test_analyse_endpoint_returns_anomalies_with_reasons():
+    from fastapi.testclient import TestClient
+
+    from app.main import app
+
+    raw = (SAMPLES / "sales.csv").read_bytes()
+    resp = TestClient(app).post("/analyse", files={"file": ("sales.csv", raw, "text/csv")})
+    assert resp.status_code == 200
+    body = resp.json()
+    anom = body["anomalies"]
+    assert anom["skipped"] is False
+    assert anom["rows"], "API returned no anomaly rows for sales.csv"
+    top = anom["rows"][0]
+    assert top["reasons"] and top["top_features"]
+    assert any("9,800" in r or "980,000" in r for r in top["reasons"])
+    assert body["facts_pack"]["anomalies"]["flagged_count"] == anom["flagged_count"]
+
+
+def test_analyse_endpoint_small_file_reports_skipped():
+    from fastapi.testclient import TestClient
+
+    from app.main import app
+
+    raw = (FIXTURES / "dirty_sales.csv").read_bytes()
+    resp = TestClient(app).post("/analyse", files={"file": ("d.csv", raw, "text/csv")})
+    assert resp.status_code == 200
+    assert resp.json()["anomalies"]["skipped"] is True
