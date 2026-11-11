@@ -1,1 +1,49 @@
-IiIiRGF5IDEgZ29sZGVuIHRlc3RzIGZvciBwYXJzZSArIHByb2ZpbGUgKyBoZWFsdGggc2NvcmUuCgpSdW46ICBweXRob24gLW0gcHl0ZXN0IHRlc3RzLyAtdiAgIChmcm9tIHNlcnZpY2VzL2VuZ2luZS8pClRoZXNlIGxvY2sgaW4gdGhlIGRldGVybWluaXN0aWMgYmVoYXZpb3VyOiBpZiBhIGZ1dHVyZSBjaGFuZ2UgYWx0ZXJzIGEKc2NvcmUsIGEgdGVzdCBtdXN0IGZhaWwgbG91ZGx5IGluc3RlYWQgb2YgdXNlcnMgc2VlaW5nIGEgZGlmZmVyZW50IG51bWJlci4KIiIiCmltcG9ydCBpbwppbXBvcnQgc3lzCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKc3lzLnBhdGguaW5zZXJ0KDAsIHN0cihQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50c1sxXSkpCgppbXBvcnQgcGFuZGFzIGFzIHBkCgpmcm9tIGFwcC5lbmdpbmUucGFyc2UgaW1wb3J0IGluZmVyX3R5cGVzLCBwYXJzZV9jc3ZfYnl0ZXMKZnJvbSBhcHAuZW5naW5lLnByb2ZpbGUgaW1wb3J0IGhlYWx0aF9zY29yZSwgcHJvZmlsZV9kYXRhZnJhbWUKCkZJWFRVUkVTID0gUGF0aChfX2ZpbGVfXykucGFyZW50IC8gImZpeHR1cmVzIgoKCmRlZiB0ZXN0X3BhcnNlX2FuZF90eXBlc19vbl9kaXJ0eV9maXh0dXJlKCk6CiAgICBkZiA9IHBhcnNlX2Nzdl9ieXRlcygoRklYVFVSRVMgLyAiZGlydHlfc2FsZXMuY3N2IikucmVhZF9ieXRlcygpKQogICAgYXNzZXJ0IGxlbihkZikgPT0gOAogICAgdHlwZXMgPSBpbmZlcl90eXBlcyhkZikKICAgIGFzc2VydCB0eXBlc1siZGF0ZSJdID09ICJkYXRldGltZSIKICAgIGFzc2VydCB0eXBlc1sicmV2ZW51ZSJdID09ICJudW1lcmljIgogICAgYXNzZXJ0IHR5cGVzWyJyZWdpb24iXSA9PSAiY2F0ZWdvcmljYWwiCiAgICBhc3NlcnQgdHlwZXNbIm9yZGVyX2lkIl0gPT0gImlkIiAgICAgICAgICAjIElEcyBtdXN0IG5ldmVyIGJlY29tZSBudW1iZXJzCiAgICBhc3NlcnQgdHlwZXNbIm5vdGVzIl0gPT0gImNvbnN0YW50IgoKCmRlZiB0ZXN0X3Byb2ZpbGVfY291bnRzX2R1cGxpY2F0ZXNfYW5kX21pc3NpbmcoKToKICAgIGRmID0gcGFyc2VfY3N2X2J5dGVzKChGSVhUVVJFUyAvICJkaXJ0eV9zYWxlcy5jc3YiKS5yZWFkX2J5dGVzKCkpCiAgICBwcm9mID0gcHJvZmlsZV9kYXRhZnJhbWUoZGYpCiAgICBhc3NlcnQgcHJvZlsicm93cyJdID09IDgKICAgIGFzc2VydCBwcm9mWyJkdXBsaWNhdGVfcm93cyJdID09IDIgICAgICAgICMgcm93cyAyIGFuZCA3IHJlcGVhdCBlYXJsaWVyIHJvd3MKICAgIGFzc2VydCBwcm9mWyJtaXNzaW5nX3BjdCJdID4gMCAgICAgICAgICAgICMgcmV2ZW51ZSArIHJlZ2lvbiBoYXZlIGJsYW5rcwoKCmRlZiB0ZXN0X2hlYWx0aF9zY29yZV9wdW5pc2hlc19kaXJ0eV9hbmRfcmV3YXJkc19jbGVhbigpOgogICAgZGlydHkgPSBwcm9maWxlX2RhdGFmcmFtZShwYXJzZV9jc3ZfYnl0ZXMoKEZJWFRVUkVTIC8gImRpcnR5X3NhbGVzLmNzdiIpLnJlYWRfYnl0ZXMoKSkpCiAgICBkaXJ0eV9zY29yZSwgcmVhc29ucyA9IGhlYWx0aF9zY29yZShkaXJ0eSkKICAgIGFzc2VydCBkaXJ0eV9zY29yZSA8IDkwIGFuZCByZWFzb25zCgogICAgY2xlYW4gPSBwZC5EYXRhRnJhbWUoeyJhIjogWzEsIDIsIDMsIDRdLCAiYiI6IFsieCIsICJ5IiwgIngiLCAieSJdfSkuYXN0eXBlKHN0cikKICAgIGNsZWFuLmxvY1s6LCA6XSA9IGNsZWFuLmFzdHlwZShzdHIpCiAgICBjbGVhbl9wcm9mID0gcHJvZmlsZV9kYXRhZnJhbWUoY2xlYW4pCiAgICBjbGVhbl9zY29yZSwgXyA9IGhlYWx0aF9zY29yZShjbGVhbl9wcm9mKQogICAgYXNzZXJ0IGNsZWFuX3Njb3JlID4gZGlydHlfc2NvcmUK
+"""Day 1 golden tests for parse + profile + health score.
+
+Run:  python -m pytest tests/ -v   (from services/engine/)
+These lock in the deterministic behaviour: if a future change alters a
+score, a test must fail loudly instead of users seeing a different number.
+"""
+import io
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+import pandas as pd
+
+from app.engine.parse import infer_types, parse_csv_bytes
+from app.engine.profile import health_score, profile_dataframe
+
+FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def test_parse_and_types_on_dirty_fixture():
+    df = parse_csv_bytes((FIXTURES / "dirty_sales.csv").read_bytes())
+    assert len(df) == 8
+    types = infer_types(df)
+    assert types["date"] == "datetime"
+    assert types["revenue"] == "numeric"
+    assert types["region"] == "categorical"
+    assert types["order_id"] == "id"          # IDs must never become numbers
+    assert types["notes"] == "constant"
+
+
+def test_profile_counts_duplicates_and_missing():
+    df = parse_csv_bytes((FIXTURES / "dirty_sales.csv").read_bytes())
+    prof = profile_dataframe(df)
+    assert prof["rows"] == 8
+    assert prof["duplicate_rows"] == 2        # rows 2 and 7 repeat earlier rows
+    assert prof["missing_pct"] > 0            # revenue + region have blanks
+
+
+def test_health_score_punishes_dirty_and_rewards_clean():
+    dirty = profile_dataframe(parse_csv_bytes((FIXTURES / "dirty_sales.csv").read_bytes()))
+    dirty_score, reasons = health_score(dirty)
+    assert dirty_score < 90 and reasons
+
+    clean = pd.DataFrame({"a": [1, 2, 3, 4], "b": ["x", "y", "x", "y"]}).astype(str)
+    clean.loc[:, :] = clean.astype(str)
+    clean_prof = profile_dataframe(clean)
+    clean_score, _ = health_score(clean_prof)
+    assert clean_score > dirty_score
