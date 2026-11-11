@@ -1,1 +1,13 @@
-ZXhwb3J0IGNvbnN0IG1ldGFkYXRhID0gewogIHRpdGxlOiAiQ1NWIERvY3RvciDigJQgV2hhdCdzIHdyb25nLCB3ZWlyZCBhbmQgaW50ZXJlc3RpbmcgaW4geW91ciBDU1Y/IiwKICBkZXNjcmlwdGlvbjoKICAgICJEcm9wIGFueSBDU1YuIFJlYWwgTUwgcHJvZmlsZXMgaXQsIGZpbmRzIGFub21hbGllcyBhbmQgZHJpZnQsIGFuZCBhIGZyZWUgQUkgZXhwbGFpbnMgaXQgaW4gcGxhaW4gRW5nbGlzaC4gTm8gc2lnbnVwLiBGaWxlcyBhdXRvLWRlbGV0ZWQuIiwKfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJvb3RMYXlvdXQoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgewogIHJldHVybiAoCiAgICA8aHRtbCBsYW5nPSJlbiI+CiAgICAgIDxib2R5IHN0eWxlPXt7IGZvbnRGYW1pbHk6ICJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiLCBtYXJnaW46IDAgfX0+e2NoaWxkcmVufTwvYm9keT4KICAgIDwvaHRtbD4KICApOwp9Cg==
+export const metadata = {
+  title: "CSV Doctor — What's wrong, weird and interesting in your CSV?",
+  description:
+    "Drop any CSV. Real ML profiles it, finds anomalies and drift, and a free AI explains it in plain English. No signup. Files auto-deleted.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body style={{ fontFamily: "system-ui, sans-serif", margin: 0 }}>{children}</body>
+    </html>
+  );
+}
