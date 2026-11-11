@@ -1,1 +1,13 @@
-X19weWNhY2hlX18vCioucHljCi52ZW52Lwp2ZW52Lwpub2RlX21vZHVsZXMvCi5uZXh0LwouZW52Ci5lbnYuKgohLmVudi5leGFtcGxlCioubG9nCi5EU19TdG9yZQp1cGxvYWRzLwp0bXAvCg==
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+uploads/
+tmp/
