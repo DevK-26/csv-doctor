@@ -1,1 +1,27 @@
-IyBET01BSU4gY29tZXMgZnJvbSAuZW52IOKAlCAiOjgwIiBtZWFucyBJUC1vbmx5IEhUVFAgbW9kZSwgYSByZWFsCiMgZG9tYWluIGxpa2UgY3N2ZG9jdG9yLmV4YW1wbGUuY29tIG1lYW5zIGF1dG9tYXRpYyBIVFRQUyB2aWEgTGV0J3MgRW5jcnlwdC4KeyRET01BSU59IHsKCWVuY29kZSBnemlwCgoJIyBBUEk6IC9hcGkvaGVhbHRoIC0+IGVuZ2luZSAvaGVhbHRoLCAvYXBpL2FuYWx5c2UgLT4gZW5naW5lIC9hbmFseXNlCgloYW5kbGUgL2FwaS8qIHsKCQl1cmkgc3RyaXBfcHJlZml4IC9hcGkKCQlyZXZlcnNlX3Byb3h5IGVuZ2luZTo3ODYwCgl9CgoJIyBFdmVyeXRoaW5nIGVsc2UgZ29lcyB0byB0aGUgTmV4dC5qcyB3ZWIgYXBwCgloYW5kbGUgewoJCXJldmVyc2VfcHJveHkgd2ViOjMwMDAKCX0KCgloZWFkZXIgewoJCVgtQ29udGVudC1UeXBlLU9wdGlvbnMgbm9zbmlmZgoJCVJlZmVycmVyLVBvbGljeSBzdHJpY3Qtb3JpZ2luLXdoZW4tY3Jvc3Mtb3JpZ2luCgkJLVNlcnZlcgoJfQoKCWxvZyB7CgkJb3V0cHV0IHN0ZG91dAoJCWZvcm1hdCBjb25zb2xlCgl9Cn0K
+# DOMAIN comes from .env — ":80" means IP-only HTTP mode, a real
+# domain like csvdoctor.example.com means automatic HTTPS via Let's Encrypt.
+{$DOMAIN} {
+	encode gzip
+
+	# API: /api/health -> engine /health, /api/analyse -> engine /analyse
+	handle /api/* {
+		uri strip_prefix /api
+		reverse_proxy engine:7860
+	}
+
+	# Everything else goes to the Next.js web app
+	handle {
+		reverse_proxy web:3000
+	}
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+
+	log {
+		output stdout
+		format console
+	}
+}
