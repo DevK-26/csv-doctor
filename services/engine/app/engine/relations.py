@@ -1,1 +1,16 @@
-IiIiU3RlcCBGIOKAlCByZWxhdGlvbnNoaXBzLiBEQVkgNSBpbiB0aGUgYnVpbGQgcGxhbiAoc3R1YiBvbiBEYXkgMSkuCgpQbGFubmVkIGltcGxlbWVudGF0aW9uIChCTFVFUFJJTlQgwqczRik6IFBlYXJzb24gKyBTcGVhcm1hbiBmb3IgbnVtZXJpYyBwYWlycwoocmVwb3J0IHxyfCA+PSAwLjQsIHRvcCAxMCksIGNhdGVnb3JpY2FsLXZzLW51bWVyaWMgZ3JvdXAgZGlmZmVyZW5jZXMKKHJlcG9ydCBtYXgvbWluIGdyb3VwLW1lYW4gcmF0aW8gPj0gMS41IHdpdGggbiA+PSAzMCBwZXIgZ3JvdXApLCBoZWF0bWFwIGRhdGEKZm9yIHRoZSB0b3AtOCBudW1lcmljIGNvbHVtbnMgYnkgdmFyaWFuY2UuCiIiIgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgcGFuZGFzIGFzIHBkCgoKZGVmIGZpbmRfcmVsYXRpb25zaGlwcyhkZjogcGQuRGF0YUZyYW1lLCB0eXBlczogZGljdFtzdHIsIHN0cl0pIC0+IGRpY3Q6CiAgICAjIFRPRE8gRGF5IDU6IGNvcnJlbGF0aW9ucyArIGdyb3VwIGRpZmZlcmVuY2VzIChzZWUgZG9jc3RyaW5nKS4KICAgIHJldHVybiB7InNraXBwZWQiOiBUcnVlLCAicmVhc29uIjogIm5vdCBpbXBsZW1lbnRlZCB5ZXQgKERheSA1KSIsCiAgICAgICAgICAgICJjb3JyZWxhdGlvbnMiOiBbXSwgImdyb3VwX2RpZmZlcmVuY2VzIjogW119Cg==
+"""Step F — relationships. DAY 5 in the build plan (stub on Day 1).
+
+Planned implementation (BLUEPRINT §3F): Pearson + Spearman for numeric pairs
+(report |r| >= 0.4, top 10), categorical-vs-numeric group differences
+(report max/min group-mean ratio >= 1.5 with n >= 30 per group), heatmap data
+for the top-8 numeric columns by variance.
+"""
+from __future__ import annotations
+
+import pandas as pd
+
+
+def find_relationships(df: pd.DataFrame, types: dict[str, str]) -> dict:
+    # TODO Day 5: correlations + group differences (see docstring).
+    return {"skipped": True, "reason": "not implemented yet (Day 5)",
+            "correlations": [], "group_differences": []}
