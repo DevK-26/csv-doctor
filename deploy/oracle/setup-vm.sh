@@ -1,1 +1,48 @@
-IyEvdXNyL2Jpbi9lbnYgYmFzaAojIENTViBEb2N0b3Ig4oCUIE9yYWNsZSBDbG91ZCBWTSBvbmUtdGltZSBzZXR1cAojIFJ1biBPTkNFIG9uIGEgZnJlc2ggVWJ1bnR1IDI0LjA0IC8gMjIuMDQgQVJNIChBbXBlcmUgQTEpIFZNLCBhcyB1YnVudHUgdXNlcjoKIyAgIGJhc2ggc2V0dXAtdm0uc2gKIyBJZGVtcG90ZW50OiBzYWZlIHRvIHJ1biBhZ2Fpbi4Kc2V0IC1ldW8gcGlwZWZhaWwKCmVjaG8gIj09PiAxLzYgU3lzdGVtIHVwZGF0ZSArIGJhc2ljcyIKc3VkbyBhcHQtZ2V0IHVwZGF0ZSAteQpzdWRvIGFwdC1nZXQgdXBncmFkZSAteQpzdWRvIGFwdC1nZXQgaW5zdGFsbCAteSBjdXJsIGdpdCB1ZncgZmFpbDJiYW4gdW5hdHRlbmRlZC11cGdyYWRlcwoKZWNobyAiPT0+IDIvNiBTd2FwICgyR0Ig4oCUIHByb3RlY3RzIHRoZSBidWlsZCBvbiBzbWFsbCBib290cykiCmlmICEgc3VkbyBzd2Fwb24gLS1zaG93IHwgZ3JlcCAtcSBzd2FwZmlsZTsgdGhlbgogIHN1ZG8gZmFsbG9jYXRlIC1sIDJHIC9zd2FwZmlsZSB8fCBzdWRvIGRkIGlmPS9kZXYvemVybyBvZj0vc3dhcGZpbGUgYnM9MU0gY291bnQ9MjA0OAogIHN1ZG8gY2htb2QgNjAwIC9zd2FwZmlsZQogIHN1ZG8gbWtzd2FwIC9zd2FwZmlsZQogIHN1ZG8gc3dhcG9uIC9zd2FwZmlsZQogIGVjaG8gJy9zd2FwZmlsZSBub25lIHN3YXAgc3cgMCAwJyB8IHN1ZG8gdGVlIC1hIC9ldGMvZnN0YWIKZmkKCmVjaG8gIj09PiAzLzYgRG9ja2VyIChvZmZpY2lhbCBjb252ZW5pZW5jZSBzY3JpcHQpICsgQ29tcG9zZSBwbHVnaW4iCmlmICEgY29tbWFuZCAtdiBkb2NrZXIgPi9kZXYvbnVsbCAyPiYxOyB0aGVuCiAgY3VybCAtZnNTTCBodHRwczovL2dldC5kb2NrZXIuY29tIHwgc3VkbyBzaApmaQpzdWRvIHVzZXJtb2QgLWFHIGRvY2tlciAiJFVTRVIiCnN1ZG8gc3lzdGVtY3RsIGVuYWJsZSAtLW5vdyBkb2NrZXIKCmVjaG8gIj09PiA0LzYgRmlyZXdhbGwg4oCUIFNTSCArIEhUVFAvSFRUUFMgb25seSIKIyBPcmFjbGUgYWxzbyBoYXMgYSBjbG91ZC1zaWRlIFNlY3VyaXR5IExpc3Qg4oCUIHBvcnRzIDgwLzQ0MyBtdXN0IGJlIG9wZW5lZAojIHRoZXJlIHRvbyAoc2VlIERFUExPWS1PUkFDTEUubWQgU3RlcCAzKS4gVGhpcyBpcyB0aGUgT1Mtc2lkZSBmaXJld2FsbC4Kc3VkbyB1ZncgYWxsb3cgMjIvdGNwCnN1ZG8gdWZ3IGFsbG93IDgwL3RjcApzdWRvIHVmdyBhbGxvdyA0NDMvdGNwCnN1ZG8gdWZ3IGFsbG93IDQ0My91ZHAKc3VkbyB1ZncgLS1mb3JjZSBlbmFibGUKIyBPcmFjbGUgVWJ1bnR1IGltYWdlcyBzaGlwIGlwdGFibGVzIHJ1bGVzIHRoYXQgYmxvY2sgbm9uLVNTSCB0cmFmZmljOgpzdWRvIGlwdGFibGVzIC1JIElOUFVUIDYgLW0gc3RhdGUgLS1zdGF0ZSBORVcgLXAgdGNwIC0tZHBvcnQgODAgLWogQUNDRVBUIHx8IHRydWUKc3VkbyBpcHRhYmxlcyAtSSBJTlBVVCA2IC1tIHN0YXRlIC0tc3RhdGUgTkVXIC1wIHRjcCAtLWRwb3J0IDQ0MyAtaiBBQ0NFUFQgfHwgdHJ1ZQoKZWNobyAiPT0+IDUvNiBBcHAgZm9sZGVyIgpta2RpciAtcCB+L2Nzdi1kb2N0b3IKc3VkbyBjaG93biAtUiAiJFVTRVIiOiIkVVNFUiIgfi9jc3YtZG9jdG9yCgplY2hvICI9PT4gNi82IERvbmUiCmVjaG8gIkxvZyBvdXQgYW5kIGJhY2sgaW4gb25jZSAoc28gdGhlIGRvY2tlciBncm91cCBhcHBsaWVzKSwgdGhlbiBydW4gZGVwbG95LnNoIgpkb2NrZXIgLS12ZXJzaW9uIHx8IHRydWUKZG9ja2VyIGNvbXBvc2UgdmVyc2lvbiB8fCB0cnVlCg==
+#!/usr/bin/env bash
+# CSV Doctor — Oracle Cloud VM one-time setup
+# Run ONCE on a fresh Ubuntu 24.04 / 22.04 ARM (Ampere A1) VM, as ubuntu user:
+#   bash setup-vm.sh
+# Idempotent: safe to run again.
+set -euo pipefail
+
+echo "==> 1/6 System update + basics"
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install -y curl git ufw fail2ban unattended-upgrades
+
+echo "==> 2/6 Swap (2GB — protects the build on small boots)"
+if ! sudo swapon --show | grep -q swapfile; then
+  sudo fallocate -l 2G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+  sudo chmod 600 /swapfile
+  sudo mkswap /swapfile
+  sudo swapon /swapfile
+  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+fi
+
+echo "==> 3/6 Docker (official convenience script) + Compose plugin"
+if ! command -v docker >/dev/null 2>&1; then
+  curl -fsSL https://get.docker.com | sudo sh
+fi
+sudo usermod -aG docker "$USER"
+sudo systemctl enable --now docker
+
+echo "==> 4/6 Firewall — SSH + HTTP/HTTPS only"
+# Oracle also has a cloud-side Security List — ports 80/443 must be opened
+# there too (see DEPLOY-ORACLE.md Step 3). This is the OS-side firewall.
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 443/udp
+sudo ufw --force enable
+# Oracle Ubuntu images ship iptables rules that block non-SSH traffic:
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT || true
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 443 -j ACCEPT || true
+
+echo "==> 5/6 App folder"
+mkdir -p ~/csv-doctor
+sudo chown -R "$USER":"$USER" ~/csv-doctor
+
+echo "==> 6/6 Done"
+echo "Log out and back in once (so the docker group applies), then run deploy.sh"
+docker --version || true
+docker compose version || true
