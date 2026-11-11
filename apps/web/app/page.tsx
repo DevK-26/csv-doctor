@@ -1,1 +1,32 @@
-Ly8gRGF5IDEgbGFuZGluZyBza2VsZXRvbi4gRHJvcCB6b25lIGlzIHdpcmVkIG9uIERheSA3LTkgKHNlZSBCTFVFUFJJTlQgwqc5KS4KLy8gRm9yIG5vdyB0aGlzIHBhZ2UncyBqb2IgaXMgdG8gc3RhdGUgdGhlIHByb21pc2UgY2xlYXJseSBhbmQgbGluayBzYW1wbGVzLgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkgewogIHJldHVybiAoCiAgICA8bWFpbiBzdHlsZT17eyBtYXhXaWR0aDogNzIwLCBtYXJnaW46ICIwIGF1dG8iLCBwYWRkaW5nOiAiNjRweCAyMHB4IiB9fT4KICAgICAgPGgxIHN0eWxlPXt7IGZvbnRTaXplOiA0NCwgbGluZUhlaWdodDogMS4xIH19PkNTViBEb2N0b3I8L2gxPgogICAgICA8cCBzdHlsZT17eyBmb250U2l6ZTogMjAsIGNvbG9yOiAiIzQ0NCIgfX0+CiAgICAgICAgRHJvcCBhbnkgQ1NWLiBJbiAzMCBzZWNvbmRzLCBrbm93IHdoYXQmYXBvcztzIDxiPndyb25nPC9iPiwgd2hhdCZhcG9zO3N7IiAifQogICAgICAgIDxiPndlaXJkPC9iPiwgYW5kIHdoYXQmYXBvcztzIDxiPmludGVyZXN0aW5nPC9iPiBpbiB5b3VyIGRhdGEg4oCUIGluIHBsYWluIEVuZ2xpc2guCiAgICAgIDwvcD4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBib3JkZXI6ICIycHggZGFzaGVkICM5OTkiLCBib3JkZXJSYWRpdXM6IDEyLCBwYWRkaW5nOiA0MCwKICAgICAgICAgIHRleHRBbGlnbjogImNlbnRlciIsIGNvbG9yOiAiIzY2NiIsIG1hcmdpbjogIjMycHggMCIsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIERyb3AgeW91ciAuY3N2IGhlcmUgKERheSA3LTk6IHVwbG9hZCB3aXJpbmcpCiAgICAgICAgPGJyIC8+CiAgICAgICAgPHNtYWxsPk1heCAxMCBNQiAvIDUwLDAwMCByb3dzIMK3IE5vIHNpZ251cCDCtyBGaWxlIGF1dG8tZGVsZXRlZCB3aXRoaW4gMSBob3VyPC9zbWFsbD4KICAgICAgPC9kaXY+CiAgICAgIDxwPgogICAgICAgIE5vIGZpbGUgaGFuZHk/IFRyeSBhIHNhbXBsZTogPGI+U2FsZXM8L2I+IMK3IDxiPlN1cnZleTwvYj4gwrcgPGI+V2Vic2l0ZSBhbmFseXRpY3M8L2I+eyIgIn0KICAgICAgICAoaW4gPGNvZGU+L3NhbXBsZXM8L2NvZGU+KQogICAgICA8L3A+CiAgICAgIDxwIHN0eWxlPXt7IGNvbG9yOiAiIzY2NiIsIGZvbnRTaXplOiAxNCB9fT4KICAgICAgICBSZWFsIE1MIHJ1bnMgb24geW91ciBmdWxsIGZpbGUg4oCUIHByb2ZpbGluZywgYW5vbWFseSBkZXRlY3Rpb24sIGRyaWZ0CiAgICAgICAgZGV0ZWN0aW9uLiBBIGZyZWUgQUkgb25seSBleHBsYWlucyB0aGUgY29tcHV0ZWQgZmFjdHMuIEl0IG5ldmVyIHNlZXMKICAgICAgICB5b3VyIHJhdyBkYXRhLCBhbmQgaXQgbmV2ZXIgaW52ZW50cyBhIG51bWJlci4KICAgICAgPC9wPgogICAgPC9tYWluPgogICk7Cn0K
+// Day 1 landing skeleton. Drop zone is wired on Day 7-9 (see BLUEPRINT §9).
+// For now this page's job is to state the promise clearly and link samples.
+export default function Home() {
+  return (
+    <main style={{ maxWidth: 720, margin: "0 auto", padding: "64px 20px" }}>
+      <h1 style={{ fontSize: 44, lineHeight: 1.1 }}>CSV Doctor</h1>
+      <p style={{ fontSize: 20, color: "#444" }}>
+        Drop any CSV. In 30 seconds, know what&apos;s <b>wrong</b>, what&apos;s{" "}
+        <b>weird</b>, and what&apos;s <b>interesting</b> in your data — in plain English.
+      </p>
+      <div
+        style={{
+          border: "2px dashed #999", borderRadius: 12, padding: 40,
+          textAlign: "center", color: "#666", margin: "32px 0",
+        }}
+      >
+        Drop your .csv here (Day 7-9: upload wiring)
+        <br />
+        <small>Max 10 MB / 50,000 rows · No signup · File auto-deleted within 1 hour</small>
+      </div>
+      <p>
+        No file handy? Try a sample: <b>Sales</b> · <b>Survey</b> · <b>Website analytics</b>{" "}
+        (in <code>/samples</code>)
+      </p>
+      <p style={{ color: "#666", fontSize: 14 }}>
+        Real ML runs on your full file — profiling, anomaly detection, drift
+        detection. A free AI only explains the computed facts. It never sees
+        your raw data, and it never invents a number.
+      </p>
+    </main>
+  );
+}
