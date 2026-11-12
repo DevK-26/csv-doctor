@@ -262,6 +262,23 @@ def score_matrix(X: np.ndarray, seed: int = DEFAULT_SEED,
     }
 
 
+def flag_mask(scores: dict[str, np.ndarray],
+              threshold: float = DEFAULT_THRESHOLD) -> np.ndarray:
+    """The product's flag rule, as a boolean mask over rows.
+
+    Input: the "scores" dict from `score_matrix`. Output: bool array, True
+    where the ensemble score is >= threshold AND at least 2 of the 3
+    detectors are individually >= threshold. `find_anomalies` and the
+    benchmark both call this, so the benchmark grades the rule the API ships.
+    """
+    # Calibrated scores are relative to the data's own bulk, so a single
+    # detector's tail always exists even in perfectly clean data — majority
+    # agreement is what keeps clean files quiet while planted outliers,
+    # which trip every detector family at once, still flag.
+    votes = np.column_stack([scores[m] >= threshold for m in MODELS])
+    return (scores["ensemble"] >= threshold) & (votes.sum(axis=1) >= 2)
+
+
 # --------------------------------------------------------------------------
 # Explanations
 # --------------------------------------------------------------------------
@@ -355,15 +372,7 @@ def find_anomalies(df: pd.DataFrame, types: dict[str, str], *,
     scores, w = result["scores"], result["weights"]
     ensemble = scores["ensemble"]
 
-    # Flag gate: ensemble above threshold AND a majority of detectors
-    # (at least 2 of 3) individually above threshold. Calibrated scores
-    # are relative to the data's own bulk, so a single detector's tail
-    # always exists even in perfectly clean data — majority agreement is
-    # what keeps clean files quiet while planted outliers, which trip
-    # every detector family at once, still flag.
-    votes_arr = np.column_stack([scores[m] >= threshold for m in MODELS])
-    flagged = np.flatnonzero((ensemble >= threshold)
-                             & (votes_arr.sum(axis=1) >= 2))
+    flagged = np.flatnonzero(flag_mask(scores, threshold))
     # Stable sort: ties resolve by row order, so output is reproducible.
     flagged = flagged[np.argsort(-ensemble[flagged], kind="stable")]
 
