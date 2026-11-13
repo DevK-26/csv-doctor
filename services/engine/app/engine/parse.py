@@ -60,28 +60,44 @@ def _is_numeric(series: pd.Series) -> bool:
     return pd.to_numeric(sample, errors="coerce").notna().mean() >= 0.9
 
 
+def classify_column(name: str, non_empty_count: int, unique_count: int,
+                    lowered: set[str] | None, head: pd.Series) -> str:
+    """The type rules, on summary statistics instead of a whole column.
+
+    Inputs: how many non-empty values the column has, how many are distinct,
+    the set of distinct lower-cased values (None when there are more than 2 —
+    only the boolean rule reads it), and `head`, the first non-empty values in
+    file order (the datetime/numeric sniffers only ever look at the first
+    200/500). Output: one of empty, constant, id, datetime, numeric, boolean,
+    categorical, text. Split out so the chunked scale path (scale.py) applies
+    the exact same rules as the in-memory path without holding the column.
+    """
+    if non_empty_count == 0:
+        return "empty"
+    if unique_count == 1:
+        return "constant"
+    # Targeting guard: unique / ID-named columns are identifiers, not measures.
+    if _ID_NAME.search(name) or (unique_count == non_empty_count and _is_numeric(head)):
+        if _ID_NAME.search(name) or unique_count > 20:
+            return "id"
+    if lowered is not None and lowered <= {"true", "false", "yes", "no", "0", "1"} and len(lowered) <= 2:
+        return "boolean"
+    if _is_datetime(head):
+        return "datetime"
+    if _is_numeric(head):
+        return "numeric"
+    if unique_count <= max(20, int(0.05 * non_empty_count)):
+        return "categorical"
+    return "text"
+
+
 def infer_column_type(name: str, series: pd.Series) -> str:
     """One of: empty, constant, id, datetime, numeric, boolean, categorical, text."""
     values = series.astype(str)
     non_empty = values[values != ""]
-    if len(non_empty) == 0:
-        return "empty"
-    if non_empty.nunique() == 1:
-        return "constant"
-    # Targeting guard: unique / ID-named columns are identifiers, not measures.
-    if _ID_NAME.search(name) or (non_empty.nunique() == len(non_empty) and _is_numeric(non_empty)):
-        if _ID_NAME.search(name) or non_empty.nunique() > 20:
-            return "id"
-    lowered = set(non_empty.str.lower().unique())
-    if lowered <= {"true", "false", "yes", "no", "0", "1"} and len(lowered) <= 2:
-        return "boolean"
-    if _is_datetime(non_empty):
-        return "datetime"
-    if _is_numeric(non_empty):
-        return "numeric"
-    if non_empty.nunique() <= max(20, int(0.05 * len(non_empty))):
-        return "categorical"
-    return "text"
+    unique_count = int(non_empty.nunique())
+    lowered = set(non_empty.str.lower().unique()) if unique_count else set()
+    return classify_column(name, len(non_empty), unique_count, lowered, non_empty)
 
 
 def infer_types(df: pd.DataFrame) -> dict[str, str]:
