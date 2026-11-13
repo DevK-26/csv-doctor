@@ -12,3 +12,6 @@ scikit-learn>=1.4,<2
 torch>=2.2,<3
 # Tests only: FastAPI's TestClient needs it to exercise /analyse.
 httpx>=0.27,<1
+# Phase B1 fuzzy dedupe: C++-backed token-sort ratio and Jaro-Winkler for
+# pairwise record similarity (hand-rolling these would be slow and untested).
+rapidfuzz>=3.6,<4
