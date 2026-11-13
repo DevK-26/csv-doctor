@@ -9,6 +9,8 @@ independent re-computation (see app/engine/ask). The default generator is
 deterministic and local; swapping in an LLM is a one-function change
 (get_generator). The LLM summary is a separate web-app route (Day 10) —
 this service never calls a model unless a generator that does is plugged in.
+Phase C2: CORS for the browser app (CSV_DOCTOR_WEB_ORIGIN, default
+http://localhost:3000; comma-separate to allow several origins).
 Phase C1 scale path: POST /jobs queues a chunked + DuckDB profile of a large
 CSV (no 50k-row cap), GET /jobs/{id} returns its status/result, and
 GET /jobs/{id}/events streams progress as Server-Sent Events (app/jobs.py).
@@ -18,11 +20,13 @@ from __future__ import annotations
 import asyncio
 import hashlib
 import json
+import os
 import time
 import uuid
 
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.concurrency import run_in_threadpool
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, StreamingResponse
 from redis.exceptions import RedisError
 
@@ -41,7 +45,29 @@ SSE_POLL_SECONDS = 0.2
 SSE_KEEPALIVE_SECONDS = 15.0
 SSE_MAX_SECONDS = 3600.0
 
+DEFAULT_WEB_ORIGIN = "http://localhost:3000"
+
+
+def parse_web_origins(value: str | None) -> list[str]:
+    """Allowed browser origins from a comma-separated env value (default: the web dev origin).
+
+    Exact origins only: a wildcard would let any site upload to the engine
+    from a visitor's browser, so "*" is rejected rather than honoured.
+    """
+    origins = [o.strip().rstrip("/") for o in (value or "").split(",") if o.strip()]
+    if "*" in origins:
+        raise ValueError("CSV_DOCTOR_WEB_ORIGIN must list exact origins, not '*'.")
+    return origins or [DEFAULT_WEB_ORIGIN]
+
+
+WEB_ORIGINS = parse_web_origins(os.environ.get("CSV_DOCTOR_WEB_ORIGIN"))
+
 app = FastAPI(title="CSV Doctor Engine", version=ENGINE_VERSION)
+# No cookies or auth headers are used, so credentials stay off. The SSE stream is
+# read with EventSource (a simple GET), which only needs the allow-origin header.
+app.add_middleware(CORSMiddleware, allow_origins=WEB_ORIGINS, allow_credentials=False,
+                   allow_methods=["GET", "POST", "OPTIONS"],
+                   allow_headers=["Content-Type", "Last-Event-ID"], max_age=600)
 
 
 @app.exception_handler(RedisError)
