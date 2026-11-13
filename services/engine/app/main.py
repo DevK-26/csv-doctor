@@ -1,9 +1,9 @@
 """CSV Doctor engine API (FastAPI).
 
 GET /health and POST /analyse: parse + profile + health score + the anomaly
-ensemble (Phase A1: per-row results with reasons under "anomalies").
-Drift/relations still return their honest 'skipped / not implemented yet'
-stubs. The LLM summary is a separate web-app route (Day 10) —
+ensemble (Phase A1: per-row results with reasons under "anomalies") + fuzzy
+duplicate groups for review (Phase B1, under "relations").
+The LLM summary is a separate web-app route (Day 10) —
 this service never calls a model.
 """
 from __future__ import annotations
@@ -16,7 +16,7 @@ from .engine import anomalies, drift, facts, profile as profile_mod, relations
 from .engine.parse import ParseError, infer_types, parse_csv_bytes
 
 # Bump on any change to analysis output: reports are cached by file hash + version.
-ENGINE_VERSION = "0.2.0-a1"
+ENGINE_VERSION = "0.3.0-b1"
 
 app = FastAPI(title="CSV Doctor Engine", version=ENGINE_VERSION)
 
@@ -39,7 +39,7 @@ async def analyse(file: UploadFile = File(...)):
     score, reasons = profile_mod.health_score(prof)
     anom = anomalies.find_anomalies(df, types)
     dr = drift.find_change_points(df, types)
-    rel = relations.find_relationships(df, types)
+    rel = relations.find_duplicates(df, types)
     pack = facts.build_facts_pack(prof, score, reasons, anom, dr, rel)
 
     return {
